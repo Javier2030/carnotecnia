@@ -203,6 +203,11 @@ td b{color:var(--tinta)}
 }
 .aviso b{color:var(--tinta)}
 
+/* Bloque técnico: las tablas piden más ancho que una columna de lectura. */
+.tecnico{max-width:1000px}
+.tecnico h2{font-size:clamp(1.5rem,3vw,2.05rem);margin:54px 0 16px}
+.tecnico h2:first-child{margin-top:0}
+
 /* -------------------------------------------------------------------- FAQ */
 .faq{display:grid;gap:11px;max-width:840px}
 .faq details{background:#fff;border:1px solid var(--linea-clara);border-radius:11px;overflow:hidden}
