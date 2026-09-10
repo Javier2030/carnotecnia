@@ -55,4 +55,26 @@
     el.style.transitionDelay = (Math.min(n % 3, 2) * 70) + 'ms';
     io.observe(el);
   });
+
+  // Red de seguridad: con un salto de scroll muy rápido (o un anclaje) el observador
+  // puede no alcanzar a disparar y el bloque se queda en opacity:0, es decir invisible.
+  // Nada puede quedar oculto: repasamos a mano lo que ya está en pantalla.
+  function repasar() {
+    var alto = window.innerHeight || 800;
+    for (var i = 0; i < revs.length; i++) {
+      var el = revs[i];
+      if (el.classList.contains('visible')) continue;
+      var r = el.getBoundingClientRect();
+      if (r.top < alto && r.bottom > 0) { el.classList.add('visible'); io.unobserve(el); }
+    }
+  }
+  var pend = 0;
+  function pedirRepaso() {
+    if (pend) return;
+    pend = requestAnimationFrame(function () { pend = 0; repasar(); });
+  }
+  window.addEventListener('scroll', pedirRepaso, { passive: true });
+  window.addEventListener('resize', pedirRepaso, { passive: true });
+  window.addEventListener('hashchange', pedirRepaso);
+  setTimeout(repasar, 1200);
 })();

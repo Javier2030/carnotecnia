@@ -50,6 +50,7 @@
   <url><loc>https://carnotecnia.com/pt/servicos/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://carnotecnia.com/pt/formulacao/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://carnotecnia.com/pt/mao-de-obra/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://carnotecnia.com/pt/diagnostico/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
   <url><loc>https://carnotecnia.com/pt/fabrica/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://carnotecnia.com/pt/consultoria/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://carnotecnia.com/pt/academia/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
@@ -72,6 +73,7 @@
   <url><loc>https://carnotecnia.com/fr/services/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://carnotecnia.com/fr/formulation/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://carnotecnia.com/fr/main-doeuvre/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://carnotecnia.com/fr/diagnostic/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
   <url><loc>https://carnotecnia.com/fr/usine/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://carnotecnia.com/fr/conseil/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://carnotecnia.com/fr/academie/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
@@ -94,6 +96,7 @@
   <url><loc>https://carnotecnia.com/it/servizi/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://carnotecnia.com/it/formulazione/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://carnotecnia.com/it/manodopera/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://carnotecnia.com/it/diagnosi/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
   <url><loc>https://carnotecnia.com/it/stabilimento/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://carnotecnia.com/it/consulenza/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://carnotecnia.com/it/accademia/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
@@ -116,6 +119,7 @@
   <url><loc>https://carnotecnia.com/ar/khadamat/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://carnotecnia.com/ar/tarkib/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://carnotecnia.com/ar/kawa-amila/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://carnotecnia.com/ar/tashkhis/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
   <url><loc>https://carnotecnia.com/ar/masna/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://carnotecnia.com/ar/istisharat/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://carnotecnia.com/ar/akadimiya/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
@@ -138,6 +142,7 @@
   <url><loc>https://carnotecnia.com/pl/uslugi/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://carnotecnia.com/pl/receptury/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://carnotecnia.com/pl/kadry/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://carnotecnia.com/pl/diagnostyka/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
   <url><loc>https://carnotecnia.com/pl/zaklad/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://carnotecnia.com/pl/doradztwo/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://carnotecnia.com/pl/akademia/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
@@ -156,4 +161,73 @@
   <url><loc>https://carnotecnia.com/pl/receptury/majonez-przemyslowy/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://carnotecnia.com/pl/receptury/sos-pomidorowy-przemyslowy/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://carnotecnia.com/pl/receptury/makaron-suszony/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/de/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://carnotecnia.com/de/leistungen/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://carnotecnia.com/de/rezepturen/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://carnotecnia.com/de/fachkraefte/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://carnotecnia.com/de/diagnose/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://carnotecnia.com/de/produktion/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://carnotecnia.com/de/beratung/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://carnotecnia.com/de/akademie/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://carnotecnia.com/de/rezepturen/grillbratwurst/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/de/rezepturen/mortadella-und-bruehwurst/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/de/rezepturen/kochschinken/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/de/rezepturen/fermentierte-salami/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/de/rezepturen/spanische-chorizo-luftgetrocknet/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/de/rezepturen/dry-aged-rindfleisch/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/de/rezepturen/natriumnitrit-dosierung/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/de/rezepturen/halal-wurstwaren/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/de/rezepturen/natriumreduktion/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/de/rezepturen/vorgekochtes-maismehl/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/de/rezepturen/tier-und-knochenmehl/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/de/rezepturen/extrudiertes-hundefutter/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/de/rezepturen/industrielle-mayonnaise/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/de/rezepturen/industrielle-tomatensauce/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/de/rezepturen/trockenteigwaren/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/zh/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://carnotecnia.com/zh/fuwu/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://carnotecnia.com/zh/peifang/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://carnotecnia.com/zh/rencai/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://carnotecnia.com/zh/zhenduan/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://carnotecnia.com/zh/gongchang/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://carnotecnia.com/zh/zixun/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://carnotecnia.com/zh/xueyuan/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://carnotecnia.com/zh/peifang/shaokao-xiangchang/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/zh/peifang/modaila-yu-ruhua/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/zh/peifang/shu-huotui/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/zh/peifang/fajiao-salami/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/zh/peifang/xibanya-fenggan-xiangchang/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/zh/peifang/ganshi-shucheng-niurou/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/zh/peifang/yaxiaosuanna-jiliang/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/zh/peifang/qingzhen-xiangchang/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/zh/peifang/jiangna/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/zh/peifang/yushu-yumifen/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/zh/peifang/rougufen/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/zh/peifang/penghua-chongwuliang/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/zh/peifang/gongye-danhuangjiang/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/zh/peifang/gongye-fanqiejiang/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/zh/peifang/gan-yidalimian/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/ru/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://carnotecnia.com/ru/uslugi/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://carnotecnia.com/ru/retseptury/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://carnotecnia.com/ru/kadry/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://carnotecnia.com/ru/diagnostika/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://carnotecnia.com/ru/proizvodstvo/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://carnotecnia.com/ru/konsalting/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://carnotecnia.com/ru/akademiya/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://carnotecnia.com/ru/retseptury/kolbasa-dlya-grilya/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/ru/retseptury/mortadella-i-varyonye-kolbasy/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/ru/retseptury/varyonaya-vetchina/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/ru/retseptury/fermentirovannaya-salyami/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/ru/retseptury/ispanskoe-syrovyalenoe-chorizo/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/ru/retseptury/myaso-sukhoy-vyderzhki/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/ru/retseptury/nitrit-natriya-dozirovka/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/ru/retseptury/halyal-kolbasy/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/ru/retseptury/snizhenie-natriya/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/ru/retseptury/kukuruznaya-muka-predvaritelnoy-varki/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/ru/retseptury/myasokostnaya-muka/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/ru/retseptury/ekstrudirovanny-korm-dlya-sobak/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/ru/retseptury/promyshlenny-mayonez/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/ru/retseptury/promyshlenny-tomatny-sous/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://carnotecnia.com/ru/retseptury/sukhie-makaronnye-izdeliya/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
