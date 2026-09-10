@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Carnotecnia: sausage formulation and meat consulting</title>
-<meta name="description" content="Sausage and dry-aged meat production in Venezuela, plus international food technology consulting: formulation, yield, shelf life, export compliance and HACCP.">
+<title>Carnotecnia: food technology and animal feed</title>
+<meta name="description" content="Sausages, dry-aged meat, sauces, precooked flours, pasta, meat and bone meal and pet food. Manufacturing in Venezuela and consulting worldwide.">
 <link rel="canonical" href="https://carnotecnia.com/en/">
 <link rel="alternate" hreflang="es" href="https://carnotecnia.com/">
 <link rel="alternate" hreflang="en" href="https://carnotecnia.com/en/">
@@ -18,8 +18,8 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="Carnotecnia">
-<meta property="og:title" content="Carnotecnia: sausage formulation and meat consulting">
-<meta property="og:description" content="Sausage and dry-aged meat production in Venezuela, plus international food technology consulting: formulation, yield, shelf life, export compliance and HACCP.">
+<meta property="og:title" content="Carnotecnia: food technology and animal feed">
+<meta property="og:description" content="Sausages, dry-aged meat, sauces, precooked flours, pasta, meat and bone meal and pet food. Manufacturing in Venezuela and consulting worldwide.">
 <meta property="og:url" content="https://carnotecnia.com/en/">
 <style>:root{
 --carbon:#14110f;
@@ -254,6 +254,22 @@ background:linear-gradient(180deg,var(--curado),var(--paprika));
 .servicios.claros .serv dt{color:var(--curado)}
 .servicios.claros .serv dd{color:#5b524c}
 .servicios.claros .serv .num{color:var(--curado)}
+.areas{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.area{
+background:#fff;border:1px solid var(--linea-clara);border-radius:var(--r);padding:26px 24px;
+transition:transform .28s var(--ease),box-shadow .28s var(--ease);
+}
+.area:hover{transform:translateY(-4px);box-shadow:0 20px 44px -22px rgba(26,21,18,.3)}
+.area-icono{font-size:26px;line-height:1;display:block;margin-bottom:13px}
+.area h3{font-size:1.13rem;margin-bottom:9px;letter-spacing:-.025em}
+.area p{font-size:14.4px;color:var(--gris);margin:0}
+.area-n{
+display:inline-block;margin-top:13px;font-size:11.5px;font-weight:700;letter-spacing:.09em;
+text-transform:uppercase;color:var(--curado);
+}
+.grupo-area{margin-bottom:46px}
+.grupo-titulo{font-size:1.28rem;margin-bottom:7px;display:flex;align-items:center;gap:10px}
+.grupo-texto{color:var(--gris);font-size:15px;max-width:70ch;margin-bottom:20px}
 .consulta{max-width:880px;margin-inline:auto}
 .campos{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
 .consulta label{display:block;font-size:13px;font-weight:650;letter-spacing:.02em;color:var(--paprika)}
@@ -279,12 +295,14 @@ outline:none;border-color:var(--curado-vivo);background:var(--carbon-3);
 @media (max-width:960px){
 .hero-grid{grid-template-columns:1fr}
 .lineas{grid-template-columns:1fr}
+.areas{grid-template-columns:1fr 1fr}
 .servicios{grid-template-columns:1fr}
 .ftr-grid{grid-template-columns:1fr 1fr}
 }
 @media (max-width:760px){
 body{font-size:16.3px}
 .campos{grid-template-columns:1fr}
+.areas{grid-template-columns:1fr}
 .burger{display:block}
 .nav{
 position:fixed;inset:66px 0 auto;background:var(--carbon);flex-direction:column;
@@ -308,7 +326,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
 [dir="rtl"] .linea a.mas:hover span{transform:scaleX(-1) translateX(5px)}
 [dir="rtl"] th,[dir="rtl"] td{text-align:right}</style>
 <link rel="icon" href="/assets/img/logo.svg" type="image/svg+xml">
-<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"Carnotecnia","url":"https://carnotecnia.com","logo":"https://carnotecnia.com/assets/img/logo.svg","description":"Sausage and dry-aged meat production in Venezuela, plus international food technology consulting: formulation, yield, shelf life, export compliance and HACCP.","address":{"@type":"PostalAddress","addressLocality":"Maracaibo","addressRegion":"Zulia","addressCountry":"VE"},"contactPoint":[{"@type":"ContactPoint","telephone":"+573223623930","contactType":"sales","email":"direccion@carnotecnia.com","areaServed":"Worldwide","availableLanguage":["es","en","pt","fr","it","ar"]}],"knowsAbout":["Meat technology","Sausage formulation","Dry-aged meat","HACCP","Halal production","Food technology"]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What exactly is meat technology?","acceptedAnswer":{"@type":"Answer","text":"It is the discipline that runs from the live animal to the packed product, through slaughter, ageing, formulation, thermal treatment and shelf life. When somebody says «food technology applied to meat», that is what they mean."}},{"@type":"Question","name":"Do you work outside Venezuela?","acceptedAnswer":{"@type":"Answer","text":"Yes. The factory and wholesale side is Venezuelan, based in Maracaibo, but consulting and training are remote and delivered in any country. We work in English, Spanish, Portuguese, French, Italian and Arabic, and we fit your time zone."}},{"@type":"Question","name":"Can I ask about one formula without hiring a whole project?","acceptedAnswer":{"@type":"Answer","text":"Yes. A specific question — why an emulsion broke, what nitrite dosage applies, why pH will not drop, whether an ingredient is legal in a given country — is answered by email or a short video call. Projects are for what does not fit in one answer."}},{"@type":"Question","name":"Can I set up a small sausage plant?","acceptedAnswer":{"@type":"Answer","text":"Yes, and assuming otherwise is the most common mistake. A fresh and scalded line starts with a grinder, a mixer, a stuffer and one chamber: what decides whether it works is not the size of the equipment, it is batter temperature control and formulation discipline."}},{"@type":"Question","name":"Do you hand over recipes?","acceptedAnswer":{"@type":"Answer","text":"We hand over formulations with the reason for every component and its legal dosage, which is the only thing you can actually produce from. An ingredient list with no process curve and no temperature control reproduces nothing."}},{"@type":"Question","name":"How long does developing a new product take?","acceptedAnswer":{"@type":"Answer","text":"A fresh or scalded product closes in weeks. A dry cured one needs the full ageing time per trial, so the product sets the clock: between 21 and 90 days depending on calibre and type."}},{"@type":"Question","name":"What do I need to sell to hotels and retail chains?","acceptedAnswer":{"@type":"Answer","text":"A technical sheet per product, validated shelf life, current regulatory registration and batch records. Without those four documents the negotiation does not start, however good the product is."}}]}]</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"Carnotecnia","url":"https://carnotecnia.com","logo":"https://carnotecnia.com/assets/img/logo.svg","description":"Sausages, dry-aged meat, sauces, precooked flours, pasta, meat and bone meal and pet food. Manufacturing in Venezuela and consulting worldwide.","address":{"@type":"PostalAddress","addressLocality":"Maracaibo","addressRegion":"Zulia","addressCountry":"VE"},"contactPoint":[{"@type":"ContactPoint","telephone":"+573223623930","contactType":"sales","email":"direccion@carnotecnia.com","areaServed":"Worldwide","availableLanguage":["es","en","pt","fr","it","ar"]}],"knowsAbout":["Meat technology","Sausage formulation","Dry-aged meat","HACCP","Halal production","Food technology"]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What exactly is meat technology?","acceptedAnswer":{"@type":"Answer","text":"It is the discipline that runs from the live animal to the packed product, through slaughter, ageing, formulation, thermal treatment and shelf life. When somebody says «food technology applied to meat», that is what they mean."}},{"@type":"Question","name":"Do you work outside Venezuela?","acceptedAnswer":{"@type":"Answer","text":"Yes. The factory and wholesale side is Venezuelan, based in Maracaibo, but consulting and training are remote and delivered in any country. We work in English, Spanish, Portuguese, French, Italian and Arabic, and we fit your time zone."}},{"@type":"Question","name":"Can I ask about one formula without hiring a whole project?","acceptedAnswer":{"@type":"Answer","text":"Yes. A specific question — why an emulsion broke, what nitrite dosage applies, why pH will not drop, whether an ingredient is legal in a given country — is answered by email or a short video call. Projects are for what does not fit in one answer."}},{"@type":"Question","name":"Can I set up a small sausage plant?","acceptedAnswer":{"@type":"Answer","text":"Yes, and assuming otherwise is the most common mistake. A fresh and scalded line starts with a grinder, a mixer, a stuffer and one chamber: what decides whether it works is not the size of the equipment, it is batter temperature control and formulation discipline."}},{"@type":"Question","name":"Do you hand over recipes?","acceptedAnswer":{"@type":"Answer","text":"We hand over formulations with the reason for every component and its legal dosage, which is the only thing you can actually produce from. An ingredient list with no process curve and no temperature control reproduces nothing."}},{"@type":"Question","name":"How long does developing a new product take?","acceptedAnswer":{"@type":"Answer","text":"A fresh or scalded product closes in weeks. A dry cured one needs the full ageing time per trial, so the product sets the clock: between 21 and 90 days depending on calibre and type."}},{"@type":"Question","name":"What do I need to sell to hotels and retail chains?","acceptedAnswer":{"@type":"Answer","text":"A technical sheet per product, validated shelf life, current regulatory registration and batch records. Without those four documents the negotiation does not start, however good the product is."}}]}]</script>
 <script defer src="/assets/js/main.js?v=10c84d56"></script>
 </head>
 <body>
@@ -343,8 +361,8 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
     <div class="hero-grid">
       <div>
         <span class="eyebrow">Maracaibo · Venezuela · Consulting in 6 languages</span>
-        <h1>Meat technology that <em>holds up in numbers</em>, not in family recipes.</h1>
-        <p class="hero-sub">We produce sausages and dry-aged meat in Venezuela, and we advise food plants anywhere in the world: formulation, yield, shelf life, export compliance and regulatory dossiers.</p>
+        <h1>Food technology that <em>holds up in numbers</em>, not in family recipes.</h1>
+        <p class="hero-sub">From the sausage to the dog’s kibble: meat products, sauces, precooked flours, pasta, by-product recovery and animal feed. We manufacture in Venezuela and advise plants anywhere in the world.</p>
         <div class="btns">
           <a class="btn btn-p" href="#consulta">Tell us about your plant</a>
           <a class="btn btn-linea" href="/en/formulation/">See formulations</a>
@@ -354,15 +372,15 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
       <div class="def rev">
         <h2>What meat technology is</h2>
         <p>Meat technology is the discipline that joins livestock production with the transformation and preservation of meat and its by-products. It is not just «making sausages»: it is controlling protein, water, fat, salt and time until the product comes out the same every single day.</p>
-        <p>That is the difference between a product people like and a product you can sell to the same customer every week.</p>
+        <p>And it reaches further than the name suggests: the same animal that gives the loin gives the bone that gives the meal that feeds the animal that starts the cycle again. That full recovery is the thread running through everything we do.</p>
       </div>
     </div>
   </div>
   <div class="wrap">
     <div class="cifras">
       <div class="cifra"><b>6 languages</b><span>Technical enquiries in English, Spanish, Portuguese, French, Italian and Arabic</span></div>
-      <div class="cifra"><b>9 sheets</b><span>Published formulations with process, dosage and defects</span></div>
-      <div class="cifra"><b>13 services</b><span>From cost-down reformulation to the export dossier</span></div>
+      <div class="cifra"><b>15 sheets</b><span>Published formulations with process, dosage and defects</span></div>
+      <div class="cifra"><b>25 services</b><span>From cost-down reformulation to a full livestock project</span></div>
     </div>
   </div>
 </section>
@@ -395,6 +413,55 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
         <p>Complete formulations with the reason for every gram, not copied ingredient lists. For people who manufacture, not for people who collect PDFs.</p>
         <ul><li>Formulation sheets with each additive’s function and legal dosage.</li><li>Process curves: temperature, humidity and time, hour by hour.</li><li>Cost per kilo and weight-loss calculation before you produce.</li><li>Defect diagnosis: why did the emulsion break, why did it turn grey?</li></ul>
         <a class="mas" href="/en/academy/">See academy <span>→</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<section class="seccion seccion-clara">
+  <div class="wrap">
+    <div class="cab rev">
+      <span class="eyebrow">Technical areas</span>
+      <h2>Six areas, one set of criteria.</h2>
+      <p>These are not loose specialities: a mayonnaise emulsion obeys the same physics as a mortadella one, and the bone left over from cutting is the raw material of animal feed. Knowledge accumulates, it does not split.</p>
+    </div>
+    <div class="areas rev">
+      <article class="area">
+        <span class="area-icono" aria-hidden="true">🥩</span>
+        <h3>Meat and charcuterie</h3>
+        <p>Fresh, scalded and dry cured sausages, and dry-aged beef. Where the company started and where the technical library runs deepest.</p>
+        <span class="area-n">9 fichas</span>
+      </article>
+      <article class="area">
+        <span class="area-icono" aria-hidden="true">🫙</span>
+        <h3>Sauces and dressings</h3>
+        <p>Mayonnaise, ketchup, mustard, hot sauces and dressings. Emulsions and acidification: the same physics as mortadella, applied cold.</p>
+        <span class="area-n">2 fichas</span>
+      </article>
+      <article class="area">
+        <span class="area-icono" aria-hidden="true">🌽</span>
+        <h3>Precooked flours and pasta</h3>
+        <p>Precooked corn flour, bakery blends and dry pasta. Starch gelatinisation, flaking, extrusion and the drying curve that decides everything.</p>
+        <span class="area-n">2 fichas</span>
+      </article>
+      <article class="area">
+        <span class="area-icono" aria-hidden="true">♻️</span>
+        <h3>By-products and rendering</h3>
+        <p>Meat and bone meal, blood meal, tallow. What most plants pay to throw away, and which can carry a second line of business.</p>
+        <span class="area-n">1 ficha</span>
+      </article>
+      <article class="area">
+        <span class="area-icono" aria-hidden="true">🐕</span>
+        <h3>Animal feed and petfood</h3>
+        <p>Extruded kibble for dogs and cats, and compound feed for poultry, pigs and cattle. Least-cost formulation that still meets the nutrient profile.</p>
+        <span class="area-n">1 ficha</span>
+      </article>
+      <article class="area">
+        <span class="area-icono" aria-hidden="true">🐄</span>
+        <h3>Livestock projects</h3>
+        <p>Poultry, pig or cattle operations: sizing, feeding, health plan, and the number almost nobody gets right — feed conversion ratio.</p>
+        
       </article>
     </div>
   </div>
@@ -438,15 +505,15 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
         <p>Cutting salt, nitrite, phosphates and allergens without losing microbiological safety or texture. It is the requirement advancing fastest in every market’s regulation.</p>
         <dl><dt>Deliverable</dt><dd>Reformulated product with the safety barrier recalculated and a simplified label.</dd></dl>
       </article>
-      <article class="serv">
+      <article class="serv serv-top">
         <span class="num">06</span>
-        <h3>Plant diagnosis</h3>
-        <p>Full process review with the numbers in hand: yield per batch, real weight loss, cost per kilo, points of loss.</p>
-        <dl><dt>Deliverable</dt><dd>Report naming the three bottlenecks costing the most money and the order in which to attack them.</dd></dl>
+        <h3>Turnkey livestock projects</h3>
+        <p>Sizing a poultry, pig or cattle operation: stock numbers, housing, feeding plan, health programme, and the figure almost nobody calculates properly — the feed conversion ratio.</p>
+        <dl><dt>Deliverable</dt><dd>Project with phased investment, feeding plan per production stage and a real break-even point.</dd></dl>
       </article>
     </div>
     <div class="btns rev" style="justify-content:center;margin-top:34px">
-      <a class="btn btn-linea" href="/en/services/">Services (13)</a>
+      <a class="btn btn-linea" href="/en/services/">Services (20)</a>
     </div>
   </div>
 </section>
@@ -485,6 +552,24 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
       </a>
       <a class="ficha" href="/en/formulation/sodium-reduction/">
         <span class="tipo">Reformulation</span><h3>Sodium reduction</h3><p>How to reduce salt in a sausage without losing protein extraction or microbiological safety: substitutes, stepwise reduction and water activity compensation.</p>
+      </a>
+      <a class="ficha" href="/en/formulation/precooked-corn-flour/">
+        <span class="tipo">Flours</span><h3>Precooked corn flour</h3><p>How precooked corn flour is made: degerming, cooking, flaking, drying, milling, and the water absorption index that decides whether the dough works.</p>
+      </a>
+      <a class="ficha" href="/en/formulation/meat-and-bone-meal/">
+        <span class="tipo">By-products</span><h3>Meat and bone meal</h3><p>Rendering of meat by-products: sterilisation at 133 °C, pressing, milling, typical protein, calcium and phosphorus figures, and Salmonella control.</p>
+      </a>
+      <a class="ficha" href="/en/formulation/extruded-dog-food/">
+        <span class="tipo">Petfood</span><h3>Dog and cat kibble</h3><p>How extruded dog and cat food is made: formulation, extrusion parameters, drying, coating and reference nutrient profiles.</p>
+      </a>
+      <a class="ficha" href="/en/formulation/industrial-mayonnaise/">
+        <span class="tipo">Sauces</span><h3>Industrial mayonnaise</h3><p>Formulation and process for industrial mayonnaise: oil ratio, emulsifier, the critical pH of 4.</p>
+      </a>
+      <a class="ficha" href="/en/formulation/industrial-tomato-sauce/">
+        <span class="tipo">Sauces</span><h3>Tomato sauce</h3><p>Industrial process for tomato sauce and ketchup: concentration in degrees Brix, critical pH, hot filling and Bostwick viscosity control.</p>
+      </a>
+      <a class="ficha" href="/en/formulation/dry-pasta-production/">
+        <span class="tipo">Pasta</span><h3>Dry pasta</h3><p>Industrial dry pasta production: semolina quality, hydration, bronze or teflon dies, and the drying curve that prevents cracking.</p>
       </a>
     </div>
   </div>
@@ -541,7 +626,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
   <path d="M16 6.4c-4.1 0-7.1 2.9-7.1 6.9 0 3 1.7 5 3.6 6.6 1.6 1.4 2.4 2.4 2.4 4v1.7h2.2v-1.7c0-1.6.8-2.6 2.4-4 1.9-1.6 3.6-3.6 3.6-6.6 0-4-3-6.9-7.1-6.9Zm0 2.5c2.6 0 4.6 1.8 4.6 4.4 0 1.9-1.1 3.2-2.7 4.6-.8.7-1.5 1.4-1.9 2.2-.4-.8-1.1-1.5-1.9-2.2-1.6-1.4-2.7-2.7-2.7-4.6 0-2.6 2-4.4 4.6-4.4Z" fill="#faf6f0"/>
   <circle cx="13.4" cy="13" r="1.35" fill="#c9962b"/><circle cx="18.4" cy="14.6" r="1.05" fill="#c9962b"/>
 </svg><span><b>Carnotecnia</b><span>Meat technology</span></span></a>
-        <p style="margin:0;max-width:34ch">We produce sausages and dry-aged meat in Venezuela, and we advise food plants anywhere in the world: formulation, yield, shelf life, export compliance and regulatory dossiers.</p>
+        <p style="margin:0;max-width:34ch">From the sausage to the dog’s kibble: meat products, sauces, precooked flours, pasta, by-product recovery and animal feed. We manufacture in Venezuela and advise plants anywhere in the world.</p>
       </div>
       <div>
         <h4>What we do</h4>

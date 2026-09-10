@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Serviços de consultoria em tecnologia de carnes</title>
-<meta name="description" content="Reformulação para baixar custo, adequação para exportar, vida útil, clean label, perícia e projeto de linha. Consultoria remota para qualquer país.">
+<meta name="description" content="Reformulação de custos, exportação, halal, projetos pecuários, fábrica de ração, rendering, petfood, molhos e farinhas. Consultoria remota para qualquer país.">
 <link rel="canonical" href="https://carnotecnia.com/pt/servicos/">
 <link rel="alternate" hreflang="es" href="https://carnotecnia.com/servicios/">
 <link rel="alternate" hreflang="en" href="https://carnotecnia.com/en/services/">
@@ -19,7 +19,7 @@
 <meta property="og:locale" content="pt">
 <meta property="og:site_name" content="Carnotecnia">
 <meta property="og:title" content="Serviços de consultoria em tecnologia de carnes">
-<meta property="og:description" content="Reformulação para baixar custo, adequação para exportar, vida útil, clean label, perícia e projeto de linha. Consultoria remota para qualquer país.">
+<meta property="og:description" content="Reformulação de custos, exportação, halal, projetos pecuários, fábrica de ração, rendering, petfood, molhos e farinhas. Consultoria remota para qualquer país.">
 <meta property="og:url" content="https://carnotecnia.com/pt/servicos/">
 <style>:root{
 --carbon:#14110f;
@@ -254,6 +254,22 @@ background:linear-gradient(180deg,var(--curado),var(--paprika));
 .servicios.claros .serv dt{color:var(--curado)}
 .servicios.claros .serv dd{color:#5b524c}
 .servicios.claros .serv .num{color:var(--curado)}
+.areas{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.area{
+background:#fff;border:1px solid var(--linea-clara);border-radius:var(--r);padding:26px 24px;
+transition:transform .28s var(--ease),box-shadow .28s var(--ease);
+}
+.area:hover{transform:translateY(-4px);box-shadow:0 20px 44px -22px rgba(26,21,18,.3)}
+.area-icono{font-size:26px;line-height:1;display:block;margin-bottom:13px}
+.area h3{font-size:1.13rem;margin-bottom:9px;letter-spacing:-.025em}
+.area p{font-size:14.4px;color:var(--gris);margin:0}
+.area-n{
+display:inline-block;margin-top:13px;font-size:11.5px;font-weight:700;letter-spacing:.09em;
+text-transform:uppercase;color:var(--curado);
+}
+.grupo-area{margin-bottom:46px}
+.grupo-titulo{font-size:1.28rem;margin-bottom:7px;display:flex;align-items:center;gap:10px}
+.grupo-texto{color:var(--gris);font-size:15px;max-width:70ch;margin-bottom:20px}
 .consulta{max-width:880px;margin-inline:auto}
 .campos{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
 .consulta label{display:block;font-size:13px;font-weight:650;letter-spacing:.02em;color:var(--paprika)}
@@ -279,12 +295,14 @@ outline:none;border-color:var(--curado-vivo);background:var(--carbon-3);
 @media (max-width:960px){
 .hero-grid{grid-template-columns:1fr}
 .lineas{grid-template-columns:1fr}
+.areas{grid-template-columns:1fr 1fr}
 .servicios{grid-template-columns:1fr}
 .ftr-grid{grid-template-columns:1fr 1fr}
 }
 @media (max-width:760px){
 body{font-size:16.3px}
 .campos{grid-template-columns:1fr}
+.areas{grid-template-columns:1fr}
 .burger{display:block}
 .nav{
 position:fixed;inset:66px 0 auto;background:var(--carbon);flex-direction:column;
@@ -308,7 +326,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
 [dir="rtl"] .linea a.mas:hover span{transform:scaleX(-1) translateX(5px)}
 [dir="rtl"] th,[dir="rtl"] td{text-align:right}</style>
 <link rel="icon" href="/assets/img/logo.svg" type="image/svg+xml">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Carnotecnia","url":"https://carnotecnia.com","logo":"https://carnotecnia.com/assets/img/logo.svg","description":"Fabricação de embutidos e carnes maturadas na Venezuela e consultoria internacional em tecnologia de alimentos: formulação, rendimento, vida útil e HACCP.","address":{"@type":"PostalAddress","addressLocality":"Maracaibo","addressRegion":"Zulia","addressCountry":"VE"},"contactPoint":[{"@type":"ContactPoint","telephone":"+573223623930","contactType":"sales","email":"direccion@carnotecnia.com","areaServed":"Worldwide","availableLanguage":["es","en","pt","fr","it","ar"]}],"knowsAbout":["Meat technology","Sausage formulation","Dry-aged meat","HACCP","Halal production","Food technology"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Carnotecnia","url":"https://carnotecnia.com","logo":"https://carnotecnia.com/assets/img/logo.svg","description":"Embutidos, carnes maturadas, molhos, farinhas pré-cozidas, massas, farinha de ossos e ração para pets. Fabricação na Venezuela e consultoria internacional.","address":{"@type":"PostalAddress","addressLocality":"Maracaibo","addressRegion":"Zulia","addressCountry":"VE"},"contactPoint":[{"@type":"ContactPoint","telephone":"+573223623930","contactType":"sales","email":"direccion@carnotecnia.com","areaServed":"Worldwide","availableLanguage":["es","en","pt","fr","it","ar"]}],"knowsAbout":["Meat technology","Sausage formulation","Dry-aged meat","HACCP","Halal production","Food technology"]}</script>
 <script defer src="/assets/js/main.js?v=10c84d56"></script>
 </head>
 <body>
@@ -343,7 +361,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
   <div class="wrap">
     <div class="cab rev">
       <span class="eyebrow">Como trabalhamos</span>
-      <h2 style="font-size:clamp(2rem,4.4vw,3rem)">18 serviços</h2>
+      <h2 style="font-size:clamp(2rem,4.4vw,3rem)">25 serviços</h2>
       <p>Uma planta que não sabe a sua quebra real nem o seu custo por quilo não tem um problema de sabor: tem um problema de controle. É sempre daí que o trabalho começa.</p>
     </div>
   </div>
@@ -373,36 +391,64 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
         <span class="num">05</span><h3>Clean label: menos sódio, nitritos e alérgenos</h3><p>Redução de sal, nitritos, fosfatos e alérgenos sem perder segurança microbiológica nem textura. É a exigência que mais avança na regulação de todos os mercados.</p>
         <dl><dt>Entregável</dt><dd>Fórmula reformulada com a barreira de segurança recalculada e o rótulo simplificado.</dd><dt>Modalidade</dt><dd>Projeto, com validação microbiológica obrigatória.</dd></dl>
       </article>
+      <article class="serv serv-top">
+        <span class="num">06</span><h3>Projetos pecuários chave na mão</h3><p>Dimensionamento de uma granja avícola, suinícola ou bovina: plantel, instalações, plano de alimentação, sanidade e o número que quase ninguém calcula bem, a conversão alimentar.</p>
+        <dl><dt>Entregável</dt><dd>Projeto com investimento por etapas, plano alimentar por fase produtiva e ponto de equilíbrio real.</dd><dt>Modalidade</dt><dd>Projeto, com acompanhamento durante o primeiro ciclo produtivo.</dd></dl>
+      </article>
       <article class="serv">
-        <span class="num">06</span><h3>Diagnóstico de planta</h3><p>Revisão do processo completo com os números na mão: rendimento por lote, quebra real, custo por quilo, pontos de perda.</p>
+        <span class="num">07</span><h3>Fábrica de ração</h3><p>Projeto da fábrica de ração própria: moagem, mistura, peletização ou extrusão, e o sistema de dosagem que faz cada tonelada sair igual à anterior.</p>
+        <dl><dt>Entregável</dt><dd>Lista de equipamentos, fluxo, capacidade real e programa de formulações por espécie.</dd><dt>Modalidade</dt><dd>Projeto. Produzir a própria ração costuma baixar o custo por quilo de carne mais do que qualquer outra alavanca.</dd></dl>
+      </article>
+      <article class="serv">
+        <span class="num">08</span><h3>Formulação de rações de mínimo custo</h3><p>Cálculo da ração que cumpre a exigência nutricional da espécie e fase ao menor custo possível com os insumos disponíveis na sua região, não com os do manual.</p>
+        <dl><dt>Entregável</dt><dd>Fórmulas por espécie e fase, com recálculo quando muda o preço das matérias-primas.</dd><dt>Modalidade</dt><dd>Serviço recorrente: a fórmula ótima muda quando o mercado muda.</dd></dl>
+      </article>
+      <article class="serv">
+        <span class="num">09</span><h3>Aproveitamento integral de subprodutos</h3><p>Converter em produto vendável o que hoje se paga para descartar: farinha de carne e ossos, farinha de sangue, sebo e gorduras. Dimensionamento, equipamento e saída comercial.</p>
+        <dl><dt>Entregável</dt><dd>Estudo de viabilidade com volume disponível, investimento e os mercados concretos para cada saída.</dd><dt>Modalidade</dt><dd>Projeto. É o segundo faturamento sobre matéria-prima que já foi comprada.</dd></dl>
+      </article>
+      <article class="serv">
+        <span class="num">10</span><h3>Desenvolvimento de alimento para pets</h3><p>Formulação e processo de ração extrusada para cão e gato: perfil nutricional, parâmetros de extrusão, palatabilidade e cobertura.</p>
+        <dl><dt>Entregável</dt><dd>Fórmula conforme o perfil de referência, parâmetros de linha e ensaio de aceitação.</dd><dt>Modalidade</dt><dd>Projeto, com piloto e painel de aceitação animal.</dd></dl>
+      </article>
+      <article class="serv">
+        <span class="num">11</span><h3>Desenvolvimento de molhos e temperos</h3><p>Maionese, ketchup, mostarda, molhos picantes e temperos: emulsão estável, pH seguro, viscosidade objetivo e vida útil sem cadeia de frio.</p>
+        <dl><dt>Entregável</dt><dd>Formulação, parâmetros de processo e validação de estabilidade em prateleira.</dd><dt>Modalidade</dt><dd>Projeto por produto.</dd></dl>
+      </article>
+      <article class="serv">
+        <span class="num">12</span><h3>Linha de farinhas pré-cozidas e massas</h3><p>Montagem ou correção de uma linha de farinha de milho pré-cozida, misturas de panificação ou massa seca: gelatinização, laminação, curva de secagem e granulometria.</p>
+        <dl><dt>Entregável</dt><dd>Parâmetros de processo, controle de qualidade por lote e diagnóstico da linha existente.</dd><dt>Modalidade</dt><dd>Projeto ou diagnóstico pontual.</dd></dl>
+      </article>
+      <article class="serv">
+        <span class="num">13</span><h3>Diagnóstico de planta</h3><p>Revisão do processo completo com os números na mão: rendimento por lote, quebra real, custo por quilo, pontos de perda.</p>
         <dl><dt>Entregável</dt><dd>Relatório com os três gargalos que mais custam dinheiro e a ordem em que convém atacá-los.</dd><dt>Modalidade</dt><dd>Remoto com dados e vídeo, ou presencial na planta.</dd></dl>
       </article>
       <article class="serv">
-        <span class="num">07</span><h3>Desenvolvimento e escalonamento de produto</h3><p>Do conceito à produção: formulação objetivo e a sua tradução para lote industrial, com o ajuste de sal, fosfato, gelo e gordura que o salto de escala exige.</p>
+        <span class="num">14</span><h3>Desenvolvimento e escalonamento de produto</h3><p>Do conceito à produção: formulação objetivo e a sua tradução para lote industrial, com o ajuste de sal, fosfato, gelo e gordura que o salto de escala exige.</p>
         <dl><dt>Entregável</dt><dd>Ficha de formulação, curva de processo e ensaio de vida útil.</dd><dt>Modalidade</dt><dd>Piloto documentado antes de comprometer matéria-prima.</dd></dl>
       </article>
       <article class="serv">
-        <span class="num">08</span><h3>Projeto de linha e seleção de equipamentos</h3><p>Que equipamentos são precisos para a capacidade buscada, em que ordem se compram e qual a capacidade real do conjunto, não a da ficha do fabricante. Inclui avaliação de equipamento usado.</p>
+        <span class="num">15</span><h3>Projeto de linha e seleção de equipamentos</h3><p>Que equipamentos são precisos para a capacidade buscada, em que ordem se compram e qual a capacidade real do conjunto, não a da ficha do fabricante. Inclui avaliação de equipamento usado.</p>
         <dl><dt>Entregável</dt><dd>Lista de equipamentos com capacidade, fluxo de planta e orçamento por etapas.</dd><dt>Modalidade</dt><dd>Projeto, com marcos de pagamento por entregável.</dd></dl>
       </article>
       <article class="serv">
-        <span class="num">09</span><h3>HACCP e dossiê sanitário</h3><p>Plano HACCP com limites críticos reais, não copiados de modelo, e montagem do dossiê para o registro exigido pelo país.</p>
+        <span class="num">16</span><h3>HACCP e dossiê sanitário</h3><p>Plano HACCP com limites críticos reais, não copiados de modelo, e montagem do dossiê para o registro exigido pelo país.</p>
         <dl><dt>Entregável</dt><dd>Manual, fichas técnicas e dossiê pronto para protocolar.</dd><dt>Modalidade</dt><dd>Projeto com acompanhamento até a resolução.</dd></dl>
       </article>
       <article class="serv">
-        <span class="num">10</span><h3>Rotulagem e declaração nutricional</h3><p>Cálculo da tabela nutricional, lista de ingredientes na ordem correta, alérgenos, e as alegações que o país de destino permite ou proíbe.</p>
+        <span class="num">17</span><h3>Rotulagem e declaração nutricional</h3><p>Cálculo da tabela nutricional, lista de ingredientes na ordem correta, alérgenos, e as alegações que o país de destino permite ou proíbe.</p>
         <dl><dt>Entregável</dt><dd>Rótulo conforme o regulamento do mercado-alvo, pronto para imprimir.</dd><dt>Modalidade</dt><dd>Serviço por produto e por mercado.</dd></dl>
       </article>
       <article class="serv">
-        <span class="num">11</span><h3>Perícia e segunda opinião técnica</h3><p>Parecer independente quando há um lote recusado, uma disputa com fornecedor ou um sinistro a discutir com a seguradora.</p>
+        <span class="num">18</span><h3>Perícia e segunda opinião técnica</h3><p>Parecer independente quando há um lote recusado, uma disputa com fornecedor ou um sinistro a discutir com a seguradora.</p>
         <dl><dt>Entregável</dt><dd>Laudo pericial com a causa raiz fundamentada e o respaldo documental.</dd><dt>Modalidade</dt><dd>Encargo pontual, com confidencialidade por escrito.</dd></dl>
       </article>
       <article class="serv">
-        <span class="num">12</span><h3>Capacitação da equipe de planta</h3><p>Formação para quem realmente toca a massa: controle de temperatura, ordem no cutter, leitura de defeitos e por que cada passo está onde está.</p>
+        <span class="num">19</span><h3>Capacitação da equipe de planta</h3><p>Formação para quem realmente toca a massa: controle de temperatura, ordem no cutter, leitura de defeitos e por que cada passo está onde está.</p>
         <dl><dt>Entregável</dt><dd>Programa on-line ou presencial, com material e avaliação.</dd><dt>Modalidade</dt><dd>Por módulos, em qualquer dos seis idiomas.</dd></dl>
       </article>
       <article class="serv">
-        <span class="num">13</span><h3>Consulta técnica pontual</h3><p>Uma pergunta concreta com uma resposta concreta: por que a emulsão quebrou, que dose corresponde, por que o pH não baixa, se um ingrediente é legal num país.</p>
+        <span class="num">20</span><h3>Consulta técnica pontual</h3><p>Uma pergunta concreta com uma resposta concreta: por que a emulsão quebrou, que dose corresponde, por que o pH não baixa, se um ingrediente é legal num país.</p>
         <dl><dt>Entregável</dt><dd>Resposta fundamentada por escrito, com a fonte normativa quando aplicável.</dd><dt>Modalidade</dt><dd>Por e-mail ou videochamada curta, de qualquer país.</dd></dl>
       </article>
     </div>
@@ -472,7 +518,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
   <path d="M16 6.4c-4.1 0-7.1 2.9-7.1 6.9 0 3 1.7 5 3.6 6.6 1.6 1.4 2.4 2.4 2.4 4v1.7h2.2v-1.7c0-1.6.8-2.6 2.4-4 1.9-1.6 3.6-3.6 3.6-6.6 0-4-3-6.9-7.1-6.9Zm0 2.5c2.6 0 4.6 1.8 4.6 4.4 0 1.9-1.1 3.2-2.7 4.6-.8.7-1.5 1.4-1.9 2.2-.4-.8-1.1-1.5-1.9-2.2-1.6-1.4-2.7-2.7-2.7-4.6 0-2.6 2-4.4 4.6-4.4Z" fill="#faf6f0"/>
   <circle cx="13.4" cy="13" r="1.35" fill="#c9962b"/><circle cx="18.4" cy="14.6" r="1.05" fill="#c9962b"/>
 </svg><span><b>Carnotecnia</b><span>Tecnologia de carnes</span></span></a>
-        <p style="margin:0;max-width:34ch">Fabricamos embutidos e carnes maturadas na Venezuela e assessoramos plantas de alimentos de qualquer país: formulação, rendimento, vida útil, exportação e dossiê sanitário.</p>
+        <p style="margin:0;max-width:34ch">Do embutido à ração do cão: cárneos, molhos, farinhas pré-cozidas, massas, aproveitamento de subprodutos e alimentação animal. Fabricamos na Venezuela e assessoramos plantas em qualquer país.</p>
       </div>
       <div>
         <h4>O que fazemos</h4>

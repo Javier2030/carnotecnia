@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Formulation charcutière : fiches techniques complètes</title>
-<meta name="description" content="Fiches de formulation charcutière : pourcentages, courbes de température et d’humidité, rendement, perte de poids et défauts. Chorizo, salami, jambon">
+<title>Formulations : fiches techniques avec procédé complet</title>
+<meta name="description" content="Fiches de formulation avec pourcentages, courbes et défauts : charcuterie, viandes maturées, mayonnaise, ketchup, farine de maïs précuite, pâtes, farine d’os">
 <link rel="canonical" href="https://carnotecnia.com/fr/formulation/">
 <link rel="alternate" hreflang="es" href="https://carnotecnia.com/formulacion/">
 <link rel="alternate" hreflang="en" href="https://carnotecnia.com/en/formulation/">
@@ -18,8 +18,8 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr">
 <meta property="og:site_name" content="Carnotecnia">
-<meta property="og:title" content="Formulation charcutière : fiches techniques complètes">
-<meta property="og:description" content="Fiches de formulation charcutière : pourcentages, courbes de température et d’humidité, rendement, perte de poids et défauts. Chorizo, salami, jambon">
+<meta property="og:title" content="Formulations : fiches techniques avec procédé complet">
+<meta property="og:description" content="Fiches de formulation avec pourcentages, courbes et défauts : charcuterie, viandes maturées, mayonnaise, ketchup, farine de maïs précuite, pâtes, farine d’os">
 <meta property="og:url" content="https://carnotecnia.com/fr/formulation/">
 <style>:root{
 --carbon:#14110f;
@@ -254,6 +254,22 @@ background:linear-gradient(180deg,var(--curado),var(--paprika));
 .servicios.claros .serv dt{color:var(--curado)}
 .servicios.claros .serv dd{color:#5b524c}
 .servicios.claros .serv .num{color:var(--curado)}
+.areas{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.area{
+background:#fff;border:1px solid var(--linea-clara);border-radius:var(--r);padding:26px 24px;
+transition:transform .28s var(--ease),box-shadow .28s var(--ease);
+}
+.area:hover{transform:translateY(-4px);box-shadow:0 20px 44px -22px rgba(26,21,18,.3)}
+.area-icono{font-size:26px;line-height:1;display:block;margin-bottom:13px}
+.area h3{font-size:1.13rem;margin-bottom:9px;letter-spacing:-.025em}
+.area p{font-size:14.4px;color:var(--gris);margin:0}
+.area-n{
+display:inline-block;margin-top:13px;font-size:11.5px;font-weight:700;letter-spacing:.09em;
+text-transform:uppercase;color:var(--curado);
+}
+.grupo-area{margin-bottom:46px}
+.grupo-titulo{font-size:1.28rem;margin-bottom:7px;display:flex;align-items:center;gap:10px}
+.grupo-texto{color:var(--gris);font-size:15px;max-width:70ch;margin-bottom:20px}
 .consulta{max-width:880px;margin-inline:auto}
 .campos{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
 .consulta label{display:block;font-size:13px;font-weight:650;letter-spacing:.02em;color:var(--paprika)}
@@ -279,12 +295,14 @@ outline:none;border-color:var(--curado-vivo);background:var(--carbon-3);
 @media (max-width:960px){
 .hero-grid{grid-template-columns:1fr}
 .lineas{grid-template-columns:1fr}
+.areas{grid-template-columns:1fr 1fr}
 .servicios{grid-template-columns:1fr}
 .ftr-grid{grid-template-columns:1fr 1fr}
 }
 @media (max-width:760px){
 body{font-size:16.3px}
 .campos{grid-template-columns:1fr}
+.areas{grid-template-columns:1fr}
 .burger{display:block}
 .nav{
 position:fixed;inset:66px 0 auto;background:var(--carbon);flex-direction:column;
@@ -308,7 +326,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
 [dir="rtl"] .linea a.mas:hover span{transform:scaleX(-1) translateX(5px)}
 [dir="rtl"] th,[dir="rtl"] td{text-align:right}</style>
 <link rel="icon" href="/assets/img/logo.svg" type="image/svg+xml">
-<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"Carnotecnia","url":"https://carnotecnia.com","logo":"https://carnotecnia.com/assets/img/logo.svg","description":"Fabrication de charcuterie et de viande maturée au Venezuela et conseil international en technologie alimentaire : formulation, rendement, DLC et HACCP.","address":{"@type":"PostalAddress","addressLocality":"Maracaibo","addressRegion":"Zulia","addressCountry":"VE"},"contactPoint":[{"@type":"ContactPoint","telephone":"+573223623930","contactType":"sales","email":"direccion@carnotecnia.com","areaServed":"Worldwide","availableLanguage":["es","en","pt","fr","it","ar"]}],"knowsAbout":["Meat technology","Sausage formulation","Dry-aged meat","HACCP","Halal production","Food technology"]},{"@context":"https://schema.org","@type":"CollectionPage","name":"Formulation charcutière : fiches techniques complètes","url":"https://carnotecnia.com/fr/formulation/","inLanguage":"fr","hasPart":[{"@type":"TechArticle","name":"Chorizo à griller","url":"https://carnotecnia.com/fr/formulation/chorizo-a-griller/"},{"@type":"TechArticle","name":"Mortadelle et émulsions","url":"https://carnotecnia.com/fr/formulation/mortadelle-et-emulsions/"},{"@type":"TechArticle","name":"Jambon cuit","url":"https://carnotecnia.com/fr/formulation/jambon-cuit/"},{"@type":"TechArticle","name":"Salami fermenté","url":"https://carnotecnia.com/fr/formulation/salami-fermente/"},{"@type":"TechArticle","name":"Chorizo espagnol","url":"https://carnotecnia.com/fr/formulation/chorizo-espagnol-sec/"},{"@type":"TechArticle","name":"Viande maturée","url":"https://carnotecnia.com/fr/formulation/viande-maturee-dry-aged/"},{"@type":"TechArticle","name":"Nitrite : dose et loi","url":"https://carnotecnia.com/fr/formulation/nitrite-de-sodium-dosage/"},{"@type":"TechArticle","name":"Charcuterie halal","url":"https://carnotecnia.com/fr/formulation/charcuterie-halal/"},{"@type":"TechArticle","name":"Réduction du sodium","url":"https://carnotecnia.com/fr/formulation/reduction-du-sodium/"}]}]</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"Carnotecnia","url":"https://carnotecnia.com","logo":"https://carnotecnia.com/assets/img/logo.svg","description":"Charcuterie, viandes maturées, sauces, farines précuites, pâtes, farine de viande et d’os et petfood. Fabrication au Venezuela et conseil international.","address":{"@type":"PostalAddress","addressLocality":"Maracaibo","addressRegion":"Zulia","addressCountry":"VE"},"contactPoint":[{"@type":"ContactPoint","telephone":"+573223623930","contactType":"sales","email":"direccion@carnotecnia.com","areaServed":"Worldwide","availableLanguage":["es","en","pt","fr","it","ar"]}],"knowsAbout":["Meat technology","Sausage formulation","Dry-aged meat","HACCP","Halal production","Food technology"]},{"@context":"https://schema.org","@type":"CollectionPage","name":"Formulations : fiches techniques avec procédé complet","url":"https://carnotecnia.com/fr/formulation/","inLanguage":"fr","hasPart":[{"@type":"TechArticle","name":"Chorizo à griller","url":"https://carnotecnia.com/fr/formulation/chorizo-a-griller/"},{"@type":"TechArticle","name":"Mortadelle et émulsions","url":"https://carnotecnia.com/fr/formulation/mortadelle-et-emulsions/"},{"@type":"TechArticle","name":"Jambon cuit","url":"https://carnotecnia.com/fr/formulation/jambon-cuit/"},{"@type":"TechArticle","name":"Salami fermenté","url":"https://carnotecnia.com/fr/formulation/salami-fermente/"},{"@type":"TechArticle","name":"Chorizo espagnol","url":"https://carnotecnia.com/fr/formulation/chorizo-espagnol-sec/"},{"@type":"TechArticle","name":"Viande maturée","url":"https://carnotecnia.com/fr/formulation/viande-maturee-dry-aged/"},{"@type":"TechArticle","name":"Nitrite : dose et loi","url":"https://carnotecnia.com/fr/formulation/nitrite-de-sodium-dosage/"},{"@type":"TechArticle","name":"Charcuterie halal","url":"https://carnotecnia.com/fr/formulation/charcuterie-halal/"},{"@type":"TechArticle","name":"Réduction du sodium","url":"https://carnotecnia.com/fr/formulation/reduction-du-sodium/"},{"@type":"TechArticle","name":"Farine de maïs précuite","url":"https://carnotecnia.com/fr/formulation/farine-de-mais-precuite/"},{"@type":"TechArticle","name":"Farine de viande et d’os","url":"https://carnotecnia.com/fr/formulation/farine-de-viande-et-os/"},{"@type":"TechArticle","name":"Croquettes chien et chat","url":"https://carnotecnia.com/fr/formulation/croquettes-extrudees/"},{"@type":"TechArticle","name":"Mayonnaise industrielle","url":"https://carnotecnia.com/fr/formulation/mayonnaise-industrielle/"},{"@type":"TechArticle","name":"Sauce tomate","url":"https://carnotecnia.com/fr/formulation/sauce-tomate-industrielle/"},{"@type":"TechArticle","name":"Pâtes sèches","url":"https://carnotecnia.com/fr/formulation/pates-seches-industrielles/"}]}]</script>
 <script defer src="/assets/js/main.js?v=10c84d56"></script>
 </head>
 <body>
@@ -343,37 +361,88 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
   <div class="wrap">
     <div class="cab rev">
       <span class="eyebrow">Bibliothèque technique</span>
-      <h2 style="font-size:clamp(2rem,4.4vw,3rem)">Formulation charcutière : fiches techniques complètes</h2>
+      <h2 style="font-size:clamp(2rem,4.4vw,3rem)">Formulations : fiches techniques avec procédé complet</h2>
       <p>Ce ne sont pas des listes d’ingrédients : chaque fiche donne les pourcentages, la courbe de procédé, le rendement attendu et les défauts qui ruinent un lot.</p>
     </div>
-    <div class="fichas rev">
-      <a class="ficha" href="/fr/formulation/chorizo-a-griller/">
-        <span class="tipo">Frais</span><h3>Chorizo à griller</h3><p>Formulation complète du chorizo à griller : pourcentages, température de mêlée, hachage, poussage et rendement.</p>
-      </a>
-      <a class="ficha" href="/fr/formulation/mortadelle-et-emulsions/">
-        <span class="tipo">Cuit</span><h3>Mortadelle et émulsions</h3><p>Comment se construit une émulsion carnée stable : ordre au cutter, température limite, phosphates, cuisson à 72 °C et pourquoi la mêlée casse.</p>
-      </a>
-      <a class="ficha" href="/fr/formulation/jambon-cuit/">
-        <span class="tipo">Cuit</span><h3>Jambon cuit</h3><p>Calcul de saumure, taux d’injection, temps de barattage et cuisson du jambon cuit.</p>
-      </a>
-      <a class="ficha" href="/fr/formulation/salami-fermente/">
-        <span class="tipo">Sec</span><h3>Salami fermenté</h3><p>Fermentation dirigée du salami : ferments, chute du pH, courbe de température et d’humidité, perte cible et contrôle de l’activité de l’eau.</p>
-      </a>
-      <a class="ficha" href="/fr/formulation/chorizo-espagnol-sec/">
-        <span class="tipo">Sec</span><h3>Chorizo espagnol</h3><p>Formulation du chorizo sec à l’espagnole : proportion de paprika, sel, courbe de séchage, perte cible et différences avec le salami.</p>
-      </a>
-      <a class="ficha" href="/fr/formulation/viande-maturee-dry-aged/">
-        <span class="tipo">Maturation</span><h3>Viande maturée</h3><p>Maturation à sec du bœuf : température, humidité, flux d’air, jours de maturation, perte réelle par évaporation et parage, et maîtrise sanitaire.</p>
-      </a>
-      <a class="ficha" href="/fr/formulation/nitrite-de-sodium-dosage/">
-        <span class="tipo">Additifs</span><h3>Nitrite : dose et loi</h3><p>Ce que fait le nitrite, comment se calcule le sel nitrité à 6,25 %, la dose pratique de 156 ppm et pourquoi on ne le dose jamais à l’œil.</p>
-      </a>
-      <a class="ficha" href="/fr/formulation/charcuterie-halal/">
-        <span class="tipo">Réglementation</span><h3>Charcuterie halal</h3><p>Quels ingrédients remplacer, comment séparer la ligne et ce qu’exige le certificateur pour produire halal et exporter vers le Golfe et l’Asie du Sud-Est.</p>
-      </a>
-      <a class="ficha" href="/fr/formulation/reduction-du-sodium/">
-        <span class="tipo">Reformulation</span><h3>Réduction du sodium</h3><p>Comment baisser le sel d’un produit de charcuterie sans perdre l’extraction protéique ni la sécurité microbiologique : substituts, réduction progressive et compensation de l’aw.</p>
-      </a>
+    
+    <div class="grupo-area rev">
+      <h3 class="grupo-titulo"><span aria-hidden="true">🥩</span> Viandes et charcuterie</h3>
+      <p class="grupo-texto">Charcuterie fraîche, cuite et sèche, et viandes maturées à sec. L’origine de la maison et le domaine où la bibliothèque technique est la plus fournie.</p>
+      <div class="fichas">
+        <a class="ficha" href="/fr/formulation/chorizo-a-griller/">
+          <span class="tipo">Frais</span><h3>Chorizo à griller</h3><p>Formulation complète du chorizo à griller : pourcentages, température de mêlée, hachage, poussage et rendement.</p>
+        </a>
+        <a class="ficha" href="/fr/formulation/mortadelle-et-emulsions/">
+          <span class="tipo">Cuit</span><h3>Mortadelle et émulsions</h3><p>Comment se construit une émulsion carnée stable : ordre au cutter, température limite, phosphates, cuisson à 72 °C et pourquoi la mêlée casse.</p>
+        </a>
+        <a class="ficha" href="/fr/formulation/jambon-cuit/">
+          <span class="tipo">Cuit</span><h3>Jambon cuit</h3><p>Calcul de saumure, taux d’injection, temps de barattage et cuisson du jambon cuit.</p>
+        </a>
+        <a class="ficha" href="/fr/formulation/salami-fermente/">
+          <span class="tipo">Sec</span><h3>Salami fermenté</h3><p>Fermentation dirigée du salami : ferments, chute du pH, courbe de température et d’humidité, perte cible et contrôle de l’activité de l’eau.</p>
+        </a>
+        <a class="ficha" href="/fr/formulation/chorizo-espagnol-sec/">
+          <span class="tipo">Sec</span><h3>Chorizo espagnol</h3><p>Formulation du chorizo sec à l’espagnole : proportion de paprika, sel, courbe de séchage, perte cible et différences avec le salami.</p>
+        </a>
+        <a class="ficha" href="/fr/formulation/viande-maturee-dry-aged/">
+          <span class="tipo">Maturation</span><h3>Viande maturée</h3><p>Maturation à sec du bœuf : température, humidité, flux d’air, jours de maturation, perte réelle par évaporation et parage, et maîtrise sanitaire.</p>
+        </a>
+        <a class="ficha" href="/fr/formulation/charcuterie-halal/">
+          <span class="tipo">Réglementation</span><h3>Charcuterie halal</h3><p>Quels ingrédients remplacer, comment séparer la ligne et ce qu’exige le certificateur pour produire halal et exporter vers le Golfe et l’Asie du Sud-Est.</p>
+        </a>
+        <a class="ficha" href="/fr/formulation/nitrite-de-sodium-dosage/">
+          <span class="tipo">Additifs</span><h3>Nitrite : dose et loi</h3><p>Ce que fait le nitrite, comment se calcule le sel nitrité à 6,25 %, la dose pratique de 156 ppm et pourquoi on ne le dose jamais à l’œil.</p>
+        </a>
+        <a class="ficha" href="/fr/formulation/reduction-du-sodium/">
+          <span class="tipo">Reformulation</span><h3>Réduction du sodium</h3><p>Comment baisser le sel d’un produit de charcuterie sans perdre l’extraction protéique ni la sécurité microbiologique : substituts, réduction progressive et compensation de l’aw.</p>
+        </a>
+      </div>
+    </div>
+    
+    <div class="grupo-area rev">
+      <h3 class="grupo-titulo"><span aria-hidden="true">🫙</span> Sauces et assaisonnements</h3>
+      <p class="grupo-texto">Mayonnaise, ketchup, moutarde, sauces piquantes et assaisonnements. Émulsions et acidification : la physique de la mortadelle, appliquée à froid.</p>
+      <div class="fichas">
+        <a class="ficha" href="/fr/formulation/mayonnaise-industrielle/">
+          <span class="tipo">Sauces</span><h3>Mayonnaise industrielle</h3><p>Formulation et procédé de la mayonnaise industrielle : proportion d’huile, émulsifiant, le pH critique de 4,1 et pourquoi l’émulsion tourne.</p>
+        </a>
+        <a class="ficha" href="/fr/formulation/sauce-tomate-industrielle/">
+          <span class="tipo">Sauces</span><h3>Sauce tomate</h3><p>Procédé industriel de la sauce tomate et du ketchup : concentration en degrés Brix, pH critique, remplissage à chaud et contrôle de viscosité Bostwick.</p>
+        </a>
+      </div>
+    </div>
+    
+    <div class="grupo-area rev">
+      <h3 class="grupo-titulo"><span aria-hidden="true">🌽</span> Farines précuites et pâtes</h3>
+      <p class="grupo-texto">Farine de maïs précuite, mélanges boulangers et pâtes sèches. Gélatinisation de l’amidon, laminage, extrusion et la courbe de séchage qui décide de tout.</p>
+      <div class="fichas">
+        <a class="ficha" href="/fr/formulation/farine-de-mais-precuite/">
+          <span class="tipo">Farines</span><h3>Farine de maïs précuite</h3><p>Fabrication de la farine de maïs précuite : dégermage, cuisson, laminage, séchage, mouture et l’indice d’absorption d’eau qui décide si la pâte se forme.</p>
+        </a>
+        <a class="ficha" href="/fr/formulation/pates-seches-industrielles/">
+          <span class="tipo">Pâtes</span><h3>Pâtes sèches</h3><p>Fabrication industrielle des pâtes sèches : qualité de la semoule, hydratation, filières bronze ou téflon, et la courbe de séchage qui évite les fissures.</p>
+        </a>
+      </div>
+    </div>
+    
+    <div class="grupo-area rev">
+      <h3 class="grupo-titulo"><span aria-hidden="true">♻️</span> Coproduits et rendering</h3>
+      <p class="grupo-texto">Farine de viande et d’os, farine de sang, suif. Ce que la plupart des usines paient pour jeter et qui peut porter une deuxième activité.</p>
+      <div class="fichas">
+        <a class="ficha" href="/fr/formulation/farine-de-viande-et-os/">
+          <span class="tipo">Coproduits</span><h3>Farine de viande et d’os</h3><p>Rendering des coproduits carnés : stérilisation à 133 °C, pressage, mouture, composition en protéines, calcium et phosphore, et contrôle de Salmonella.</p>
+        </a>
+      </div>
+    </div>
+    
+    <div class="grupo-area rev">
+      <h3 class="grupo-titulo"><span aria-hidden="true">🐕</span> Alimentation animale et petfood</h3>
+      <p class="grupo-texto">Croquettes extrudées pour chien et chat, et aliments composés pour volailles, porcs et bovins. Formulation au moindre coût en respectant le profil nutritionnel.</p>
+      <div class="fichas">
+        <a class="ficha" href="/fr/formulation/croquettes-extrudees/">
+          <span class="tipo">Petfood</span><h3>Croquettes chien et chat</h3><p>Fabrication de l’aliment extrudé pour chiens et chats : formulation, paramètres d’extrusion, séchage, enrobage et profils nutritionnels de référence.</p>
+        </a>
+      </div>
     </div>
     <div class="aviso rev" style="margin-top:32px"><b>À propos des dosages :</b> les fourchettes publiées correspondent à la pratique industrielle courante. Les limites légales d’additifs sont fixées pays par pays et plusieurs ont changé ces dernières années : avant de formuler pour la vente, vérifiez la réglementation en vigueur auprès de votre autorité sanitaire.</div>
   </div>
@@ -414,7 +483,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
   <path d="M16 6.4c-4.1 0-7.1 2.9-7.1 6.9 0 3 1.7 5 3.6 6.6 1.6 1.4 2.4 2.4 2.4 4v1.7h2.2v-1.7c0-1.6.8-2.6 2.4-4 1.9-1.6 3.6-3.6 3.6-6.6 0-4-3-6.9-7.1-6.9Zm0 2.5c2.6 0 4.6 1.8 4.6 4.4 0 1.9-1.1 3.2-2.7 4.6-.8.7-1.5 1.4-1.9 2.2-.4-.8-1.1-1.5-1.9-2.2-1.6-1.4-2.7-2.7-2.7-4.6 0-2.6 2-4.4 4.6-4.4Z" fill="#faf6f0"/>
   <circle cx="13.4" cy="13" r="1.35" fill="#c9962b"/><circle cx="18.4" cy="14.6" r="1.05" fill="#c9962b"/>
 </svg><span><b>Carnotecnia</b><span>Technologie des viandes</span></span></a>
-        <p style="margin:0;max-width:34ch">Nous fabriquons charcuterie et viandes maturées au Venezuela, et nous accompagnons les usines agroalimentaires de tous les pays : formulation, rendement, durée de vie, export et dossier sanitaire.</p>
+        <p style="margin:0;max-width:34ch">De la charcuterie à la croquette du chien : viandes, sauces, farines précuites, pâtes, valorisation des coproduits et alimentation animale. Nous fabriquons au Venezuela et accompagnons des usines partout.</p>
       </div>
       <div>
         <h4>Ce que nous faisons</h4>

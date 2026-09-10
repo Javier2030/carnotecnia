@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Carnotecnia: formulazione salumi e consulenza tecnica</title>
-<meta name="description" content="Produzione di salumi e carni frollate in Venezuela e consulenza internazionale in tecnologia alimentare: formulazione, resa, shelf life ed export.">
+<title>Carnotecnia: tecnologia alimentare e mangimistica</title>
+<meta name="description" content="Salumi, carni frollate, salse, farine precotte, pasta, farina di carne e ossa e petfood. Produzione in Venezuela e consulenza internazionale.">
 <link rel="canonical" href="https://carnotecnia.com/it/">
 <link rel="alternate" hreflang="es" href="https://carnotecnia.com/">
 <link rel="alternate" hreflang="en" href="https://carnotecnia.com/en/">
@@ -18,8 +18,8 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="it">
 <meta property="og:site_name" content="Carnotecnia">
-<meta property="og:title" content="Carnotecnia: formulazione salumi e consulenza tecnica">
-<meta property="og:description" content="Produzione di salumi e carni frollate in Venezuela e consulenza internazionale in tecnologia alimentare: formulazione, resa, shelf life ed export.">
+<meta property="og:title" content="Carnotecnia: tecnologia alimentare e mangimistica">
+<meta property="og:description" content="Salumi, carni frollate, salse, farine precotte, pasta, farina di carne e ossa e petfood. Produzione in Venezuela e consulenza internazionale.">
 <meta property="og:url" content="https://carnotecnia.com/it/">
 <style>:root{
 --carbon:#14110f;
@@ -254,6 +254,22 @@ background:linear-gradient(180deg,var(--curado),var(--paprika));
 .servicios.claros .serv dt{color:var(--curado)}
 .servicios.claros .serv dd{color:#5b524c}
 .servicios.claros .serv .num{color:var(--curado)}
+.areas{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.area{
+background:#fff;border:1px solid var(--linea-clara);border-radius:var(--r);padding:26px 24px;
+transition:transform .28s var(--ease),box-shadow .28s var(--ease);
+}
+.area:hover{transform:translateY(-4px);box-shadow:0 20px 44px -22px rgba(26,21,18,.3)}
+.area-icono{font-size:26px;line-height:1;display:block;margin-bottom:13px}
+.area h3{font-size:1.13rem;margin-bottom:9px;letter-spacing:-.025em}
+.area p{font-size:14.4px;color:var(--gris);margin:0}
+.area-n{
+display:inline-block;margin-top:13px;font-size:11.5px;font-weight:700;letter-spacing:.09em;
+text-transform:uppercase;color:var(--curado);
+}
+.grupo-area{margin-bottom:46px}
+.grupo-titulo{font-size:1.28rem;margin-bottom:7px;display:flex;align-items:center;gap:10px}
+.grupo-texto{color:var(--gris);font-size:15px;max-width:70ch;margin-bottom:20px}
 .consulta{max-width:880px;margin-inline:auto}
 .campos{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
 .consulta label{display:block;font-size:13px;font-weight:650;letter-spacing:.02em;color:var(--paprika)}
@@ -279,12 +295,14 @@ outline:none;border-color:var(--curado-vivo);background:var(--carbon-3);
 @media (max-width:960px){
 .hero-grid{grid-template-columns:1fr}
 .lineas{grid-template-columns:1fr}
+.areas{grid-template-columns:1fr 1fr}
 .servicios{grid-template-columns:1fr}
 .ftr-grid{grid-template-columns:1fr 1fr}
 }
 @media (max-width:760px){
 body{font-size:16.3px}
 .campos{grid-template-columns:1fr}
+.areas{grid-template-columns:1fr}
 .burger{display:block}
 .nav{
 position:fixed;inset:66px 0 auto;background:var(--carbon);flex-direction:column;
@@ -308,7 +326,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
 [dir="rtl"] .linea a.mas:hover span{transform:scaleX(-1) translateX(5px)}
 [dir="rtl"] th,[dir="rtl"] td{text-align:right}</style>
 <link rel="icon" href="/assets/img/logo.svg" type="image/svg+xml">
-<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"Carnotecnia","url":"https://carnotecnia.com","logo":"https://carnotecnia.com/assets/img/logo.svg","description":"Produzione di salumi e carni frollate in Venezuela e consulenza internazionale in tecnologia alimentare: formulazione, resa, shelf life ed export.","address":{"@type":"PostalAddress","addressLocality":"Maracaibo","addressRegion":"Zulia","addressCountry":"VE"},"contactPoint":[{"@type":"ContactPoint","telephone":"+573223623930","contactType":"sales","email":"direccion@carnotecnia.com","areaServed":"Worldwide","availableLanguage":["es","en","pt","fr","it","ar"]}],"knowsAbout":["Meat technology","Sausage formulation","Dry-aged meat","HACCP","Halal production","Food technology"]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Cos’è esattamente la tecnologia delle carni?","acceptedAnswer":{"@type":"Answer","text":"È la disciplina che va dall’animale vivo al prodotto confezionato, passando per macellazione, frollatura, formulazione, trattamento termico e shelf life. Quando si parla di «tecnologia alimentare applicata alle carni», si parla di questo."}},{"@type":"Question","name":"Lavorate anche fuori dal Venezuela?","acceptedAnswer":{"@type":"Answer","text":"Sì. Lo stabilimento e la vendita all’ingrosso sono venezuelani, con base a Maracaibo, ma consulenza e formazione sono da remoto e si prestano in qualsiasi paese. Lavoriamo in italiano, spagnolo, inglese, portoghese, francese e arabo, e ci adattiamo al tuo fuso."}},{"@type":"Question","name":"Posso chiedere di una formula senza avviare un progetto?","acceptedAnswer":{"@type":"Answer","text":"Sì. Una domanda precisa — perché l’emulsione si è rotta, che dose di nitrito serve, perché il pH non scende — si risolve via email o in una videochiamata breve. I progetti sono per ciò che non sta in una risposta."}},{"@type":"Question","name":"Si può avviare un piccolo salumificio?","acceptedAnswer":{"@type":"Answer","text":"Sì, e pensare il contrario è l’errore più comune. Una linea di freschi e cotti parte con tritacarne, impastatrice, insaccatrice e una cella: a decidere non è la dimensione della macchina, è il controllo di temperatura dell’impasto e la disciplina di formulazione."}},{"@type":"Question","name":"Consegnate ricette?","acceptedAnswer":{"@type":"Answer","text":"Consegniamo formulazioni con il perché di ogni componente e la sua dose legale, che è l’unica cosa con cui si produce davvero. Una lista di ingredienti senza curva di processo né controllo di temperatura non riproduce nulla."}},{"@type":"Question","name":"Quanto ci vuole per sviluppare un prodotto nuovo?","acceptedAnswer":{"@type":"Answer","text":"Un fresco o un cotto si chiude in settimane. Uno stagionato richiede il tempo pieno di maturazione per ogni prova, quindi l’orologio lo detta il prodotto: tra 21 e 90 giorni secondo calibro e tipo."}},{"@type":"Question","name":"Cosa serve per vendere a hotel e catene?","acceptedAnswer":{"@type":"Answer","text":"Scheda tecnica per prodotto, shelf life validata, registrazione sanitaria in corso di validità e registri di lotto. Senza quei quattro documenti la trattativa non parte, per quanto buono sia il prodotto."}}]}]</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"Carnotecnia","url":"https://carnotecnia.com","logo":"https://carnotecnia.com/assets/img/logo.svg","description":"Salumi, carni frollate, salse, farine precotte, pasta, farina di carne e ossa e petfood. Produzione in Venezuela e consulenza internazionale.","address":{"@type":"PostalAddress","addressLocality":"Maracaibo","addressRegion":"Zulia","addressCountry":"VE"},"contactPoint":[{"@type":"ContactPoint","telephone":"+573223623930","contactType":"sales","email":"direccion@carnotecnia.com","areaServed":"Worldwide","availableLanguage":["es","en","pt","fr","it","ar"]}],"knowsAbout":["Meat technology","Sausage formulation","Dry-aged meat","HACCP","Halal production","Food technology"]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Cos’è esattamente la tecnologia delle carni?","acceptedAnswer":{"@type":"Answer","text":"È la disciplina che va dall’animale vivo al prodotto confezionato, passando per macellazione, frollatura, formulazione, trattamento termico e shelf life. Quando si parla di «tecnologia alimentare applicata alle carni», si parla di questo."}},{"@type":"Question","name":"Lavorate anche fuori dal Venezuela?","acceptedAnswer":{"@type":"Answer","text":"Sì. Lo stabilimento e la vendita all’ingrosso sono venezuelani, con base a Maracaibo, ma consulenza e formazione sono da remoto e si prestano in qualsiasi paese. Lavoriamo in italiano, spagnolo, inglese, portoghese, francese e arabo, e ci adattiamo al tuo fuso."}},{"@type":"Question","name":"Posso chiedere di una formula senza avviare un progetto?","acceptedAnswer":{"@type":"Answer","text":"Sì. Una domanda precisa — perché l’emulsione si è rotta, che dose di nitrito serve, perché il pH non scende — si risolve via email o in una videochiamata breve. I progetti sono per ciò che non sta in una risposta."}},{"@type":"Question","name":"Si può avviare un piccolo salumificio?","acceptedAnswer":{"@type":"Answer","text":"Sì, e pensare il contrario è l’errore più comune. Una linea di freschi e cotti parte con tritacarne, impastatrice, insaccatrice e una cella: a decidere non è la dimensione della macchina, è il controllo di temperatura dell’impasto e la disciplina di formulazione."}},{"@type":"Question","name":"Consegnate ricette?","acceptedAnswer":{"@type":"Answer","text":"Consegniamo formulazioni con il perché di ogni componente e la sua dose legale, che è l’unica cosa con cui si produce davvero. Una lista di ingredienti senza curva di processo né controllo di temperatura non riproduce nulla."}},{"@type":"Question","name":"Quanto ci vuole per sviluppare un prodotto nuovo?","acceptedAnswer":{"@type":"Answer","text":"Un fresco o un cotto si chiude in settimane. Uno stagionato richiede il tempo pieno di maturazione per ogni prova, quindi l’orologio lo detta il prodotto: tra 21 e 90 giorni secondo calibro e tipo."}},{"@type":"Question","name":"Cosa serve per vendere a hotel e catene?","acceptedAnswer":{"@type":"Answer","text":"Scheda tecnica per prodotto, shelf life validata, registrazione sanitaria in corso di validità e registri di lotto. Senza quei quattro documenti la trattativa non parte, per quanto buono sia il prodotto."}}]}]</script>
 <script defer src="/assets/js/main.js?v=10c84d56"></script>
 </head>
 <body>
@@ -343,8 +361,8 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
     <div class="hero-grid">
       <div>
         <span class="eyebrow">Maracaibo · Venezuela · Consulenza in 6 lingue</span>
-        <h1>Tecnologia delle carni che <em>si regge sui numeri</em>, non sulle ricette di famiglia.</h1>
-        <p class="hero-sub">Produciamo salumi e carni frollate in Venezuela e affianchiamo stabilimenti alimentari di qualsiasi paese: formulazione, resa, shelf life, export e dossier sanitario.</p>
+        <h1>Tecnologia alimentare che <em>si regge sui numeri</em>, non sulle ricette di famiglia.</h1>
+        <p class="hero-sub">Dal salume alla crocchetta del cane: carni, salse, farine precotte, pasta, valorizzazione dei sottoprodotti e mangimistica. Produciamo in Venezuela e affianchiamo stabilimenti ovunque.</p>
         <div class="btns">
           <a class="btn btn-p" href="#consulta">Parliamo del tuo stabilimento</a>
           <a class="btn btn-linea" href="/it/formulazione/">Vedi le formulazioni</a>
@@ -354,15 +372,15 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
       <div class="def rev">
         <h2>Cos’è la tecnologia delle carni</h2>
         <p>La carnotecnica è la disciplina che unisce la produzione zootecnica alla trasformazione e conservazione della carne e dei suoi sottoprodotti. Non è soltanto «fare salumi»: è controllare proteina, acqua, grasso, sale e tempo finché il prodotto non esce identico ogni giorno.</p>
-        <p>È la differenza tra un prodotto che piace e un prodotto che si può vendere ogni settimana allo stesso cliente.</p>
+        <p>E va oltre quello che il nome suggerisce: lo stesso animale che dà il lombo dà l’osso che dà la farina che nutre l’animale che ricomincia il ciclo. Questa valorizzazione integrale è il filo che unisce tutto quello che facciamo.</p>
       </div>
     </div>
   </div>
   <div class="wrap">
     <div class="cifras">
       <div class="cifra"><b>6 lingue</b><span>Consulenza tecnica in italiano, spagnolo, inglese, portoghese, francese e arabo</span></div>
-      <div class="cifra"><b>9 schede</b><span>Formulazioni pubblicate con processo, dosaggio e difetti</span></div>
-      <div class="cifra"><b>13 servizi</b><span>Dalla riformulazione al dossier di esportazione</span></div>
+      <div class="cifra"><b>15 schede</b><span>Formulazioni pubblicate con processo, dosaggio e difetti</span></div>
+      <div class="cifra"><b>25 servizi</b><span>Dalla riformulazione al progetto zootecnico completo</span></div>
     </div>
   </div>
 </section>
@@ -395,6 +413,55 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
         <p>Formulazioni complete con il perché di ogni grammo, non liste di ingredienti copiate. Per chi produce, non per chi colleziona PDF.</p>
         <ul><li>Schede di formulazione con la funzione di ogni additivo e la sua dose legale.</li><li>Curve di processo: temperatura, umidità e tempo, ora per ora.</li><li>Calcolo del costo al chilo e del calo prima di produrre.</li><li>Diagnosi dei difetti: perché l’emulsione si è rotta, perché è venuto grigio?</li></ul>
         <a class="mas" href="/it/accademia/">Vedi accademia <span>→</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<section class="seccion seccion-clara">
+  <div class="wrap">
+    <div class="cab rev">
+      <span class="eyebrow">Aree tecniche</span>
+      <h2>Sei aree, un solo criterio.</h2>
+      <p>Non sono specialità slegate: un’emulsione di maionese obbedisce alla stessa fisica di una di mortadella, e l’osso che avanza dal disosso è la materia prima del mangime. La conoscenza si accumula, non si divide.</p>
+    </div>
+    <div class="areas rev">
+      <article class="area">
+        <span class="area-icono" aria-hidden="true">🥩</span>
+        <h3>Carni e salumeria</h3>
+        <p>Salumi freschi, cotti e stagionati, e carni frollate a secco. L’origine della casa e l’area con la biblioteca tecnica più ampia.</p>
+        <span class="area-n">9 fichas</span>
+      </article>
+      <article class="area">
+        <span class="area-icono" aria-hidden="true">🫙</span>
+        <h3>Salse e condimenti</h3>
+        <p>Maionese, ketchup, senape, salse piccanti e condimenti. Emulsioni e acidificazione: la stessa fisica della mortadella, applicata a freddo.</p>
+        <span class="area-n">2 fichas</span>
+      </article>
+      <article class="area">
+        <span class="area-icono" aria-hidden="true">🌽</span>
+        <h3>Farine precotte e pasta</h3>
+        <p>Farina di mais precotta, miscele da forno e pasta secca. Gelatinizzazione dell’amido, laminazione, estrusione e la curva di essiccazione che decide tutto.</p>
+        <span class="area-n">2 fichas</span>
+      </article>
+      <article class="area">
+        <span class="area-icono" aria-hidden="true">♻️</span>
+        <h3>Sottoprodotti e rendering</h3>
+        <p>Farina di carne e ossa, farina di sangue, sego. Quello che la maggior parte degli stabilimenti paga per smaltire e che può reggere una seconda linea di business.</p>
+        <span class="area-n">1 ficha</span>
+      </article>
+      <article class="area">
+        <span class="area-icono" aria-hidden="true">🐕</span>
+        <h3>Mangimi e petfood</h3>
+        <p>Crocchette estruse per cane e gatto, e mangimi per avicoli, suini e bovini. Formulazione a minimo costo rispettando il profilo nutrizionale.</p>
+        <span class="area-n">1 ficha</span>
+      </article>
+      <article class="area">
+        <span class="area-icono" aria-hidden="true">🐄</span>
+        <h3>Progetti zootecnici</h3>
+        <p>Allevamento avicolo, suinicolo o bovino: dimensionamento, alimentazione, sanità e il numero che quasi nessuno calcola bene, l’indice di conversione.</p>
+        
       </article>
     </div>
   </div>
@@ -438,15 +505,15 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
         <p>Riduzione di sale, nitriti, fosfati e allergeni senza perdere sicurezza microbiologica né struttura. È l’esigenza che avanza più rapidamente in tutte le normative.</p>
         <dl><dt>Consegna</dt><dd>Prodotto riformulato con la barriera di sicurezza ricalcolata e l’etichetta semplificata.</dd></dl>
       </article>
-      <article class="serv">
+      <article class="serv serv-top">
         <span class="num">06</span>
-        <h3>Diagnosi di stabilimento</h3>
-        <p>Revisione del processo completo con i numeri alla mano: resa per lotto, calo reale, costo al chilo, punti di perdita.</p>
-        <dl><dt>Consegna</dt><dd>Relazione con i tre colli di bottiglia che costano di più e l’ordine in cui conviene affrontarli.</dd></dl>
+        <h3>Progetti zootecnici chiavi in mano</h3>
+        <p>Dimensionamento di un allevamento avicolo, suinicolo o bovino: consistenza, strutture, piano alimentare, sanità e il numero che quasi nessuno calcola bene, l’indice di conversione.</p>
+        <dl><dt>Consegna</dt><dd>Progetto con investimento per fasi, piano alimentare per fase produttiva e punto di pareggio reale.</dd></dl>
       </article>
     </div>
     <div class="btns rev" style="justify-content:center;margin-top:34px">
-      <a class="btn btn-linea" href="/it/servizi/">Servizi (13)</a>
+      <a class="btn btn-linea" href="/it/servizi/">Servizi (20)</a>
     </div>
   </div>
 </section>
@@ -485,6 +552,24 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
       </a>
       <a class="ficha" href="/it/formulazione/riduzione-del-sodio/">
         <span class="tipo">Riformulazione</span><h3>Riduzione del sodio</h3><p>Come abbassare il sale di un salume senza perdere estrazione proteica né sicurezza microbiologica: sostituti, riduzione graduale e compensazione dell’aw.</p>
+      </a>
+      <a class="ficha" href="/it/formulazione/farina-di-mais-precotta/">
+        <span class="tipo">Farine</span><h3>Farina di mais precotta</h3><p>Come si produce la farina di mais precotta: degerminazione, cottura, laminazione, essiccazione, macinazione e l’indice di assorbimento d’acqua che decide se l’impasto lega.</p>
+      </a>
+      <a class="ficha" href="/it/formulazione/farina-di-carne-e-ossa/">
+        <span class="tipo">Sottoprodotti</span><h3>Farina di carne e ossa</h3><p>Rendering dei sottoprodotti carnei: sterilizzazione a 133 °C, pressatura, macinazione, composizione tipica di proteina, calcio e fosforo, e controllo Salmonella.</p>
+      </a>
+      <a class="ficha" href="/it/formulazione/crocchette-estruse/">
+        <span class="tipo">Petfood</span><h3>Crocchette per cani e gatti</h3><p>Come si produce l’alimento estruso per cani e gatti: formulazione, parametri di estrusione, essiccazione, rivestimento e profili nutrizionali di riferimento.</p>
+      </a>
+      <a class="ficha" href="/it/formulazione/maionese-industriale/">
+        <span class="tipo">Salse</span><h3>Maionese industriale</h3><p>Formulazione e processo della maionese industriale: proporzione di olio, emulsionante, il pH critico di 4,1 e perché l’emulsione impazzisce.</p>
+      </a>
+      <a class="ficha" href="/it/formulazione/salsa-di-pomodoro-industriale/">
+        <span class="tipo">Salse</span><h3>Salsa di pomodoro</h3><p>Processo industriale della salsa di pomodoro e del ketchup: concentrazione in gradi Brix, pH critico, riempimento a caldo e controllo della viscosità Bostwick.</p>
+      </a>
+      <a class="ficha" href="/it/formulazione/pasta-secca-industriale/">
+        <span class="tipo">Pasta</span><h3>Pasta secca</h3><p>Produzione industriale di pasta secca: qualità della semola, idratazione, trafile in bronzo o teflon, e la curva di essiccazione che evita le cricche.</p>
       </a>
     </div>
   </div>
@@ -541,7 +626,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
   <path d="M16 6.4c-4.1 0-7.1 2.9-7.1 6.9 0 3 1.7 5 3.6 6.6 1.6 1.4 2.4 2.4 2.4 4v1.7h2.2v-1.7c0-1.6.8-2.6 2.4-4 1.9-1.6 3.6-3.6 3.6-6.6 0-4-3-6.9-7.1-6.9Zm0 2.5c2.6 0 4.6 1.8 4.6 4.4 0 1.9-1.1 3.2-2.7 4.6-.8.7-1.5 1.4-1.9 2.2-.4-.8-1.1-1.5-1.9-2.2-1.6-1.4-2.7-2.7-2.7-4.6 0-2.6 2-4.4 4.6-4.4Z" fill="#faf6f0"/>
   <circle cx="13.4" cy="13" r="1.35" fill="#c9962b"/><circle cx="18.4" cy="14.6" r="1.05" fill="#c9962b"/>
 </svg><span><b>Carnotecnia</b><span>Tecnologia delle carni</span></span></a>
-        <p style="margin:0;max-width:34ch">Produciamo salumi e carni frollate in Venezuela e affianchiamo stabilimenti alimentari di qualsiasi paese: formulazione, resa, shelf life, export e dossier sanitario.</p>
+        <p style="margin:0;max-width:34ch">Dal salume alla crocchetta del cane: carni, salse, farine precotte, pasta, valorizzazione dei sottoprodotti e mangimistica. Produciamo in Venezuela e affianchiamo stabilimenti ovunque.</p>
       </div>
       <div>
         <h4>Cosa facciamo</h4>

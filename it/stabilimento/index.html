@@ -254,6 +254,22 @@ background:linear-gradient(180deg,var(--curado),var(--paprika));
 .servicios.claros .serv dt{color:var(--curado)}
 .servicios.claros .serv dd{color:#5b524c}
 .servicios.claros .serv .num{color:var(--curado)}
+.areas{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.area{
+background:#fff;border:1px solid var(--linea-clara);border-radius:var(--r);padding:26px 24px;
+transition:transform .28s var(--ease),box-shadow .28s var(--ease);
+}
+.area:hover{transform:translateY(-4px);box-shadow:0 20px 44px -22px rgba(26,21,18,.3)}
+.area-icono{font-size:26px;line-height:1;display:block;margin-bottom:13px}
+.area h3{font-size:1.13rem;margin-bottom:9px;letter-spacing:-.025em}
+.area p{font-size:14.4px;color:var(--gris);margin:0}
+.area-n{
+display:inline-block;margin-top:13px;font-size:11.5px;font-weight:700;letter-spacing:.09em;
+text-transform:uppercase;color:var(--curado);
+}
+.grupo-area{margin-bottom:46px}
+.grupo-titulo{font-size:1.28rem;margin-bottom:7px;display:flex;align-items:center;gap:10px}
+.grupo-texto{color:var(--gris);font-size:15px;max-width:70ch;margin-bottom:20px}
 .consulta{max-width:880px;margin-inline:auto}
 .campos{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
 .consulta label{display:block;font-size:13px;font-weight:650;letter-spacing:.02em;color:var(--paprika)}
@@ -279,12 +295,14 @@ outline:none;border-color:var(--curado-vivo);background:var(--carbon-3);
 @media (max-width:960px){
 .hero-grid{grid-template-columns:1fr}
 .lineas{grid-template-columns:1fr}
+.areas{grid-template-columns:1fr 1fr}
 .servicios{grid-template-columns:1fr}
 .ftr-grid{grid-template-columns:1fr 1fr}
 }
 @media (max-width:760px){
 body{font-size:16.3px}
 .campos{grid-template-columns:1fr}
+.areas{grid-template-columns:1fr}
 .burger{display:block}
 .nav{
 position:fixed;inset:66px 0 auto;background:var(--carbon);flex-direction:column;
@@ -308,7 +326,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
 [dir="rtl"] .linea a.mas:hover span{transform:scaleX(-1) translateX(5px)}
 [dir="rtl"] th,[dir="rtl"] td{text-align:right}</style>
 <link rel="icon" href="/assets/img/logo.svg" type="image/svg+xml">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Carnotecnia","url":"https://carnotecnia.com","logo":"https://carnotecnia.com/assets/img/logo.svg","description":"Produzione di salumi e carni frollate in Venezuela e consulenza internazionale in tecnologia alimentare: formulazione, resa, shelf life ed export.","address":{"@type":"PostalAddress","addressLocality":"Maracaibo","addressRegion":"Zulia","addressCountry":"VE"},"contactPoint":[{"@type":"ContactPoint","telephone":"+573223623930","contactType":"sales","email":"direccion@carnotecnia.com","areaServed":"Worldwide","availableLanguage":["es","en","pt","fr","it","ar"]}],"knowsAbout":["Meat technology","Sausage formulation","Dry-aged meat","HACCP","Halal production","Food technology"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Carnotecnia","url":"https://carnotecnia.com","logo":"https://carnotecnia.com/assets/img/logo.svg","description":"Salumi, carni frollate, salse, farine precotte, pasta, farina di carne e ossa e petfood. Produzione in Venezuela e consulenza internazionale.","address":{"@type":"PostalAddress","addressLocality":"Maracaibo","addressRegion":"Zulia","addressCountry":"VE"},"contactPoint":[{"@type":"ContactPoint","telephone":"+573223623930","contactType":"sales","email":"direccion@carnotecnia.com","areaServed":"Worldwide","availableLanguage":["es","en","pt","fr","it","ar"]}],"knowsAbout":["Meat technology","Sausage formulation","Dry-aged meat","HACCP","Halal production","Food technology"]}</script>
 <script defer src="/assets/js/main.js?v=10c84d56"></script>
 </head>
 <body>
@@ -423,7 +441,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
   <path d="M16 6.4c-4.1 0-7.1 2.9-7.1 6.9 0 3 1.7 5 3.6 6.6 1.6 1.4 2.4 2.4 2.4 4v1.7h2.2v-1.7c0-1.6.8-2.6 2.4-4 1.9-1.6 3.6-3.6 3.6-6.6 0-4-3-6.9-7.1-6.9Zm0 2.5c2.6 0 4.6 1.8 4.6 4.4 0 1.9-1.1 3.2-2.7 4.6-.8.7-1.5 1.4-1.9 2.2-.4-.8-1.1-1.5-1.9-2.2-1.6-1.4-2.7-2.7-2.7-4.6 0-2.6 2-4.4 4.6-4.4Z" fill="#faf6f0"/>
   <circle cx="13.4" cy="13" r="1.35" fill="#c9962b"/><circle cx="18.4" cy="14.6" r="1.05" fill="#c9962b"/>
 </svg><span><b>Carnotecnia</b><span>Tecnologia delle carni</span></span></a>
-        <p style="margin:0;max-width:34ch">Produciamo salumi e carni frollate in Venezuela e affianchiamo stabilimenti alimentari di qualsiasi paese: formulazione, resa, shelf life, export e dossier sanitario.</p>
+        <p style="margin:0;max-width:34ch">Dal salume alla crocchetta del cane: carni, salse, farine precotte, pasta, valorizzazione dei sottoprodotti e mangimistica. Produciamo in Venezuela e affianchiamo stabilimenti ovunque.</p>
       </div>
       <div>
         <h4>Cosa facciamo</h4>

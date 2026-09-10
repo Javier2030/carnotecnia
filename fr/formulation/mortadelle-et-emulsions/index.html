@@ -254,6 +254,22 @@ background:linear-gradient(180deg,var(--curado),var(--paprika));
 .servicios.claros .serv dt{color:var(--curado)}
 .servicios.claros .serv dd{color:#5b524c}
 .servicios.claros .serv .num{color:var(--curado)}
+.areas{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.area{
+background:#fff;border:1px solid var(--linea-clara);border-radius:var(--r);padding:26px 24px;
+transition:transform .28s var(--ease),box-shadow .28s var(--ease);
+}
+.area:hover{transform:translateY(-4px);box-shadow:0 20px 44px -22px rgba(26,21,18,.3)}
+.area-icono{font-size:26px;line-height:1;display:block;margin-bottom:13px}
+.area h3{font-size:1.13rem;margin-bottom:9px;letter-spacing:-.025em}
+.area p{font-size:14.4px;color:var(--gris);margin:0}
+.area-n{
+display:inline-block;margin-top:13px;font-size:11.5px;font-weight:700;letter-spacing:.09em;
+text-transform:uppercase;color:var(--curado);
+}
+.grupo-area{margin-bottom:46px}
+.grupo-titulo{font-size:1.28rem;margin-bottom:7px;display:flex;align-items:center;gap:10px}
+.grupo-texto{color:var(--gris);font-size:15px;max-width:70ch;margin-bottom:20px}
 .consulta{max-width:880px;margin-inline:auto}
 .campos{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
 .consulta label{display:block;font-size:13px;font-weight:650;letter-spacing:.02em;color:var(--paprika)}
@@ -279,12 +295,14 @@ outline:none;border-color:var(--curado-vivo);background:var(--carbon-3);
 @media (max-width:960px){
 .hero-grid{grid-template-columns:1fr}
 .lineas{grid-template-columns:1fr}
+.areas{grid-template-columns:1fr 1fr}
 .servicios{grid-template-columns:1fr}
 .ftr-grid{grid-template-columns:1fr 1fr}
 }
 @media (max-width:760px){
 body{font-size:16.3px}
 .campos{grid-template-columns:1fr}
+.areas{grid-template-columns:1fr}
 .burger{display:block}
 .nav{
 position:fixed;inset:66px 0 auto;background:var(--carbon);flex-direction:column;
@@ -308,7 +326,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
 [dir="rtl"] .linea a.mas:hover span{transform:scaleX(-1) translateX(5px)}
 [dir="rtl"] th,[dir="rtl"] td{text-align:right}</style>
 <link rel="icon" href="/assets/img/logo.svg" type="image/svg+xml">
-<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"Carnotecnia","url":"https://carnotecnia.com","logo":"https://carnotecnia.com/assets/img/logo.svg","description":"Fabrication de charcuterie et de viande maturée au Venezuela et conseil international en technologie alimentaire : formulation, rendement, DLC et HACCP.","address":{"@type":"PostalAddress","addressLocality":"Maracaibo","addressRegion":"Zulia","addressCountry":"VE"},"contactPoint":[{"@type":"ContactPoint","telephone":"+573223623930","contactType":"sales","email":"direccion@carnotecnia.com","areaServed":"Worldwide","availableLanguage":["es","en","pt","fr","it","ar"]}],"knowsAbout":["Meat technology","Sausage formulation","Dry-aged meat","HACCP","Halal production","Food technology"]},{"@context":"https://schema.org","@type":"TechArticle","headline":"Mortadelle : émulsion, cutter et cuisson","description":"Comment se construit une émulsion carnée stable : ordre au cutter, température limite, phosphates, cuisson à 72 °C et pourquoi la mêlée casse.","url":"https://carnotecnia.com/fr/formulation/mortadelle-et-emulsions/","inLanguage":"fr","author":{"@type":"Organization","name":"Carnotecnia"},"publisher":{"@type":"Organization","name":"Carnotecnia","logo":{"@type":"ImageObject","url":"https://carnotecnia.com/assets/img/logo.svg"}}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"À quoi servent réellement les phosphates ?","acceptedAnswer":{"@type":"Answer","text":"Ils élèvent le pH de la viande en l’éloignant du point isoélectrique des protéines, et la viande retient donc plus d’eau. C’est ce qui permet d’ajouter de la glace sans que le produit la relâche à la cuisson. La plupart des réglementations les plafonnent à 5 g/kg exprimés en P₂O₅ sur produit fini."}},{"@type":"Question","name":"Pourquoi 72 °C et pas plus ?","acceptedAnswer":{"@type":"Answer","text":"À 70 – 72 °C à cœur on atteint la létalité requise pour les pathogènes végétatifs et la protéine coagule complètement. Aller au-delà n’apporte pas de sécurité et coûte du rendement : le produit relâche de l’eau et rétrécit."}},{"@type":"Question","name":"Peut-on le faire sans cutter ?","acceptedAnswer":{"@type":"Answer","text":"À petite échelle on remplace par un hachoir à grille fine et un mélangeur, en acceptant une texture plus granuleuse. Ce qui ne se remplace pas, c’est le contrôle de température."}}]}]</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"Carnotecnia","url":"https://carnotecnia.com","logo":"https://carnotecnia.com/assets/img/logo.svg","description":"Charcuterie, viandes maturées, sauces, farines précuites, pâtes, farine de viande et d’os et petfood. Fabrication au Venezuela et conseil international.","address":{"@type":"PostalAddress","addressLocality":"Maracaibo","addressRegion":"Zulia","addressCountry":"VE"},"contactPoint":[{"@type":"ContactPoint","telephone":"+573223623930","contactType":"sales","email":"direccion@carnotecnia.com","areaServed":"Worldwide","availableLanguage":["es","en","pt","fr","it","ar"]}],"knowsAbout":["Meat technology","Sausage formulation","Dry-aged meat","HACCP","Halal production","Food technology"]},{"@context":"https://schema.org","@type":"TechArticle","headline":"Mortadelle : émulsion, cutter et cuisson","description":"Comment se construit une émulsion carnée stable : ordre au cutter, température limite, phosphates, cuisson à 72 °C et pourquoi la mêlée casse.","url":"https://carnotecnia.com/fr/formulation/mortadelle-et-emulsions/","inLanguage":"fr","author":{"@type":"Organization","name":"Carnotecnia"},"publisher":{"@type":"Organization","name":"Carnotecnia","logo":{"@type":"ImageObject","url":"https://carnotecnia.com/assets/img/logo.svg"}}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"À quoi servent réellement les phosphates ?","acceptedAnswer":{"@type":"Answer","text":"Ils élèvent le pH de la viande en l’éloignant du point isoélectrique des protéines, et la viande retient donc plus d’eau. C’est ce qui permet d’ajouter de la glace sans que le produit la relâche à la cuisson. La plupart des réglementations les plafonnent à 5 g/kg exprimés en P₂O₅ sur produit fini."}},{"@type":"Question","name":"Pourquoi 72 °C et pas plus ?","acceptedAnswer":{"@type":"Answer","text":"À 70 – 72 °C à cœur on atteint la létalité requise pour les pathogènes végétatifs et la protéine coagule complètement. Aller au-delà n’apporte pas de sécurité et coûte du rendement : le produit relâche de l’eau et rétrécit."}},{"@type":"Question","name":"Peut-on le faire sans cutter ?","acceptedAnswer":{"@type":"Answer","text":"À petite échelle on remplace par un hachoir à grille fine et un mélangeur, en acceptant une texture plus granuleuse. Ce qui ne se remplace pas, c’est le contrôle de température."}}]}]</script>
 <script defer src="/assets/js/main.js?v=10c84d56"></script>
 </head>
 <body>
@@ -440,7 +458,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
   <path d="M16 6.4c-4.1 0-7.1 2.9-7.1 6.9 0 3 1.7 5 3.6 6.6 1.6 1.4 2.4 2.4 2.4 4v1.7h2.2v-1.7c0-1.6.8-2.6 2.4-4 1.9-1.6 3.6-3.6 3.6-6.6 0-4-3-6.9-7.1-6.9Zm0 2.5c2.6 0 4.6 1.8 4.6 4.4 0 1.9-1.1 3.2-2.7 4.6-.8.7-1.5 1.4-1.9 2.2-.4-.8-1.1-1.5-1.9-2.2-1.6-1.4-2.7-2.7-2.7-4.6 0-2.6 2-4.4 4.6-4.4Z" fill="#faf6f0"/>
   <circle cx="13.4" cy="13" r="1.35" fill="#c9962b"/><circle cx="18.4" cy="14.6" r="1.05" fill="#c9962b"/>
 </svg><span><b>Carnotecnia</b><span>Technologie des viandes</span></span></a>
-        <p style="margin:0;max-width:34ch">Nous fabriquons charcuterie et viandes maturées au Venezuela, et nous accompagnons les usines agroalimentaires de tous les pays : formulation, rendement, durée de vie, export et dossier sanitaire.</p>
+        <p style="margin:0;max-width:34ch">De la charcuterie à la croquette du chien : viandes, sauces, farines précuites, pâtes, valorisation des coproduits et alimentation animale. Nous fabriquons au Venezuela et accompagnons des usines partout.</p>
       </div>
       <div>
         <h4>Ce que nous faisons</h4>

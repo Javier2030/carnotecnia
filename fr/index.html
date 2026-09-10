@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Carnotecnia : formulation charcutière et conseil</title>
-<meta name="description" content="Fabrication de charcuterie et de viande maturée au Venezuela et conseil international en technologie alimentaire : formulation, rendement, DLC et HACCP.">
+<title>Carnotecnia : technologie alimentaire et nutrition animale</title>
+<meta name="description" content="Charcuterie, viandes maturées, sauces, farines précuites, pâtes, farine de viande et d’os et petfood. Fabrication au Venezuela et conseil international.">
 <link rel="canonical" href="https://carnotecnia.com/fr/">
 <link rel="alternate" hreflang="es" href="https://carnotecnia.com/">
 <link rel="alternate" hreflang="en" href="https://carnotecnia.com/en/">
@@ -18,8 +18,8 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr">
 <meta property="og:site_name" content="Carnotecnia">
-<meta property="og:title" content="Carnotecnia : formulation charcutière et conseil">
-<meta property="og:description" content="Fabrication de charcuterie et de viande maturée au Venezuela et conseil international en technologie alimentaire : formulation, rendement, DLC et HACCP.">
+<meta property="og:title" content="Carnotecnia : technologie alimentaire et nutrition animale">
+<meta property="og:description" content="Charcuterie, viandes maturées, sauces, farines précuites, pâtes, farine de viande et d’os et petfood. Fabrication au Venezuela et conseil international.">
 <meta property="og:url" content="https://carnotecnia.com/fr/">
 <style>:root{
 --carbon:#14110f;
@@ -254,6 +254,22 @@ background:linear-gradient(180deg,var(--curado),var(--paprika));
 .servicios.claros .serv dt{color:var(--curado)}
 .servicios.claros .serv dd{color:#5b524c}
 .servicios.claros .serv .num{color:var(--curado)}
+.areas{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.area{
+background:#fff;border:1px solid var(--linea-clara);border-radius:var(--r);padding:26px 24px;
+transition:transform .28s var(--ease),box-shadow .28s var(--ease);
+}
+.area:hover{transform:translateY(-4px);box-shadow:0 20px 44px -22px rgba(26,21,18,.3)}
+.area-icono{font-size:26px;line-height:1;display:block;margin-bottom:13px}
+.area h3{font-size:1.13rem;margin-bottom:9px;letter-spacing:-.025em}
+.area p{font-size:14.4px;color:var(--gris);margin:0}
+.area-n{
+display:inline-block;margin-top:13px;font-size:11.5px;font-weight:700;letter-spacing:.09em;
+text-transform:uppercase;color:var(--curado);
+}
+.grupo-area{margin-bottom:46px}
+.grupo-titulo{font-size:1.28rem;margin-bottom:7px;display:flex;align-items:center;gap:10px}
+.grupo-texto{color:var(--gris);font-size:15px;max-width:70ch;margin-bottom:20px}
 .consulta{max-width:880px;margin-inline:auto}
 .campos{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
 .consulta label{display:block;font-size:13px;font-weight:650;letter-spacing:.02em;color:var(--paprika)}
@@ -279,12 +295,14 @@ outline:none;border-color:var(--curado-vivo);background:var(--carbon-3);
 @media (max-width:960px){
 .hero-grid{grid-template-columns:1fr}
 .lineas{grid-template-columns:1fr}
+.areas{grid-template-columns:1fr 1fr}
 .servicios{grid-template-columns:1fr}
 .ftr-grid{grid-template-columns:1fr 1fr}
 }
 @media (max-width:760px){
 body{font-size:16.3px}
 .campos{grid-template-columns:1fr}
+.areas{grid-template-columns:1fr}
 .burger{display:block}
 .nav{
 position:fixed;inset:66px 0 auto;background:var(--carbon);flex-direction:column;
@@ -308,7 +326,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
 [dir="rtl"] .linea a.mas:hover span{transform:scaleX(-1) translateX(5px)}
 [dir="rtl"] th,[dir="rtl"] td{text-align:right}</style>
 <link rel="icon" href="/assets/img/logo.svg" type="image/svg+xml">
-<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"Carnotecnia","url":"https://carnotecnia.com","logo":"https://carnotecnia.com/assets/img/logo.svg","description":"Fabrication de charcuterie et de viande maturée au Venezuela et conseil international en technologie alimentaire : formulation, rendement, DLC et HACCP.","address":{"@type":"PostalAddress","addressLocality":"Maracaibo","addressRegion":"Zulia","addressCountry":"VE"},"contactPoint":[{"@type":"ContactPoint","telephone":"+573223623930","contactType":"sales","email":"direccion@carnotecnia.com","areaServed":"Worldwide","availableLanguage":["es","en","pt","fr","it","ar"]}],"knowsAbout":["Meat technology","Sausage formulation","Dry-aged meat","HACCP","Halal production","Food technology"]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Qu’est-ce que la technologie des viandes exactement ?","acceptedAnswer":{"@type":"Answer","text":"C’est la discipline qui va de l’animal sur pied au produit emballé, en passant par l’abattage, la maturation, la formulation, le traitement thermique et la durée de vie. Quand on parle de « technologie alimentaire appliquée aux viandes », c’est de cela qu’il s’agit."}},{"@type":"Question","name":"Intervenez-vous hors du Venezuela ?","acceptedAnswer":{"@type":"Answer","text":"Oui. L’usine et la vente en gros sont vénézuéliennes, basées à Maracaibo, mais le conseil et la formation sont à distance et se font dans n’importe quel pays. Nous travaillons en français, espagnol, anglais, portugais, italien et arabe, et nous nous adaptons à votre fuseau."}},{"@type":"Question","name":"Puis-je poser une question ponctuelle sans engager un projet ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Une question précise — pourquoi une émulsion a cassé, quelle dose de nitrite appliquer, pourquoi le pH ne descend pas — se règle par e-mail ou en visioconférence courte. Les projets, c’est pour ce qui ne tient pas dans une réponse."}},{"@type":"Question","name":"Peut-on monter une petite unité de charcuterie ?","acceptedAnswer":{"@type":"Answer","text":"Oui, et prétendre le contraire est l’erreur la plus fréquente. Une ligne de frais et de cuits démarre avec un hachoir, un mélangeur, un poussoir et une chambre : ce qui décide, ce n’est pas la taille du matériel, c’est le contrôle de température de la mêlée et la rigueur de formulation."}},{"@type":"Question","name":"Livrez-vous des recettes ?","acceptedAnswer":{"@type":"Answer","text":"Nous livrons des formulations avec la raison de chaque composant et sa dose légale, la seule chose qui permette réellement de produire. Une liste d’ingrédients sans courbe de procédé ni contrôle de température ne reproduit rien."}},{"@type":"Question","name":"Combien de temps pour développer un nouveau produit ?","acceptedAnswer":{"@type":"Answer","text":"Un produit frais ou cuit se boucle en semaines. Un produit sec exige le temps complet de maturation par essai : c’est le produit qui donne l’horloge, entre 21 et 90 jours selon le calibre et le type."}},{"@type":"Question","name":"Que faut-il pour vendre aux hôtels et aux enseignes ?","acceptedAnswer":{"@type":"Answer","text":"Une fiche technique par produit, une durée de vie validée, un enregistrement sanitaire en cours de validité et des relevés de lot. Sans ces quatre documents la négociation ne démarre pas, aussi bon soit le produit."}}]}]</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"Carnotecnia","url":"https://carnotecnia.com","logo":"https://carnotecnia.com/assets/img/logo.svg","description":"Charcuterie, viandes maturées, sauces, farines précuites, pâtes, farine de viande et d’os et petfood. Fabrication au Venezuela et conseil international.","address":{"@type":"PostalAddress","addressLocality":"Maracaibo","addressRegion":"Zulia","addressCountry":"VE"},"contactPoint":[{"@type":"ContactPoint","telephone":"+573223623930","contactType":"sales","email":"direccion@carnotecnia.com","areaServed":"Worldwide","availableLanguage":["es","en","pt","fr","it","ar"]}],"knowsAbout":["Meat technology","Sausage formulation","Dry-aged meat","HACCP","Halal production","Food technology"]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Qu’est-ce que la technologie des viandes exactement ?","acceptedAnswer":{"@type":"Answer","text":"C’est la discipline qui va de l’animal sur pied au produit emballé, en passant par l’abattage, la maturation, la formulation, le traitement thermique et la durée de vie. Quand on parle de « technologie alimentaire appliquée aux viandes », c’est de cela qu’il s’agit."}},{"@type":"Question","name":"Intervenez-vous hors du Venezuela ?","acceptedAnswer":{"@type":"Answer","text":"Oui. L’usine et la vente en gros sont vénézuéliennes, basées à Maracaibo, mais le conseil et la formation sont à distance et se font dans n’importe quel pays. Nous travaillons en français, espagnol, anglais, portugais, italien et arabe, et nous nous adaptons à votre fuseau."}},{"@type":"Question","name":"Puis-je poser une question ponctuelle sans engager un projet ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Une question précise — pourquoi une émulsion a cassé, quelle dose de nitrite appliquer, pourquoi le pH ne descend pas — se règle par e-mail ou en visioconférence courte. Les projets, c’est pour ce qui ne tient pas dans une réponse."}},{"@type":"Question","name":"Peut-on monter une petite unité de charcuterie ?","acceptedAnswer":{"@type":"Answer","text":"Oui, et prétendre le contraire est l’erreur la plus fréquente. Une ligne de frais et de cuits démarre avec un hachoir, un mélangeur, un poussoir et une chambre : ce qui décide, ce n’est pas la taille du matériel, c’est le contrôle de température de la mêlée et la rigueur de formulation."}},{"@type":"Question","name":"Livrez-vous des recettes ?","acceptedAnswer":{"@type":"Answer","text":"Nous livrons des formulations avec la raison de chaque composant et sa dose légale, la seule chose qui permette réellement de produire. Une liste d’ingrédients sans courbe de procédé ni contrôle de température ne reproduit rien."}},{"@type":"Question","name":"Combien de temps pour développer un nouveau produit ?","acceptedAnswer":{"@type":"Answer","text":"Un produit frais ou cuit se boucle en semaines. Un produit sec exige le temps complet de maturation par essai : c’est le produit qui donne l’horloge, entre 21 et 90 jours selon le calibre et le type."}},{"@type":"Question","name":"Que faut-il pour vendre aux hôtels et aux enseignes ?","acceptedAnswer":{"@type":"Answer","text":"Une fiche technique par produit, une durée de vie validée, un enregistrement sanitaire en cours de validité et des relevés de lot. Sans ces quatre documents la négociation ne démarre pas, aussi bon soit le produit."}}]}]</script>
 <script defer src="/assets/js/main.js?v=10c84d56"></script>
 </head>
 <body>
@@ -343,8 +361,8 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
     <div class="hero-grid">
       <div>
         <span class="eyebrow">Maracaibo · Venezuela · Conseil en 6 langues</span>
-        <h1>Une technologie des viandes qui <em>tient sur des chiffres</em>, pas sur des recettes de famille.</h1>
-        <p class="hero-sub">Nous fabriquons charcuterie et viandes maturées au Venezuela, et nous accompagnons les usines agroalimentaires de tous les pays : formulation, rendement, durée de vie, export et dossier sanitaire.</p>
+        <h1>Une technologie alimentaire qui <em>tient sur des chiffres</em>, pas sur des recettes de famille.</h1>
+        <p class="hero-sub">De la charcuterie à la croquette du chien : viandes, sauces, farines précuites, pâtes, valorisation des coproduits et alimentation animale. Nous fabriquons au Venezuela et accompagnons des usines partout.</p>
         <div class="btns">
           <a class="btn btn-p" href="#consulta">Parlons de votre usine</a>
           <a class="btn btn-linea" href="/fr/formulation/">Voir les formulations</a>
@@ -354,15 +372,15 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
       <div class="def rev">
         <h2>Ce qu’est la technologie des viandes</h2>
         <p>La carnotechnie est la discipline qui relie la production animale à la transformation et à la conservation de la viande et de ses coproduits. Ce n’est pas seulement « faire de la charcuterie » : c’est maîtriser la protéine, l’eau, la matière grasse, le sel et le temps jusqu’à ce que le produit sorte identique chaque jour.</p>
-        <p>C’est la différence entre un produit qui plaît et un produit que l’on peut vendre chaque semaine au même client.</p>
+        <p>Et cela va plus loin que le nom ne le suggère : le même animal qui donne le filet donne l’os qui donne la farine qui nourrit l’animal qui relance le cycle. Cette valorisation intégrale est le fil qui relie tout ce que nous faisons.</p>
       </div>
     </div>
   </div>
   <div class="wrap">
     <div class="cifras">
       <div class="cifra"><b>6 langues</b><span>Consultation technique en français, espagnol, anglais, portugais, italien et arabe</span></div>
-      <div class="cifra"><b>9 fiches</b><span>Formulations publiées avec procédé, dosage et défauts</span></div>
-      <div class="cifra"><b>13 services</b><span>De la reformulation au dossier d’exportation</span></div>
+      <div class="cifra"><b>15 fiches</b><span>Formulations publiées avec procédé, dosage et défauts</span></div>
+      <div class="cifra"><b>25 services</b><span>De la reformulation au projet d’élevage complet</span></div>
     </div>
   </div>
 </section>
@@ -395,6 +413,55 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
         <p>Des formulations complètes avec la raison de chaque gramme, pas des listes d’ingrédients recopiées. Pour ceux qui fabriquent, pas pour ceux qui collectionnent des PDF.</p>
         <ul><li>Fiches de formulation avec la fonction de chaque additif et sa dose légale.</li><li>Courbes de procédé : température, humidité et temps, heure par heure.</li><li>Calcul du coût au kilo et de la perte avant de produire.</li><li>Diagnostic des défauts : pourquoi l’émulsion a cassé, pourquoi c’est gris ?</li></ul>
         <a class="mas" href="/fr/academie/">Voir académie <span>→</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<section class="seccion seccion-clara">
+  <div class="wrap">
+    <div class="cab rev">
+      <span class="eyebrow">Domaines techniques</span>
+      <h2>Six domaines, un seul critère.</h2>
+      <p>Ce ne sont pas des spécialités éparses : une émulsion de mayonnaise obéit à la même physique qu’une émulsion de mortadelle, et l’os qui reste du désossage est la matière première de l’alimentation animale. Le savoir s’accumule, il ne se divise pas.</p>
+    </div>
+    <div class="areas rev">
+      <article class="area">
+        <span class="area-icono" aria-hidden="true">🥩</span>
+        <h3>Viandes et charcuterie</h3>
+        <p>Charcuterie fraîche, cuite et sèche, et viandes maturées à sec. L’origine de la maison et le domaine où la bibliothèque technique est la plus fournie.</p>
+        <span class="area-n">9 fichas</span>
+      </article>
+      <article class="area">
+        <span class="area-icono" aria-hidden="true">🫙</span>
+        <h3>Sauces et assaisonnements</h3>
+        <p>Mayonnaise, ketchup, moutarde, sauces piquantes et assaisonnements. Émulsions et acidification : la physique de la mortadelle, appliquée à froid.</p>
+        <span class="area-n">2 fichas</span>
+      </article>
+      <article class="area">
+        <span class="area-icono" aria-hidden="true">🌽</span>
+        <h3>Farines précuites et pâtes</h3>
+        <p>Farine de maïs précuite, mélanges boulangers et pâtes sèches. Gélatinisation de l’amidon, laminage, extrusion et la courbe de séchage qui décide de tout.</p>
+        <span class="area-n">2 fichas</span>
+      </article>
+      <article class="area">
+        <span class="area-icono" aria-hidden="true">♻️</span>
+        <h3>Coproduits et rendering</h3>
+        <p>Farine de viande et d’os, farine de sang, suif. Ce que la plupart des usines paient pour jeter et qui peut porter une deuxième activité.</p>
+        <span class="area-n">1 ficha</span>
+      </article>
+      <article class="area">
+        <span class="area-icono" aria-hidden="true">🐕</span>
+        <h3>Alimentation animale et petfood</h3>
+        <p>Croquettes extrudées pour chien et chat, et aliments composés pour volailles, porcs et bovins. Formulation au moindre coût en respectant le profil nutritionnel.</p>
+        <span class="area-n">1 ficha</span>
+      </article>
+      <article class="area">
+        <span class="area-icono" aria-hidden="true">🐄</span>
+        <h3>Projets d’élevage</h3>
+        <p>Élevage avicole, porcin ou bovin : dimensionnement, alimentation, sanitaire, et le chiffre que presque personne ne calcule bien, l’indice de consommation.</p>
+        
       </article>
     </div>
   </div>
@@ -438,15 +505,15 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
         <p>Réduction du sel, des nitrites, des phosphates et des allergènes sans perdre la sécurité microbiologique ni la texture. C’est l’exigence qui progresse le plus vite dans toutes les réglementations.</p>
         <dl><dt>Livrable</dt><dd>Produit reformulé avec la barrière de sécurité recalculée et l’étiquette simplifiée.</dd></dl>
       </article>
-      <article class="serv">
+      <article class="serv serv-top">
         <span class="num">06</span>
-        <h3>Diagnostic d’usine</h3>
-        <p>Revue complète du procédé, chiffres en main : rendement par lot, perte réelle, coût au kilo, points de perte.</p>
-        <dl><dt>Livrable</dt><dd>Rapport nommant les trois goulets qui coûtent le plus cher et l’ordre dans lequel les traiter.</dd></dl>
+        <h3>Projets d’élevage clé en main</h3>
+        <p>Dimensionnement d’un élevage avicole, porcin ou bovin : effectif, bâtiments, plan d’alimentation, sanitaire, et le chiffre que presque personne ne calcule correctement, l’indice de consommation.</p>
+        <dl><dt>Livrable</dt><dd>Projet avec investissement par étapes, plan alimentaire par stade de production et seuil de rentabilité réel.</dd></dl>
       </article>
     </div>
     <div class="btns rev" style="justify-content:center;margin-top:34px">
-      <a class="btn btn-linea" href="/fr/services/">Services (13)</a>
+      <a class="btn btn-linea" href="/fr/services/">Services (20)</a>
     </div>
   </div>
 </section>
@@ -485,6 +552,24 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
       </a>
       <a class="ficha" href="/fr/formulation/reduction-du-sodium/">
         <span class="tipo">Reformulation</span><h3>Réduction du sodium</h3><p>Comment baisser le sel d’un produit de charcuterie sans perdre l’extraction protéique ni la sécurité microbiologique : substituts, réduction progressive et compensation de l’aw.</p>
+      </a>
+      <a class="ficha" href="/fr/formulation/farine-de-mais-precuite/">
+        <span class="tipo">Farines</span><h3>Farine de maïs précuite</h3><p>Fabrication de la farine de maïs précuite : dégermage, cuisson, laminage, séchage, mouture et l’indice d’absorption d’eau qui décide si la pâte se forme.</p>
+      </a>
+      <a class="ficha" href="/fr/formulation/farine-de-viande-et-os/">
+        <span class="tipo">Coproduits</span><h3>Farine de viande et d’os</h3><p>Rendering des coproduits carnés : stérilisation à 133 °C, pressage, mouture, composition en protéines, calcium et phosphore, et contrôle de Salmonella.</p>
+      </a>
+      <a class="ficha" href="/fr/formulation/croquettes-extrudees/">
+        <span class="tipo">Petfood</span><h3>Croquettes chien et chat</h3><p>Fabrication de l’aliment extrudé pour chiens et chats : formulation, paramètres d’extrusion, séchage, enrobage et profils nutritionnels de référence.</p>
+      </a>
+      <a class="ficha" href="/fr/formulation/mayonnaise-industrielle/">
+        <span class="tipo">Sauces</span><h3>Mayonnaise industrielle</h3><p>Formulation et procédé de la mayonnaise industrielle : proportion d’huile, émulsifiant, le pH critique de 4,1 et pourquoi l’émulsion tourne.</p>
+      </a>
+      <a class="ficha" href="/fr/formulation/sauce-tomate-industrielle/">
+        <span class="tipo">Sauces</span><h3>Sauce tomate</h3><p>Procédé industriel de la sauce tomate et du ketchup : concentration en degrés Brix, pH critique, remplissage à chaud et contrôle de viscosité Bostwick.</p>
+      </a>
+      <a class="ficha" href="/fr/formulation/pates-seches-industrielles/">
+        <span class="tipo">Pâtes</span><h3>Pâtes sèches</h3><p>Fabrication industrielle des pâtes sèches : qualité de la semoule, hydratation, filières bronze ou téflon, et la courbe de séchage qui évite les fissures.</p>
       </a>
     </div>
   </div>
@@ -541,7 +626,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
   <path d="M16 6.4c-4.1 0-7.1 2.9-7.1 6.9 0 3 1.7 5 3.6 6.6 1.6 1.4 2.4 2.4 2.4 4v1.7h2.2v-1.7c0-1.6.8-2.6 2.4-4 1.9-1.6 3.6-3.6 3.6-6.6 0-4-3-6.9-7.1-6.9Zm0 2.5c2.6 0 4.6 1.8 4.6 4.4 0 1.9-1.1 3.2-2.7 4.6-.8.7-1.5 1.4-1.9 2.2-.4-.8-1.1-1.5-1.9-2.2-1.6-1.4-2.7-2.7-2.7-4.6 0-2.6 2-4.4 4.6-4.4Z" fill="#faf6f0"/>
   <circle cx="13.4" cy="13" r="1.35" fill="#c9962b"/><circle cx="18.4" cy="14.6" r="1.05" fill="#c9962b"/>
 </svg><span><b>Carnotecnia</b><span>Technologie des viandes</span></span></a>
-        <p style="margin:0;max-width:34ch">Nous fabriquons charcuterie et viandes maturées au Venezuela, et nous accompagnons les usines agroalimentaires de tous les pays : formulation, rendement, durée de vie, export et dossier sanitaire.</p>
+        <p style="margin:0;max-width:34ch">De la charcuterie à la croquette du chien : viandes, sauces, farines précuites, pâtes, valorisation des coproduits et alimentation animale. Nous fabriquons au Venezuela et accompagnons des usines partout.</p>
       </div>
       <div>
         <h4>Ce que nous faisons</h4>

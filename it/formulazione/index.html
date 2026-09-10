@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Formulazione salumi: schede tecniche con processo</title>
-<meta name="description" content="Schede di formulazione per salumi: percentuali, curve di temperatura e umidità, resa, calo peso e difetti. Salsiccia, salame, prosciutto cotto e mortadella.">
+<title>Formulazioni: schede tecniche con processo completo</title>
+<meta name="description" content="Schede di formulazione con percentuali, curve e difetti: salumi, carni frollate, maionese, ketchup, farina di mais precotta, pasta, farina di ossa e petfood.">
 <link rel="canonical" href="https://carnotecnia.com/it/formulazione/">
 <link rel="alternate" hreflang="es" href="https://carnotecnia.com/formulacion/">
 <link rel="alternate" hreflang="en" href="https://carnotecnia.com/en/formulation/">
@@ -18,8 +18,8 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="it">
 <meta property="og:site_name" content="Carnotecnia">
-<meta property="og:title" content="Formulazione salumi: schede tecniche con processo">
-<meta property="og:description" content="Schede di formulazione per salumi: percentuali, curve di temperatura e umidità, resa, calo peso e difetti. Salsiccia, salame, prosciutto cotto e mortadella.">
+<meta property="og:title" content="Formulazioni: schede tecniche con processo completo">
+<meta property="og:description" content="Schede di formulazione con percentuali, curve e difetti: salumi, carni frollate, maionese, ketchup, farina di mais precotta, pasta, farina di ossa e petfood.">
 <meta property="og:url" content="https://carnotecnia.com/it/formulazione/">
 <style>:root{
 --carbon:#14110f;
@@ -254,6 +254,22 @@ background:linear-gradient(180deg,var(--curado),var(--paprika));
 .servicios.claros .serv dt{color:var(--curado)}
 .servicios.claros .serv dd{color:#5b524c}
 .servicios.claros .serv .num{color:var(--curado)}
+.areas{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.area{
+background:#fff;border:1px solid var(--linea-clara);border-radius:var(--r);padding:26px 24px;
+transition:transform .28s var(--ease),box-shadow .28s var(--ease);
+}
+.area:hover{transform:translateY(-4px);box-shadow:0 20px 44px -22px rgba(26,21,18,.3)}
+.area-icono{font-size:26px;line-height:1;display:block;margin-bottom:13px}
+.area h3{font-size:1.13rem;margin-bottom:9px;letter-spacing:-.025em}
+.area p{font-size:14.4px;color:var(--gris);margin:0}
+.area-n{
+display:inline-block;margin-top:13px;font-size:11.5px;font-weight:700;letter-spacing:.09em;
+text-transform:uppercase;color:var(--curado);
+}
+.grupo-area{margin-bottom:46px}
+.grupo-titulo{font-size:1.28rem;margin-bottom:7px;display:flex;align-items:center;gap:10px}
+.grupo-texto{color:var(--gris);font-size:15px;max-width:70ch;margin-bottom:20px}
 .consulta{max-width:880px;margin-inline:auto}
 .campos{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
 .consulta label{display:block;font-size:13px;font-weight:650;letter-spacing:.02em;color:var(--paprika)}
@@ -279,12 +295,14 @@ outline:none;border-color:var(--curado-vivo);background:var(--carbon-3);
 @media (max-width:960px){
 .hero-grid{grid-template-columns:1fr}
 .lineas{grid-template-columns:1fr}
+.areas{grid-template-columns:1fr 1fr}
 .servicios{grid-template-columns:1fr}
 .ftr-grid{grid-template-columns:1fr 1fr}
 }
 @media (max-width:760px){
 body{font-size:16.3px}
 .campos{grid-template-columns:1fr}
+.areas{grid-template-columns:1fr}
 .burger{display:block}
 .nav{
 position:fixed;inset:66px 0 auto;background:var(--carbon);flex-direction:column;
@@ -308,7 +326,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
 [dir="rtl"] .linea a.mas:hover span{transform:scaleX(-1) translateX(5px)}
 [dir="rtl"] th,[dir="rtl"] td{text-align:right}</style>
 <link rel="icon" href="/assets/img/logo.svg" type="image/svg+xml">
-<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"Carnotecnia","url":"https://carnotecnia.com","logo":"https://carnotecnia.com/assets/img/logo.svg","description":"Produzione di salumi e carni frollate in Venezuela e consulenza internazionale in tecnologia alimentare: formulazione, resa, shelf life ed export.","address":{"@type":"PostalAddress","addressLocality":"Maracaibo","addressRegion":"Zulia","addressCountry":"VE"},"contactPoint":[{"@type":"ContactPoint","telephone":"+573223623930","contactType":"sales","email":"direccion@carnotecnia.com","areaServed":"Worldwide","availableLanguage":["es","en","pt","fr","it","ar"]}],"knowsAbout":["Meat technology","Sausage formulation","Dry-aged meat","HACCP","Halal production","Food technology"]},{"@context":"https://schema.org","@type":"CollectionPage","name":"Formulazione salumi: schede tecniche con processo","url":"https://carnotecnia.com/it/formulazione/","inLanguage":"it","hasPart":[{"@type":"TechArticle","name":"Salsiccia da griglia","url":"https://carnotecnia.com/it/formulazione/salsiccia-da-griglia/"},{"@type":"TechArticle","name":"Mortadella ed emulsioni","url":"https://carnotecnia.com/it/formulazione/mortadella-ed-emulsioni/"},{"@type":"TechArticle","name":"Prosciutto cotto","url":"https://carnotecnia.com/it/formulazione/prosciutto-cotto/"},{"@type":"TechArticle","name":"Salame fermentato","url":"https://carnotecnia.com/it/formulazione/salame-fermentato/"},{"@type":"TechArticle","name":"Chorizo spagnolo","url":"https://carnotecnia.com/it/formulazione/chorizo-spagnolo-stagionato/"},{"@type":"TechArticle","name":"Carne frollata","url":"https://carnotecnia.com/it/formulazione/carne-frollata-dry-aged/"},{"@type":"TechArticle","name":"Nitrito: dose e legge","url":"https://carnotecnia.com/it/formulazione/nitrito-di-sodio-dosaggio/"},{"@type":"TechArticle","name":"Salumi halal","url":"https://carnotecnia.com/it/formulazione/salumi-halal/"},{"@type":"TechArticle","name":"Riduzione del sodio","url":"https://carnotecnia.com/it/formulazione/riduzione-del-sodio/"}]}]</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"Carnotecnia","url":"https://carnotecnia.com","logo":"https://carnotecnia.com/assets/img/logo.svg","description":"Salumi, carni frollate, salse, farine precotte, pasta, farina di carne e ossa e petfood. Produzione in Venezuela e consulenza internazionale.","address":{"@type":"PostalAddress","addressLocality":"Maracaibo","addressRegion":"Zulia","addressCountry":"VE"},"contactPoint":[{"@type":"ContactPoint","telephone":"+573223623930","contactType":"sales","email":"direccion@carnotecnia.com","areaServed":"Worldwide","availableLanguage":["es","en","pt","fr","it","ar"]}],"knowsAbout":["Meat technology","Sausage formulation","Dry-aged meat","HACCP","Halal production","Food technology"]},{"@context":"https://schema.org","@type":"CollectionPage","name":"Formulazioni: schede tecniche con processo completo","url":"https://carnotecnia.com/it/formulazione/","inLanguage":"it","hasPart":[{"@type":"TechArticle","name":"Salsiccia da griglia","url":"https://carnotecnia.com/it/formulazione/salsiccia-da-griglia/"},{"@type":"TechArticle","name":"Mortadella ed emulsioni","url":"https://carnotecnia.com/it/formulazione/mortadella-ed-emulsioni/"},{"@type":"TechArticle","name":"Prosciutto cotto","url":"https://carnotecnia.com/it/formulazione/prosciutto-cotto/"},{"@type":"TechArticle","name":"Salame fermentato","url":"https://carnotecnia.com/it/formulazione/salame-fermentato/"},{"@type":"TechArticle","name":"Chorizo spagnolo","url":"https://carnotecnia.com/it/formulazione/chorizo-spagnolo-stagionato/"},{"@type":"TechArticle","name":"Carne frollata","url":"https://carnotecnia.com/it/formulazione/carne-frollata-dry-aged/"},{"@type":"TechArticle","name":"Nitrito: dose e legge","url":"https://carnotecnia.com/it/formulazione/nitrito-di-sodio-dosaggio/"},{"@type":"TechArticle","name":"Salumi halal","url":"https://carnotecnia.com/it/formulazione/salumi-halal/"},{"@type":"TechArticle","name":"Riduzione del sodio","url":"https://carnotecnia.com/it/formulazione/riduzione-del-sodio/"},{"@type":"TechArticle","name":"Farina di mais precotta","url":"https://carnotecnia.com/it/formulazione/farina-di-mais-precotta/"},{"@type":"TechArticle","name":"Farina di carne e ossa","url":"https://carnotecnia.com/it/formulazione/farina-di-carne-e-ossa/"},{"@type":"TechArticle","name":"Crocchette per cani e gatti","url":"https://carnotecnia.com/it/formulazione/crocchette-estruse/"},{"@type":"TechArticle","name":"Maionese industriale","url":"https://carnotecnia.com/it/formulazione/maionese-industriale/"},{"@type":"TechArticle","name":"Salsa di pomodoro","url":"https://carnotecnia.com/it/formulazione/salsa-di-pomodoro-industriale/"},{"@type":"TechArticle","name":"Pasta secca","url":"https://carnotecnia.com/it/formulazione/pasta-secca-industriale/"}]}]</script>
 <script defer src="/assets/js/main.js?v=10c84d56"></script>
 </head>
 <body>
@@ -343,37 +361,88 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
   <div class="wrap">
     <div class="cab rev">
       <span class="eyebrow">Biblioteca tecnica</span>
-      <h2 style="font-size:clamp(2rem,4.4vw,3rem)">Formulazione salumi: schede tecniche con processo</h2>
+      <h2 style="font-size:clamp(2rem,4.4vw,3rem)">Formulazioni: schede tecniche con processo completo</h2>
       <p>Non sono liste di ingredienti: ogni scheda porta percentuali, curva di processo, resa attesa e i difetti che rovinano il lotto.</p>
     </div>
-    <div class="fichas rev">
-      <a class="ficha" href="/it/formulazione/salsiccia-da-griglia/">
-        <span class="tipo">Fresco</span><h3>Salsiccia da griglia</h3><p>Formulazione completa della salsiccia da griglia: percentuali, temperatura dell’impasto, macinatura, insacco e resa.</p>
-      </a>
-      <a class="ficha" href="/it/formulazione/mortadella-ed-emulsioni/">
-        <span class="tipo">Cotto</span><h3>Mortadella ed emulsioni</h3><p>Come si costruisce un’emulsione di carne stabile: ordine al cutter, temperatura limite, fosfati, cottura a 72 °C e perché l’impasto si rompe.</p>
-      </a>
-      <a class="ficha" href="/it/formulazione/prosciutto-cotto/">
-        <span class="tipo">Cotto</span><h3>Prosciutto cotto</h3><p>Calcolo della salamoia, percentuale di iniezione, tempi di zangolatura e cottura del prosciutto cotto.</p>
-      </a>
-      <a class="ficha" href="/it/formulazione/salame-fermentato/">
-        <span class="tipo">Stagionato</span><h3>Salame fermentato</h3><p>Fermentazione guidata del salame: colture starter, caduta del pH, curva di temperatura e umidità, calo obiettivo e controllo dell’attività dell’acqua.</p>
-      </a>
-      <a class="ficha" href="/it/formulazione/chorizo-spagnolo-stagionato/">
-        <span class="tipo">Stagionato</span><h3>Chorizo spagnolo</h3><p>Formulazione del chorizo stagionato tipo spagnolo: proporzione di paprika, sale, curva di asciugatura, calo obiettivo e differenze con il salame.</p>
-      </a>
-      <a class="ficha" href="/it/formulazione/carne-frollata-dry-aged/">
-        <span class="tipo">Frollatura</span><h3>Carne frollata</h3><p>Frollatura a secco del manzo: temperatura, umidità, flusso d’aria, giorni di frollatura, calo reale per evaporazione e rifilatura, e controllo sanitario.</p>
-      </a>
-      <a class="ficha" href="/it/formulazione/nitrito-di-sodio-dosaggio/">
-        <span class="tipo">Additivi</span><h3>Nitrito: dose e legge</h3><p>Cosa fa il nitrito, come si calcola il sale nitritato al 6,25 %, la dose pratica di 156 ppm e perché non si dosa mai a occhio.</p>
-      </a>
-      <a class="ficha" href="/it/formulazione/salumi-halal/">
-        <span class="tipo">Normativa</span><h3>Salumi halal</h3><p>Quali ingredienti sostituire, come separare la linea e cosa richiede il certificatore per produrre halal ed esportare nel Golfo e nel sud-est asiatico.</p>
-      </a>
-      <a class="ficha" href="/it/formulazione/riduzione-del-sodio/">
-        <span class="tipo">Riformulazione</span><h3>Riduzione del sodio</h3><p>Come abbassare il sale di un salume senza perdere estrazione proteica né sicurezza microbiologica: sostituti, riduzione graduale e compensazione dell’aw.</p>
-      </a>
+    
+    <div class="grupo-area rev">
+      <h3 class="grupo-titulo"><span aria-hidden="true">🥩</span> Carni e salumeria</h3>
+      <p class="grupo-texto">Salumi freschi, cotti e stagionati, e carni frollate a secco. L’origine della casa e l’area con la biblioteca tecnica più ampia.</p>
+      <div class="fichas">
+        <a class="ficha" href="/it/formulazione/salsiccia-da-griglia/">
+          <span class="tipo">Fresco</span><h3>Salsiccia da griglia</h3><p>Formulazione completa della salsiccia da griglia: percentuali, temperatura dell’impasto, macinatura, insacco e resa.</p>
+        </a>
+        <a class="ficha" href="/it/formulazione/mortadella-ed-emulsioni/">
+          <span class="tipo">Cotto</span><h3>Mortadella ed emulsioni</h3><p>Come si costruisce un’emulsione di carne stabile: ordine al cutter, temperatura limite, fosfati, cottura a 72 °C e perché l’impasto si rompe.</p>
+        </a>
+        <a class="ficha" href="/it/formulazione/prosciutto-cotto/">
+          <span class="tipo">Cotto</span><h3>Prosciutto cotto</h3><p>Calcolo della salamoia, percentuale di iniezione, tempi di zangolatura e cottura del prosciutto cotto.</p>
+        </a>
+        <a class="ficha" href="/it/formulazione/salame-fermentato/">
+          <span class="tipo">Stagionato</span><h3>Salame fermentato</h3><p>Fermentazione guidata del salame: colture starter, caduta del pH, curva di temperatura e umidità, calo obiettivo e controllo dell’attività dell’acqua.</p>
+        </a>
+        <a class="ficha" href="/it/formulazione/chorizo-spagnolo-stagionato/">
+          <span class="tipo">Stagionato</span><h3>Chorizo spagnolo</h3><p>Formulazione del chorizo stagionato tipo spagnolo: proporzione di paprika, sale, curva di asciugatura, calo obiettivo e differenze con il salame.</p>
+        </a>
+        <a class="ficha" href="/it/formulazione/carne-frollata-dry-aged/">
+          <span class="tipo">Frollatura</span><h3>Carne frollata</h3><p>Frollatura a secco del manzo: temperatura, umidità, flusso d’aria, giorni di frollatura, calo reale per evaporazione e rifilatura, e controllo sanitario.</p>
+        </a>
+        <a class="ficha" href="/it/formulazione/salumi-halal/">
+          <span class="tipo">Normativa</span><h3>Salumi halal</h3><p>Quali ingredienti sostituire, come separare la linea e cosa richiede il certificatore per produrre halal ed esportare nel Golfo e nel sud-est asiatico.</p>
+        </a>
+        <a class="ficha" href="/it/formulazione/nitrito-di-sodio-dosaggio/">
+          <span class="tipo">Additivi</span><h3>Nitrito: dose e legge</h3><p>Cosa fa il nitrito, come si calcola il sale nitritato al 6,25 %, la dose pratica di 156 ppm e perché non si dosa mai a occhio.</p>
+        </a>
+        <a class="ficha" href="/it/formulazione/riduzione-del-sodio/">
+          <span class="tipo">Riformulazione</span><h3>Riduzione del sodio</h3><p>Come abbassare il sale di un salume senza perdere estrazione proteica né sicurezza microbiologica: sostituti, riduzione graduale e compensazione dell’aw.</p>
+        </a>
+      </div>
+    </div>
+    
+    <div class="grupo-area rev">
+      <h3 class="grupo-titulo"><span aria-hidden="true">🫙</span> Salse e condimenti</h3>
+      <p class="grupo-texto">Maionese, ketchup, senape, salse piccanti e condimenti. Emulsioni e acidificazione: la stessa fisica della mortadella, applicata a freddo.</p>
+      <div class="fichas">
+        <a class="ficha" href="/it/formulazione/maionese-industriale/">
+          <span class="tipo">Salse</span><h3>Maionese industriale</h3><p>Formulazione e processo della maionese industriale: proporzione di olio, emulsionante, il pH critico di 4,1 e perché l’emulsione impazzisce.</p>
+        </a>
+        <a class="ficha" href="/it/formulazione/salsa-di-pomodoro-industriale/">
+          <span class="tipo">Salse</span><h3>Salsa di pomodoro</h3><p>Processo industriale della salsa di pomodoro e del ketchup: concentrazione in gradi Brix, pH critico, riempimento a caldo e controllo della viscosità Bostwick.</p>
+        </a>
+      </div>
+    </div>
+    
+    <div class="grupo-area rev">
+      <h3 class="grupo-titulo"><span aria-hidden="true">🌽</span> Farine precotte e pasta</h3>
+      <p class="grupo-texto">Farina di mais precotta, miscele da forno e pasta secca. Gelatinizzazione dell’amido, laminazione, estrusione e la curva di essiccazione che decide tutto.</p>
+      <div class="fichas">
+        <a class="ficha" href="/it/formulazione/farina-di-mais-precotta/">
+          <span class="tipo">Farine</span><h3>Farina di mais precotta</h3><p>Come si produce la farina di mais precotta: degerminazione, cottura, laminazione, essiccazione, macinazione e l’indice di assorbimento d’acqua che decide se l’impasto lega.</p>
+        </a>
+        <a class="ficha" href="/it/formulazione/pasta-secca-industriale/">
+          <span class="tipo">Pasta</span><h3>Pasta secca</h3><p>Produzione industriale di pasta secca: qualità della semola, idratazione, trafile in bronzo o teflon, e la curva di essiccazione che evita le cricche.</p>
+        </a>
+      </div>
+    </div>
+    
+    <div class="grupo-area rev">
+      <h3 class="grupo-titulo"><span aria-hidden="true">♻️</span> Sottoprodotti e rendering</h3>
+      <p class="grupo-texto">Farina di carne e ossa, farina di sangue, sego. Quello che la maggior parte degli stabilimenti paga per smaltire e che può reggere una seconda linea di business.</p>
+      <div class="fichas">
+        <a class="ficha" href="/it/formulazione/farina-di-carne-e-ossa/">
+          <span class="tipo">Sottoprodotti</span><h3>Farina di carne e ossa</h3><p>Rendering dei sottoprodotti carnei: sterilizzazione a 133 °C, pressatura, macinazione, composizione tipica di proteina, calcio e fosforo, e controllo Salmonella.</p>
+        </a>
+      </div>
+    </div>
+    
+    <div class="grupo-area rev">
+      <h3 class="grupo-titulo"><span aria-hidden="true">🐕</span> Mangimi e petfood</h3>
+      <p class="grupo-texto">Crocchette estruse per cane e gatto, e mangimi per avicoli, suini e bovini. Formulazione a minimo costo rispettando il profilo nutrizionale.</p>
+      <div class="fichas">
+        <a class="ficha" href="/it/formulazione/crocchette-estruse/">
+          <span class="tipo">Petfood</span><h3>Crocchette per cani e gatti</h3><p>Come si produce l’alimento estruso per cani e gatti: formulazione, parametri di estrusione, essiccazione, rivestimento e profili nutrizionali di riferimento.</p>
+        </a>
+      </div>
     </div>
     <div class="aviso rev" style="margin-top:32px"><b>Sui dosaggi:</b> gli intervalli pubblicati sono quelli della pratica industriale corrente. I limiti legali degli additivi li fissa ogni paese e negli ultimi anni sono cambiati: prima di formulare per la vendita, verifica la norma in vigore presso la tua autorità sanitaria.</div>
   </div>
@@ -414,7 +483,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
   <path d="M16 6.4c-4.1 0-7.1 2.9-7.1 6.9 0 3 1.7 5 3.6 6.6 1.6 1.4 2.4 2.4 2.4 4v1.7h2.2v-1.7c0-1.6.8-2.6 2.4-4 1.9-1.6 3.6-3.6 3.6-6.6 0-4-3-6.9-7.1-6.9Zm0 2.5c2.6 0 4.6 1.8 4.6 4.4 0 1.9-1.1 3.2-2.7 4.6-.8.7-1.5 1.4-1.9 2.2-.4-.8-1.1-1.5-1.9-2.2-1.6-1.4-2.7-2.7-2.7-4.6 0-2.6 2-4.4 4.6-4.4Z" fill="#faf6f0"/>
   <circle cx="13.4" cy="13" r="1.35" fill="#c9962b"/><circle cx="18.4" cy="14.6" r="1.05" fill="#c9962b"/>
 </svg><span><b>Carnotecnia</b><span>Tecnologia delle carni</span></span></a>
-        <p style="margin:0;max-width:34ch">Produciamo salumi e carni frollate in Venezuela e affianchiamo stabilimenti alimentari di qualsiasi paese: formulazione, resa, shelf life, export e dossier sanitario.</p>
+        <p style="margin:0;max-width:34ch">Dal salume alla crocchetta del cane: carni, salse, farine precotte, pasta, valorizzazione dei sottoprodotti e mangimistica. Produciamo in Venezuela e affianchiamo stabilimenti ovunque.</p>
       </div>
       <div>
         <h4>Cosa facciamo</h4>
