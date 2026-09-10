@@ -12,6 +12,7 @@
 <link rel="alternate" hreflang="fr" href="https://carnotecnia.com/fr/usine/">
 <link rel="alternate" hreflang="it" href="https://carnotecnia.com/it/stabilimento/">
 <link rel="alternate" hreflang="ar" href="https://carnotecnia.com/ar/masna/">
+<link rel="alternate" hreflang="pl" href="https://carnotecnia.com/pl/zaklad/">
 <link rel="alternate" hreflang="x-default" href="https://carnotecnia.com/en/factory/">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="theme-color" content="#14110f">
@@ -270,6 +271,17 @@ text-transform:uppercase;color:var(--curado);
 .grupo-area{margin-bottom:46px}
 .grupo-titulo{font-size:1.28rem;margin-bottom:7px;display:flex;align-items:center;gap:10px}
 .grupo-texto{color:var(--gris);font-size:15px;max-width:70ch;margin-bottom:20px}
+.perfiles{list-style:none;padding:0;margin:34px 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:11px}
+.perfiles li{
+background:var(--carbon-2);border:1px solid var(--linea);border-radius:10px;
+padding:13px 17px;font-size:14.6px;color:#cfc6bd;
+}
+.dos-cta{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.cta-mini{
+background:var(--crema-2);border:1px solid var(--linea-clara);border-radius:var(--r);padding:32px 28px;
+}
+.cta-mini h3{font-size:1.2rem;margin-bottom:11px;letter-spacing:-.025em}
+.cta-mini p{color:var(--gris);font-size:15px;margin-bottom:20px}
 .consulta{max-width:880px;margin-inline:auto}
 .campos{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
 .consulta label{display:block;font-size:13px;font-weight:650;letter-spacing:.02em;color:var(--paprika)}
@@ -296,6 +308,8 @@ outline:none;border-color:var(--curado-vivo);background:var(--carbon-3);
 .hero-grid{grid-template-columns:1fr}
 .lineas{grid-template-columns:1fr}
 .areas{grid-template-columns:1fr 1fr}
+.perfiles{grid-template-columns:1fr 1fr}
+.dos-cta{grid-template-columns:1fr}
 .servicios{grid-template-columns:1fr}
 .ftr-grid{grid-template-columns:1fr 1fr}
 }
@@ -303,6 +317,7 @@ outline:none;border-color:var(--curado-vivo);background:var(--carbon-3);
 body{font-size:16.3px}
 .campos{grid-template-columns:1fr}
 .areas{grid-template-columns:1fr}
+.perfiles{grid-template-columns:1fr}
 .burger{display:block}
 .nav{
 position:fixed;inset:66px 0 auto;background:var(--carbon);flex-direction:column;
@@ -326,7 +341,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
 [dir="rtl"] .linea a.mas:hover span{transform:scaleX(-1) translateX(5px)}
 [dir="rtl"] th,[dir="rtl"] td{text-align:right}</style>
 <link rel="icon" href="/assets/img/logo.svg" type="image/svg+xml">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Carnotecnia","url":"https://carnotecnia.com","logo":"https://carnotecnia.com/assets/img/logo.svg","description":"Sausages, dry-aged meat, sauces, precooked flours, pasta, meat and bone meal and pet food. Manufacturing in Venezuela and consulting worldwide.","address":{"@type":"PostalAddress","addressLocality":"Maracaibo","addressRegion":"Zulia","addressCountry":"VE"},"contactPoint":[{"@type":"ContactPoint","telephone":"+573223623930","contactType":"sales","email":"direccion@carnotecnia.com","areaServed":"Worldwide","availableLanguage":["es","en","pt","fr","it","ar"]}],"knowsAbout":["Meat technology","Sausage formulation","Dry-aged meat","HACCP","Halal production","Food technology"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Carnotecnia","url":"https://carnotecnia.com","logo":"https://carnotecnia.com/assets/img/logo.svg","description":"Sausages, dry-aged meat, sauces, precooked flours, pasta, meat and bone meal and pet food. Manufacturing in Venezuela and consulting worldwide.","address":{"@type":"PostalAddress","addressLocality":"Maracaibo","addressRegion":"Zulia","addressCountry":"VE"},"contactPoint":[{"@type":"ContactPoint","telephone":"+573223623930","contactType":"sales","email":"direccion@carnotecnia.com","areaServed":"Worldwide","availableLanguage":["es","en","pt","fr","it","ar","pl"]}],"knowsAbout":["Meat technology","Sausage formulation","Dry-aged meat","HACCP","Halal production","Food technology"]}</script>
 <script defer src="/assets/js/main.js?v=10c84d56"></script>
 </head>
 <body>
@@ -349,6 +364,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
       <a href="/en/academy/">Academy</a>
       <a href="/en/services/">Services</a>
       <a href="/en/formulation/">Formulation</a>
+      <a href="/en/workforce/">Workforce</a>
       <a class="btn btn-p btn-sm" href="https://wa.me/573223623930?text=Hello.%20I%20am%20writing%20from%20carnotecnia.com%20%E2%80%94%20I%20would%20like%20to%20ask%20about%20meat%20technology%20consulting." rel="noopener">Talk to us</a>
     </nav>
   </div>
@@ -462,7 +478,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
         </ul>
       </div>
     </div>
-    <nav class="idiomas" aria-label="Language"><a href="/fabrica/" hreflang="es" lang="es">Español</a><a href="/en/factory/" hreflang="en" lang="en" aria-current="true">English</a><a href="/pt/fabrica/" hreflang="pt" lang="pt">Português</a><a href="/fr/usine/" hreflang="fr" lang="fr">Français</a><a href="/it/stabilimento/" hreflang="it" lang="it">Italiano</a><a href="/ar/masna/" hreflang="ar" lang="ar">العربية</a></nav>
+    <nav class="idiomas" aria-label="Language"><a href="/fabrica/" hreflang="es" lang="es">Español</a><a href="/en/factory/" hreflang="en" lang="en" aria-current="true">English</a><a href="/pt/fabrica/" hreflang="pt" lang="pt">Português</a><a href="/fr/usine/" hreflang="fr" lang="fr">Français</a><a href="/it/stabilimento/" hreflang="it" lang="it">Italiano</a><a href="/ar/masna/" hreflang="ar" lang="ar">العربية</a><a href="/pl/zaklad/" hreflang="pl" lang="pl">Polski</a></nav>
     <div class="ftr-legal">
       <span>© 2026 Carnotecnia · Tecnología cárnica aplicada</span>
       <span>Published formulations are indicative: additive limits are set by each country.</span>

@@ -291,6 +291,19 @@ td b{color:var(--tinta)}
 .grupo-titulo{font-size:1.28rem;margin-bottom:7px;display:flex;align-items:center;gap:10px}
 .grupo-texto{color:var(--gris);font-size:15px;max-width:70ch;margin-bottom:20px}
 
+/* --------------------------------------------------- perfiles y doble CTA */
+.perfiles{list-style:none;padding:0;margin:34px 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:11px}
+.perfiles li{
+  background:var(--carbon-2);border:1px solid var(--linea);border-radius:10px;
+  padding:13px 17px;font-size:14.6px;color:#cfc6bd;
+}
+.dos-cta{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.cta-mini{
+  background:var(--crema-2);border:1px solid var(--linea-clara);border-radius:var(--r);padding:32px 28px;
+}
+.cta-mini h3{font-size:1.2rem;margin-bottom:11px;letter-spacing:-.025em}
+.cta-mini p{color:var(--gris);font-size:15px;margin-bottom:20px}
+
 /* -------------------------------------------------------------- formulario */
 .consulta{max-width:880px;margin-inline:auto}
 .campos{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
@@ -322,6 +335,8 @@ td b{color:var(--tinta)}
   .hero-grid{grid-template-columns:1fr}
   .lineas{grid-template-columns:1fr}
   .areas{grid-template-columns:1fr 1fr}
+  .perfiles{grid-template-columns:1fr 1fr}
+  .dos-cta{grid-template-columns:1fr}
   .servicios{grid-template-columns:1fr}
   .ftr-grid{grid-template-columns:1fr 1fr}
 }
@@ -329,6 +344,7 @@ td b{color:var(--tinta)}
   body{font-size:16.3px}
   .campos{grid-template-columns:1fr}
   .areas{grid-template-columns:1fr}
+  .perfiles{grid-template-columns:1fr}
   .burger{display:block}
   .nav{
     position:fixed;inset:66px 0 auto;background:var(--carbon);flex-direction:column;

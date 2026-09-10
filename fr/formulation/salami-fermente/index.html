@@ -12,6 +12,7 @@
 <link rel="alternate" hreflang="fr" href="https://carnotecnia.com/fr/formulation/salami-fermente/">
 <link rel="alternate" hreflang="it" href="https://carnotecnia.com/it/formulazione/salame-fermentato/">
 <link rel="alternate" hreflang="ar" href="https://carnotecnia.com/ar/tarkib/salami-mukhammar/">
+<link rel="alternate" hreflang="pl" href="https://carnotecnia.com/pl/receptury/salami-fermentowane/">
 <link rel="alternate" hreflang="x-default" href="https://carnotecnia.com/en/formulation/fermented-salami/">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="theme-color" content="#14110f">
@@ -270,6 +271,17 @@ text-transform:uppercase;color:var(--curado);
 .grupo-area{margin-bottom:46px}
 .grupo-titulo{font-size:1.28rem;margin-bottom:7px;display:flex;align-items:center;gap:10px}
 .grupo-texto{color:var(--gris);font-size:15px;max-width:70ch;margin-bottom:20px}
+.perfiles{list-style:none;padding:0;margin:34px 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:11px}
+.perfiles li{
+background:var(--carbon-2);border:1px solid var(--linea);border-radius:10px;
+padding:13px 17px;font-size:14.6px;color:#cfc6bd;
+}
+.dos-cta{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.cta-mini{
+background:var(--crema-2);border:1px solid var(--linea-clara);border-radius:var(--r);padding:32px 28px;
+}
+.cta-mini h3{font-size:1.2rem;margin-bottom:11px;letter-spacing:-.025em}
+.cta-mini p{color:var(--gris);font-size:15px;margin-bottom:20px}
 .consulta{max-width:880px;margin-inline:auto}
 .campos{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
 .consulta label{display:block;font-size:13px;font-weight:650;letter-spacing:.02em;color:var(--paprika)}
@@ -296,6 +308,8 @@ outline:none;border-color:var(--curado-vivo);background:var(--carbon-3);
 .hero-grid{grid-template-columns:1fr}
 .lineas{grid-template-columns:1fr}
 .areas{grid-template-columns:1fr 1fr}
+.perfiles{grid-template-columns:1fr 1fr}
+.dos-cta{grid-template-columns:1fr}
 .servicios{grid-template-columns:1fr}
 .ftr-grid{grid-template-columns:1fr 1fr}
 }
@@ -303,6 +317,7 @@ outline:none;border-color:var(--curado-vivo);background:var(--carbon-3);
 body{font-size:16.3px}
 .campos{grid-template-columns:1fr}
 .areas{grid-template-columns:1fr}
+.perfiles{grid-template-columns:1fr}
 .burger{display:block}
 .nav{
 position:fixed;inset:66px 0 auto;background:var(--carbon);flex-direction:column;
@@ -326,7 +341,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
 [dir="rtl"] .linea a.mas:hover span{transform:scaleX(-1) translateX(5px)}
 [dir="rtl"] th,[dir="rtl"] td{text-align:right}</style>
 <link rel="icon" href="/assets/img/logo.svg" type="image/svg+xml">
-<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"Carnotecnia","url":"https://carnotecnia.com","logo":"https://carnotecnia.com/assets/img/logo.svg","description":"Charcuterie, viandes maturées, sauces, farines précuites, pâtes, farine de viande et d’os et petfood. Fabrication au Venezuela et conseil international.","address":{"@type":"PostalAddress","addressLocality":"Maracaibo","addressRegion":"Zulia","addressCountry":"VE"},"contactPoint":[{"@type":"ContactPoint","telephone":"+573223623930","contactType":"sales","email":"direccion@carnotecnia.com","areaServed":"Worldwide","availableLanguage":["es","en","pt","fr","it","ar"]}],"knowsAbout":["Meat technology","Sausage formulation","Dry-aged meat","HACCP","Halal production","Food technology"]},{"@context":"https://schema.org","@type":"TechArticle","headline":"Salami : fermentation, ferments et séchage","description":"Fermentation dirigée du salami : ferments, chute du pH, courbe de température et d’humidité, perte cible et contrôle de l’activité de l’eau.","url":"https://carnotecnia.com/fr/formulation/salami-fermente/","inLanguage":"fr","author":{"@type":"Organization","name":"Carnotecnia"},"publisher":{"@type":"Organization","name":"Carnotecnia","logo":{"@type":"ImageObject","url":"https://carnotecnia.com/assets/img/logo.svg"}}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Peut-on faire du salami sans ferment ?","acceptedAnswer":{"@type":"Answer","text":"Oui, selon la flore naturelle de la viande, et c’est ainsi qu’on a fait pendant des siècles. Mais c’est une loterie : si l’acidification tarde, des pathogènes comme Staphylococcus aureus disposent d’une fenêtre. À l’échelle industrielle, le ferment dirigé n’est pas un luxe, c’est la maîtrise du risque."}},{"@type":"Question","name":"Pourquoi une perte aussi élevée ?","acceptedAnswer":{"@type":"Answer","text":"Parce que la perte, c’est le produit : perdre 35 % d’eau est ce qui amène l’aw sous 0,90 et rend le salami stable sans réfrigération. Un salami qui n’a perdu que 15 % n’est pas un salami jeune, c’est de la viande crue dangereuse."}},{"@type":"Question","name":"Et si le séchoir n’a pas de contrôle d’humidité ?","acceptedAnswer":{"@type":"Answer","text":"Alors il n’y a pas de produits secs. L’air sec provoque le croûtage et l’air humide la moisissure et la putréfaction. Avant d’acheter un poussoir, on achète le contrôle d’humidité."}}]}]</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"Carnotecnia","url":"https://carnotecnia.com","logo":"https://carnotecnia.com/assets/img/logo.svg","description":"Charcuterie, viandes maturées, sauces, farines précuites, pâtes, farine de viande et d’os et petfood. Fabrication au Venezuela et conseil international.","address":{"@type":"PostalAddress","addressLocality":"Maracaibo","addressRegion":"Zulia","addressCountry":"VE"},"contactPoint":[{"@type":"ContactPoint","telephone":"+573223623930","contactType":"sales","email":"direccion@carnotecnia.com","areaServed":"Worldwide","availableLanguage":["es","en","pt","fr","it","ar","pl"]}],"knowsAbout":["Meat technology","Sausage formulation","Dry-aged meat","HACCP","Halal production","Food technology"]},{"@context":"https://schema.org","@type":"TechArticle","headline":"Salami : fermentation, ferments et séchage","description":"Fermentation dirigée du salami : ferments, chute du pH, courbe de température et d’humidité, perte cible et contrôle de l’activité de l’eau.","url":"https://carnotecnia.com/fr/formulation/salami-fermente/","inLanguage":"fr","author":{"@type":"Organization","name":"Carnotecnia"},"publisher":{"@type":"Organization","name":"Carnotecnia","logo":{"@type":"ImageObject","url":"https://carnotecnia.com/assets/img/logo.svg"}}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Peut-on faire du salami sans ferment ?","acceptedAnswer":{"@type":"Answer","text":"Oui, selon la flore naturelle de la viande, et c’est ainsi qu’on a fait pendant des siècles. Mais c’est une loterie : si l’acidification tarde, des pathogènes comme Staphylococcus aureus disposent d’une fenêtre. À l’échelle industrielle, le ferment dirigé n’est pas un luxe, c’est la maîtrise du risque."}},{"@type":"Question","name":"Pourquoi une perte aussi élevée ?","acceptedAnswer":{"@type":"Answer","text":"Parce que la perte, c’est le produit : perdre 35 % d’eau est ce qui amène l’aw sous 0,90 et rend le salami stable sans réfrigération. Un salami qui n’a perdu que 15 % n’est pas un salami jeune, c’est de la viande crue dangereuse."}},{"@type":"Question","name":"Et si le séchoir n’a pas de contrôle d’humidité ?","acceptedAnswer":{"@type":"Answer","text":"Alors il n’y a pas de produits secs. L’air sec provoque le croûtage et l’air humide la moisissure et la putréfaction. Avant d’acheter un poussoir, on achète le contrôle d’humidité."}}]}]</script>
 <script defer src="/assets/js/main.js?v=10c84d56"></script>
 </head>
 <body>
@@ -349,6 +364,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
       <a href="/fr/academie/">Académie</a>
       <a href="/fr/services/">Services</a>
       <a href="/fr/formulation/">Formulation</a>
+      <a href="/fr/main-doeuvre/">Main-d’œuvre</a>
       <a class="btn btn-p btn-sm" href="https://wa.me/573223623930?text=Bonjour.%20Je%20vous%20%C3%A9cris%20depuis%20carnotecnia.com%2C%20je%20souhaite%20une%20consultation%20en%20technologie%20des%20viandes." rel="noopener">Nous écrire</a>
     </nav>
   </div>
@@ -479,7 +495,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
         </ul>
       </div>
     </div>
-    <nav class="idiomas" aria-label="Langue"><a href="/formulacion/salami-fermentado/" hreflang="es" lang="es">Español</a><a href="/en/formulation/fermented-salami/" hreflang="en" lang="en">English</a><a href="/pt/formulacao/salame-fermentado/" hreflang="pt" lang="pt">Português</a><a href="/fr/formulation/salami-fermente/" hreflang="fr" lang="fr" aria-current="true">Français</a><a href="/it/formulazione/salame-fermentato/" hreflang="it" lang="it">Italiano</a><a href="/ar/tarkib/salami-mukhammar/" hreflang="ar" lang="ar">العربية</a></nav>
+    <nav class="idiomas" aria-label="Langue"><a href="/formulacion/salami-fermentado/" hreflang="es" lang="es">Español</a><a href="/en/formulation/fermented-salami/" hreflang="en" lang="en">English</a><a href="/pt/formulacao/salame-fermentado/" hreflang="pt" lang="pt">Português</a><a href="/fr/formulation/salami-fermente/" hreflang="fr" lang="fr" aria-current="true">Français</a><a href="/it/formulazione/salame-fermentato/" hreflang="it" lang="it">Italiano</a><a href="/ar/tarkib/salami-mukhammar/" hreflang="ar" lang="ar">العربية</a><a href="/pl/receptury/salami-fermentowane/" hreflang="pl" lang="pl">Polski</a></nav>
     <div class="ftr-legal">
       <span>© 2026 Carnotecnia · Tecnología cárnica aplicada</span>
       <span>Les formulations publiées sont indicatives : chaque pays fixe ses propres limites d’additifs.</span>

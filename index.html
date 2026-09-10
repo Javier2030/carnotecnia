@@ -12,6 +12,7 @@
 <link rel="alternate" hreflang="fr" href="https://carnotecnia.com/fr/">
 <link rel="alternate" hreflang="it" href="https://carnotecnia.com/it/">
 <link rel="alternate" hreflang="ar" href="https://carnotecnia.com/ar/">
+<link rel="alternate" hreflang="pl" href="https://carnotecnia.com/pl/">
 <link rel="alternate" hreflang="x-default" href="https://carnotecnia.com/en/">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="theme-color" content="#14110f">
@@ -270,6 +271,17 @@ text-transform:uppercase;color:var(--curado);
 .grupo-area{margin-bottom:46px}
 .grupo-titulo{font-size:1.28rem;margin-bottom:7px;display:flex;align-items:center;gap:10px}
 .grupo-texto{color:var(--gris);font-size:15px;max-width:70ch;margin-bottom:20px}
+.perfiles{list-style:none;padding:0;margin:34px 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:11px}
+.perfiles li{
+background:var(--carbon-2);border:1px solid var(--linea);border-radius:10px;
+padding:13px 17px;font-size:14.6px;color:#cfc6bd;
+}
+.dos-cta{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.cta-mini{
+background:var(--crema-2);border:1px solid var(--linea-clara);border-radius:var(--r);padding:32px 28px;
+}
+.cta-mini h3{font-size:1.2rem;margin-bottom:11px;letter-spacing:-.025em}
+.cta-mini p{color:var(--gris);font-size:15px;margin-bottom:20px}
 .consulta{max-width:880px;margin-inline:auto}
 .campos{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
 .consulta label{display:block;font-size:13px;font-weight:650;letter-spacing:.02em;color:var(--paprika)}
@@ -296,6 +308,8 @@ outline:none;border-color:var(--curado-vivo);background:var(--carbon-3);
 .hero-grid{grid-template-columns:1fr}
 .lineas{grid-template-columns:1fr}
 .areas{grid-template-columns:1fr 1fr}
+.perfiles{grid-template-columns:1fr 1fr}
+.dos-cta{grid-template-columns:1fr}
 .servicios{grid-template-columns:1fr}
 .ftr-grid{grid-template-columns:1fr 1fr}
 }
@@ -303,6 +317,7 @@ outline:none;border-color:var(--curado-vivo);background:var(--carbon-3);
 body{font-size:16.3px}
 .campos{grid-template-columns:1fr}
 .areas{grid-template-columns:1fr}
+.perfiles{grid-template-columns:1fr}
 .burger{display:block}
 .nav{
 position:fixed;inset:66px 0 auto;background:var(--carbon);flex-direction:column;
@@ -326,7 +341,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
 [dir="rtl"] .linea a.mas:hover span{transform:scaleX(-1) translateX(5px)}
 [dir="rtl"] th,[dir="rtl"] td{text-align:right}</style>
 <link rel="icon" href="/assets/img/logo.svg" type="image/svg+xml">
-<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"Carnotecnia","url":"https://carnotecnia.com","logo":"https://carnotecnia.com/assets/img/logo.svg","description":"Embutidos, carnes maduradas, salsas, harinas precocidas, pastas, harina de hueso y alimento para mascotas. Fabricación en Venezuela y asesoría internacional.","address":{"@type":"PostalAddress","addressLocality":"Maracaibo","addressRegion":"Zulia","addressCountry":"VE"},"contactPoint":[{"@type":"ContactPoint","telephone":"+573223623930","contactType":"sales","email":"direccion@carnotecnia.com","areaServed":"Worldwide","availableLanguage":["es","en","pt","fr","it","ar"]}],"knowsAbout":["Meat technology","Sausage formulation","Dry-aged meat","HACCP","Halal production","Food technology"]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué es exactamente la carnotecnia?","acceptedAnswer":{"@type":"Answer","text":"Es la tecnología de la carne: la disciplina que va de la res en pie al producto empacado, pasando por sacrificio, maduración, formulación, tratamiento térmico y vida útil. Cuando alguien dice «tecnología de alimentos aplicada a cárnicos», está diciendo carnotecnia."}},{"@type":"Question","name":"¿Atienden fuera de Venezuela?","acceptedAnswer":{"@type":"Answer","text":"Sí. La fábrica y la venta al mayor son venezolanas, con base en Maracaibo, pero la consultoría y la formación son remotas y se prestan en cualquier país. Trabajamos en español, inglés, portugués, francés, italiano y árabe, y nos ajustamos a su huso horario."}},{"@type":"Question","name":"¿Puedo consultar una fórmula puntual sin contratar un proyecto?","acceptedAnswer":{"@type":"Answer","text":"Sí. Una consulta concreta —por qué se corta una emulsión, qué dosis de nitrito corresponde, por qué no baja el pH— se responde por correo o videollamada corta. Los proyectos son para lo que no cabe en una respuesta."}},{"@type":"Question","name":"¿Puedo montar una planta de embutidos pequeña?","acceptedAnswer":{"@type":"Answer","text":"Sí, y es el error más común pretender lo contrario. Una línea de frescos y escaldados arranca con molino, mezcladora, embutidora y una cámara: lo que decide si funciona no es el tamaño del equipo, es el control de temperatura de la masa y la disciplina de formulación."}},{"@type":"Question","name":"¿Entregan recetas?","acceptedAnswer":{"@type":"Answer","text":"Entregamos formulaciones con el porqué de cada componente y su dosis legal, que es lo único que sirve para producir. Una lista de ingredientes sin curva de proceso ni control de temperatura no reproduce nada."}},{"@type":"Question","name":"¿Cuánto tarda desarrollar un producto nuevo?","acceptedAnswer":{"@type":"Answer","text":"Un producto fresco o escaldado se cierra en semanas. Un crudo curado necesita el tiempo de maduración completo por ensayo, así que el reloj lo pone el producto: entre 21 y 90 días según calibre y tipo."}},{"@type":"Question","name":"¿Qué hace falta para vender a hoteles y cadenas?","acceptedAnswer":{"@type":"Answer","text":"Ficha técnica por producto, vida útil validada, registro sanitario vigente y constancia de lote. Sin esos cuatro papeles la negociación no empieza, por bueno que esté el producto."}}]}]</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"Carnotecnia","url":"https://carnotecnia.com","logo":"https://carnotecnia.com/assets/img/logo.svg","description":"Embutidos, carnes maduradas, salsas, harinas precocidas, pastas, harina de hueso y alimento para mascotas. Fabricación en Venezuela y asesoría internacional.","address":{"@type":"PostalAddress","addressLocality":"Maracaibo","addressRegion":"Zulia","addressCountry":"VE"},"contactPoint":[{"@type":"ContactPoint","telephone":"+573223623930","contactType":"sales","email":"direccion@carnotecnia.com","areaServed":"Worldwide","availableLanguage":["es","en","pt","fr","it","ar","pl"]}],"knowsAbout":["Meat technology","Sausage formulation","Dry-aged meat","HACCP","Halal production","Food technology"]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué es exactamente la carnotecnia?","acceptedAnswer":{"@type":"Answer","text":"Es la tecnología de la carne: la disciplina que va de la res en pie al producto empacado, pasando por sacrificio, maduración, formulación, tratamiento térmico y vida útil. Cuando alguien dice «tecnología de alimentos aplicada a cárnicos», está diciendo carnotecnia."}},{"@type":"Question","name":"¿Atienden fuera de Venezuela?","acceptedAnswer":{"@type":"Answer","text":"Sí. La fábrica y la venta al mayor son venezolanas, con base en Maracaibo, pero la consultoría y la formación son remotas y se prestan en cualquier país. Trabajamos en español, inglés, portugués, francés, italiano y árabe, y nos ajustamos a su huso horario."}},{"@type":"Question","name":"¿Puedo consultar una fórmula puntual sin contratar un proyecto?","acceptedAnswer":{"@type":"Answer","text":"Sí. Una consulta concreta —por qué se corta una emulsión, qué dosis de nitrito corresponde, por qué no baja el pH— se responde por correo o videollamada corta. Los proyectos son para lo que no cabe en una respuesta."}},{"@type":"Question","name":"¿Puedo montar una planta de embutidos pequeña?","acceptedAnswer":{"@type":"Answer","text":"Sí, y es el error más común pretender lo contrario. Una línea de frescos y escaldados arranca con molino, mezcladora, embutidora y una cámara: lo que decide si funciona no es el tamaño del equipo, es el control de temperatura de la masa y la disciplina de formulación."}},{"@type":"Question","name":"¿Entregan recetas?","acceptedAnswer":{"@type":"Answer","text":"Entregamos formulaciones con el porqué de cada componente y su dosis legal, que es lo único que sirve para producir. Una lista de ingredientes sin curva de proceso ni control de temperatura no reproduce nada."}},{"@type":"Question","name":"¿Cuánto tarda desarrollar un producto nuevo?","acceptedAnswer":{"@type":"Answer","text":"Un producto fresco o escaldado se cierra en semanas. Un crudo curado necesita el tiempo de maduración completo por ensayo, así que el reloj lo pone el producto: entre 21 y 90 días según calibre y tipo."}},{"@type":"Question","name":"¿Qué hace falta para vender a hoteles y cadenas?","acceptedAnswer":{"@type":"Answer","text":"Ficha técnica por producto, vida útil validada, registro sanitario vigente y constancia de lote. Sin esos cuatro papeles la negociación no empieza, por bueno que esté el producto."}}]}]</script>
 <script defer src="/assets/js/main.js?v=10c84d56"></script>
 </head>
 <body>
@@ -349,6 +364,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
       <a href="/academia/">Academia</a>
       <a href="/servicios/">Servicios</a>
       <a href="/formulacion/">Formulación</a>
+      <a href="/talento/">Talento</a>
       <a class="btn btn-p btn-sm" href="https://wa.me/573223623930?text=Buen%20d%C3%ADa.%20Escribo%20desde%20carnotecnia.com%2C%20quiero%20consultar%20por%20asesor%C3%ADa%20en%20c%C3%A1rnicos." rel="noopener">Hablemos</a>
     </nav>
   </div>
@@ -647,7 +663,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
         </ul>
       </div>
     </div>
-    <nav class="idiomas" aria-label="Idioma"><a href="/" hreflang="es" lang="es" aria-current="true">Español</a><a href="/en/" hreflang="en" lang="en">English</a><a href="/pt/" hreflang="pt" lang="pt">Português</a><a href="/fr/" hreflang="fr" lang="fr">Français</a><a href="/it/" hreflang="it" lang="it">Italiano</a><a href="/ar/" hreflang="ar" lang="ar">العربية</a></nav>
+    <nav class="idiomas" aria-label="Idioma"><a href="/" hreflang="es" lang="es" aria-current="true">Español</a><a href="/en/" hreflang="en" lang="en">English</a><a href="/pt/" hreflang="pt" lang="pt">Português</a><a href="/fr/" hreflang="fr" lang="fr">Français</a><a href="/it/" hreflang="it" lang="it">Italiano</a><a href="/ar/" hreflang="ar" lang="ar">العربية</a><a href="/pl/" hreflang="pl" lang="pl">Polski</a></nav>
     <div class="ftr-legal">
       <span>© 2026 Carnotecnia · Tecnología cárnica aplicada</span>
       <span>Las formulaciones publicadas son orientativas: cada país fija sus propios límites de aditivos.</span>
