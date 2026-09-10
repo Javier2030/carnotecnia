@@ -6,10 +6,17 @@
 <title>Chorizo español curado: pimentón, curva y merma</title>
 <meta name="description" content="Formulación del chorizo curado tipo español: proporción de pimentón, sal, curva de secado, merma objetivo y diferencias con el salami.">
 <link rel="canonical" href="https://carnotecnia.com/formulacion/chorizo-espanol-curado/">
+<link rel="alternate" hreflang="es" href="https://carnotecnia.com/formulacion/chorizo-espanol-curado/">
+<link rel="alternate" hreflang="en" href="https://carnotecnia.com/en/formulation/spanish-cured-chorizo/">
+<link rel="alternate" hreflang="pt" href="https://carnotecnia.com/pt/formulacao/chourico-espanhol-curado/">
+<link rel="alternate" hreflang="fr" href="https://carnotecnia.com/fr/formulation/chorizo-espagnol-sec/">
+<link rel="alternate" hreflang="it" href="https://carnotecnia.com/it/formulazione/chorizo-spagnolo-stagionato/">
+<link rel="alternate" hreflang="ar" href="https://carnotecnia.com/ar/tarkib/shorizo-isbani-mujaffaf/">
+<link rel="alternate" hreflang="x-default" href="https://carnotecnia.com/en/formulation/spanish-cured-chorizo/">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="theme-color" content="#14110f">
 <meta property="og:type" content="website">
-<meta property="og:locale" content="es_ES">
+<meta property="og:locale" content="es">
 <meta property="og:site_name" content="Carnotecnia">
 <meta property="og:title" content="Chorizo español curado: pimentón, curva y merma">
 <meta property="og:description" content="Formulación del chorizo curado tipo español: proporción de pimentón, sal, curva de secado, merma objetivo y diferencias con el salami.">
@@ -224,6 +231,45 @@ border-radius:20px;padding:clamp(38px,6vw,62px);text-align:center;position:relat
 .ftr a:hover{color:var(--crema)}
 .ftr-legal{border-top:1px solid var(--linea);padding-top:22px;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-size:13px}
 .ftr .marca{color:var(--crema);margin-bottom:14px}
+.idiomas{
+display:flex;flex-wrap:wrap;gap:6px 0;align-items:center;justify-content:center;
+padding:22px 0 6px;border-top:1px solid var(--linea);margin-top:8px;
+}
+.idiomas a{
+text-decoration:none;font-size:13.4px;padding:5px 15px;border-radius:999px;
+color:#9d948d;transition:color .2s,background .2s;
+}
+.idiomas a:hover{color:var(--crema);background:rgba(250,246,240,.07)}
+.idiomas a[aria-current]{color:var(--crema);background:rgba(168,47,54,.28);font-weight:650}
+.serv-top{position:relative}
+.serv-top::before{
+content:"";position:absolute;inset-inline-start:0;top:0;bottom:0;width:3px;
+background:linear-gradient(180deg,var(--curado),var(--paprika));
+}
+.servicios.claros{background:var(--linea-clara);border-color:var(--linea-clara)}
+.servicios.claros .serv{background:#fff}
+.servicios.claros .serv:hover{background:var(--crema-2)}
+.servicios.claros .serv h3{color:var(--tinta)}
+.servicios.claros .serv p{color:var(--gris)}
+.servicios.claros .serv dt{color:var(--curado)}
+.servicios.claros .serv dd{color:#5b524c}
+.servicios.claros .serv .num{color:var(--curado)}
+.consulta{max-width:880px;margin-inline:auto}
+.campos{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.consulta label{display:block;font-size:13px;font-weight:650;letter-spacing:.02em;color:var(--paprika)}
+.consulta label.ancho{grid-column:1/-1}
+.consulta input,.consulta textarea{
+width:100%;margin-top:7px;padding:13px 15px;border-radius:10px;
+border:1px solid var(--linea);background:var(--carbon-2);color:var(--crema);
+font:inherit;font-size:15.4px;font-weight:400;transition:border-color .2s,background .2s;
+}
+.consulta input:focus,.consulta textarea:focus{
+outline:none;border-color:var(--curado-vivo);background:var(--carbon-3);
+}
+.consulta textarea{resize:vertical;min-height:120px}
+.consulta .btns{margin-top:20px}
+.form-nota{margin-top:16px;font-size:13.2px;color:var(--gris-claro)}
+.form-nota a{color:var(--paprika)}
 .js .rev{opacity:0;transform:translateY(22px)}
 .js .rev.visible{opacity:1;transform:none;transition:opacity .7s var(--ease),transform .7s var(--ease)}
 @media (prefers-reduced-motion:reduce){
@@ -238,6 +284,7 @@ border-radius:20px;padding:clamp(38px,6vw,62px);text-align:center;position:relat
 }
 @media (max-width:760px){
 body{font-size:16.3px}
+.campos{grid-template-columns:1fr}
 .burger{display:block}
 .nav{
 position:fixed;inset:66px 0 auto;background:var(--carbon);flex-direction:column;
@@ -250,10 +297,19 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
 .cifras{grid-template-columns:1fr}
 .ftr-grid{grid-template-columns:1fr}
 .hero{padding-top:56px}
-}</style>
+}
+[dir="rtl"] .eyebrow::before{order:2}
+[dir="rtl"] .linea li{padding-left:0;padding-right:20px}
+[dir="rtl"] .linea li::before{left:auto;right:0}
+[dir="rtl"] .aviso{border-left:0;border-right:3px solid var(--paprika);border-radius:10px 0 0 10px}
+[dir="rtl"] .prosa ul,[dir="rtl"] .prosa ol{padding-left:0;padding-right:20px}
+[dir="rtl"] .nav{margin-left:0;margin-right:auto}
+[dir="rtl"] .linea a.mas span{transform:scaleX(-1)}
+[dir="rtl"] .linea a.mas:hover span{transform:scaleX(-1) translateX(5px)}
+[dir="rtl"] th,[dir="rtl"] td{text-align:right}</style>
 <link rel="icon" href="/assets/img/logo.svg" type="image/svg+xml">
-<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"Carnotecnia","url":"https://carnotecnia.com","logo":"https://carnotecnia.com/assets/img/logo.svg","description":"Tecnología cárnica: fabricación de embutidos y carnes maduradas en Venezuela y asesoría internacional en tecnología de alimentos.","address":{"@type":"PostalAddress","addressLocality":"Maracaibo","addressRegion":"Zulia","addressCountry":"VE"},"contactPoint":[{"@type":"ContactPoint","telephone":"+573223623930","contactType":"sales","email":"direccion@carnotecnia.com","availableLanguage":"es"}],"knowsAbout":["Tecnología de la carne","Formulación de embutidos","Carnes maduradas","HACCP","Tecnología de alimentos"]},{"@context":"https://schema.org","@type":"TechArticle","headline":"Chorizo español curado: pimentón, curva y merma","description":"Formulación del chorizo curado tipo español: proporción de pimentón, sal, curva de secado, merma objetivo y diferencias con el salami.","url":"https://carnotecnia.com/formulacion/chorizo-espanol-curado/","inLanguage":"es","author":{"@type":"Organization","name":"Carnotecnia"},"publisher":{"@type":"Organization","name":"Carnotecnia","logo":{"@type":"ImageObject","url":"https://carnotecnia.com/assets/img/logo.svg"}}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué diferencia real hay con el salami?","acceptedAnswer":{"@type":"Answer","text":"El salami acidifica fuerte y rápido (pH < 5,3) y se apoya en la fermentación; el chorizo español acidifica poco y se apoya en el secado y en el pimentón. Son dos estrategias distintas para llegar a la misma estabilidad."}},{"@type":"Question","name":"¿Cuánto pimentón es demasiado?","acceptedAnswer":{"@type":"Answer","text":"Por encima del 3 % la masa se vuelve seca al tacto y difícil de embutir, y el sabor tapa la carne. El rango industrial cómodo es 2,2 – 2,5 %."}},{"@type":"Question","name":"¿Se puede curar sin cámara, colgado en un cuarto fresco?","acceptedAnswer":{"@type":"Answer","text":"Es como se hizo siempre en climas templados con invierno. En clima tropical no: la temperatura ambiente de Maracaibo está muy por encima de los 15 °C que exige el secado, y el producto se echa a perder antes de curar."}}]}]</script>
-<script defer src="/assets/js/main.js?v=12ad8a10"></script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"Carnotecnia","url":"https://carnotecnia.com","logo":"https://carnotecnia.com/assets/img/logo.svg","description":"Fabricación de embutidos y carnes maduradas en Maracaibo y asesoría internacional en tecnología de alimentos: formulación, rendimiento, vida útil y HACCP.","address":{"@type":"PostalAddress","addressLocality":"Maracaibo","addressRegion":"Zulia","addressCountry":"VE"},"contactPoint":[{"@type":"ContactPoint","telephone":"+573223623930","contactType":"sales","email":"direccion@carnotecnia.com","areaServed":"Worldwide","availableLanguage":["es","en","pt","fr","it","ar"]}],"knowsAbout":["Meat technology","Sausage formulation","Dry-aged meat","HACCP","Halal production","Food technology"]},{"@context":"https://schema.org","@type":"TechArticle","headline":"Chorizo español curado: pimentón, curva y merma","description":"Formulación del chorizo curado tipo español: proporción de pimentón, sal, curva de secado, merma objetivo y diferencias con el salami.","url":"https://carnotecnia.com/formulacion/chorizo-espanol-curado/","inLanguage":"es","author":{"@type":"Organization","name":"Carnotecnia"},"publisher":{"@type":"Organization","name":"Carnotecnia","logo":{"@type":"ImageObject","url":"https://carnotecnia.com/assets/img/logo.svg"}}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué diferencia real hay con el salami?","acceptedAnswer":{"@type":"Answer","text":"El salami acidifica fuerte y rápido (pH < 5,3) y se apoya en la fermentación; el chorizo español acidifica poco y se apoya en el secado y en el pimentón. Son dos estrategias distintas para llegar a la misma estabilidad."}},{"@type":"Question","name":"¿Cuánto pimentón es demasiado?","acceptedAnswer":{"@type":"Answer","text":"Por encima del 3 % la masa se vuelve seca al tacto y difícil de embutir, y el sabor tapa la carne. El rango industrial cómodo es 2,2 – 2,5 %."}},{"@type":"Question","name":"¿Se puede curar sin cámara, colgado en un cuarto fresco?","acceptedAnswer":{"@type":"Answer","text":"Es como se hizo siempre en climas templados con invierno. En clima tropical no: la temperatura ambiente de Maracaibo está muy por encima de los 15 °C que exige el secado, y el producto se echa a perder antes de curar."}}]}]</script>
+<script defer src="/assets/js/main.js?v=10c84d56"></script>
 </head>
 <body>
 <script>document.documentElement.className+=" js"</script>
@@ -268,12 +324,13 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
 </svg>
       <span><b>Carnotecnia</b><span>Tecnología cárnica</span></span>
     </a>
-    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    <button class="burger" id="burger" aria-label="Hablemos" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
     <nav class="nav" id="nav">
       <a href="/fabrica/">Fábrica y venta</a>
       <a href="/consultoria/">Consultoría</a>
       <a href="/academia/">Academia</a>
-      <a href="/formulacion/" aria-current="page">Formulación</a>
+      <a href="/servicios/">Servicios</a>
+      <a href="/formulacion/">Formulación</a>
       <a class="btn btn-p btn-sm" href="https://wa.me/573223623930?text=Buen%20d%C3%ADa.%20Escribo%20desde%20carnotecnia.com%2C%20quiero%20consultar%20por%20asesor%C3%ADa%20en%20c%C3%A1rnicos." rel="noopener">Hablemos</a>
     </nav>
   </div>
@@ -281,7 +338,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
 
 <main>
 
-<div class="wrap"><nav class="ruta" aria-label="Ruta"><a href="/">Inicio</a> › <a href="/formulacion/">Formulación</a> › <span>Chorizo español</span></nav></div>
+<div class="wrap"><nav class="ruta" aria-label="Inicio"><a href="/">Inicio</a> › <a href="/formulacion/">Formulación</a> › <span>Chorizo español</span></nav></div>
 <section class="seccion">
   <div class="wrap">
     <div class="cab rev" style="max-width:74ch">
@@ -298,6 +355,8 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
         <tbody><tr><td><b>Carne de cerdo (magro de paleta)</b></td><td>70 – 75 kg</td><td>Grano medio, 6 – 8 mm.</td></tr><tr><td><b>Tocino dorsal</b></td><td>25 – 30 kg</td><td>En dado o molido según estilo regional.</td></tr><tr><td><b>Pimentón dulce</b></td><td>2,0 – 2,5 kg</td><td>Es la firma del producto. Su capsantina protege la grasa de la oxidación.</td></tr><tr><td><b>Pimentón picante</b></td><td>0,2 – 0,8 kg</td><td>Según mercado.</td></tr><tr><td><b>Sal común</b></td><td>2,4 – 2,6 kg</td><td></td></tr><tr><td><b>Sal de cura</b></td><td>0,25 kg</td><td></td></tr><tr><td><b>Ajo</b></td><td>0,4 – 0,6 kg</td><td></td></tr><tr><td><b>Dextrosa</b></td><td>0,3 – 0,5 kg</td><td>Menos que en salami: se busca menos acidez y más sabor a curado.</td></tr><tr><td><b>Vino blanco</b></td><td>1 – 2 kg</td><td>Tradicional y funcional: aporta aroma y algo de acidez.</td></tr></tbody>
       </table>
     </div>
+      
+      
     </div>
   </div>
 </section>
@@ -324,8 +383,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
 
 <section class="seccion">
   <div class="wrap">
-    <div class="cab rev"><span class="eyebrow">Diagnóstico</span><h2>Qué salió mal y por qué.</h2>
-    <p>La mitad del oficio es leer el defecto. Estos son los que aparecen una y otra vez.</p></div>
+    <div class="cab rev"><span class="eyebrow">Diagnóstico</span><h2>Qué salió mal y por qué.</h2><p>La mitad del oficio es leer el defecto. Estos son los que aparecen una y otra vez.</p></div>
     <div class="tabla-wrap rev">
       <table>
         <thead><tr><th>Lo que se ve</th><th>Lo que lo causó</th></tr></thead>
@@ -347,16 +405,27 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
   </div>
 </section>
 
-<section class="seccion">
+<section class="seccion seccion-oscura" id="consulta">
   <div class="wrap">
-    <div class="cta rev">
-      <h2>¿Va a producir esto en serio?</h2>
-      <p>Adaptar la ficha a su materia prima, su equipo y su mercado es donde se gana o se pierde el lote. Escríbanos con lo que tiene y le decimos qué cambia.</p>
-      <div class="btns">
-        <a class="btn btn-p" href="https://wa.me/573223623930?text=Buen%20d%C3%ADa.%20Quiero%20producir%20chorizo%20espa%C3%B1ol%20y%20necesito%20ajustar%20la%20formulaci%C3%B3n%20a%20mi%20planta." rel="noopener">Escribir por WhatsApp</a>
-        <a class="btn btn-linea" href="/formulacion/">Ver las fichas técnicas</a>
-      </div>
+    <div class="cab rev centrado">
+      <span class="eyebrow">Contacto</span>
+      <h2>Consúltenos desde donde esté</h2>
+      <p>Respondemos en español, inglés, portugués, francés, italiano y árabe. Si su pregunta es técnica y concreta, la respuesta también lo será.</p>
     </div>
+    <form class="consulta rev" id="formConsulta" data-correo="direccion@carnotecnia.com">
+      <div class="campos">
+        <label>Nombre<input type="text" name="nombre" autocomplete="name" required></label>
+        <label>País<input type="text" name="pais" autocomplete="country-name"></label>
+        <label>Su correo<input type="email" name="correo" autocomplete="email" required></label>
+        <label>Producto o proceso sobre el que consulta<input type="text" name="tema"></label>
+      </div>
+      <label class="ancho">Su consulta<textarea name="mensaje" rows="5" required></textarea></label>
+      <div class="btns">
+        <button class="btn btn-p" type="submit">Enviar consulta</button>
+        <a class="btn btn-linea" href="https://wa.me/573223623930?text=Buen%20d%C3%ADa.%20Escribo%20desde%20carnotecnia.com%2C%20quiero%20consultar%20por%20asesor%C3%ADa%20en%20c%C3%A1rnicos." rel="noopener">WhatsApp +57 322 362 3930</a>
+      </div>
+      <p class="form-nota">Se abre su programa de correo con la consulta lista para enviar. Si prefiere, escriba directamente a <a href="mailto:direccion@carnotecnia.com">direccion@carnotecnia.com</a></p>
+    </form>
   </div>
 </section>
 
@@ -371,20 +440,16 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
   <path d="M16 6.4c-4.1 0-7.1 2.9-7.1 6.9 0 3 1.7 5 3.6 6.6 1.6 1.4 2.4 2.4 2.4 4v1.7h2.2v-1.7c0-1.6.8-2.6 2.4-4 1.9-1.6 3.6-3.6 3.6-6.6 0-4-3-6.9-7.1-6.9Zm0 2.5c2.6 0 4.6 1.8 4.6 4.4 0 1.9-1.1 3.2-2.7 4.6-.8.7-1.5 1.4-1.9 2.2-.4-.8-1.1-1.5-1.9-2.2-1.6-1.4-2.7-2.7-2.7-4.6 0-2.6 2-4.4 4.6-4.4Z" fill="#faf6f0"/>
   <circle cx="13.4" cy="13" r="1.35" fill="#c9962b"/><circle cx="18.4" cy="14.6" r="1.05" fill="#c9962b"/>
 </svg><span><b>Carnotecnia</b><span>Tecnología cárnica</span></span></a>
-        <p style="margin:0;max-width:34ch">Fabricación de embutidos y carnes maduradas en Maracaibo, y asesoría en tecnología de alimentos para plantas de habla hispana.</p>
+        <p style="margin:0;max-width:34ch">Fabricamos embutidos y carnes maduradas en el Zulia, y asesoramos a plantas de alimentos de cualquier país: formulación, rendimiento, vida útil, exportación y expediente sanitario.</p>
       </div>
       <div>
         <h4>Qué hacemos</h4>
-        <ul><li><a href="/fabrica/">Embutidos y carnes maduradas</a></li><li><a href="/consultoria/">Asesoría en tecnología de alimentos</a></li><li><a href="/academia/">Formación y recetas industriales</a></li></ul>
+        <ul><li><a href="/fabrica/">Embutidos y carnes maduradas</a></li><li><a href="/consultoria/">Asesoría en tecnología de alimentos</a></li><li><a href="/academia/">Formación y recetas industriales</a></li>
+        <li><a href="/servicios/">Servicios</a></li></ul>
       </div>
       <div>
         <h4>Técnico</h4>
-        <ul>
-          <li><a href="/formulacion/">Formulaciones</a></li>
-          <li><a href="/formulacion/chorizo-parrillero/">Chorizo parrillero</a></li>
-          <li><a href="/formulacion/salami-fermentado/">Salami fermentado</a></li>
-          <li><a href="/formulacion/nitrito-de-sodio-dosis/">Nitrito: dosis legal</a></li>
-        </ul>
+        <ul><li><a href="/formulacion/chorizo-parrillero/">Chorizo parrillero</a></li><li><a href="/formulacion/mortadela-y-escaldados/">Mortadela y emulsiones</a></li><li><a href="/formulacion/jamon-cocido-de-pierna/">Jamón cocido</a></li><li><a href="/formulacion/salami-fermentado/">Salami fermentado</a></li></ul>
       </div>
       <div>
         <h4>Contacto</h4>
@@ -392,10 +457,11 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
           <li><a href="https://wa.me/573223623930?text=Buen%20d%C3%ADa.%20Escribo%20desde%20carnotecnia.com%2C%20quiero%20consultar%20por%20asesor%C3%ADa%20en%20c%C3%A1rnicos." rel="noopener">WhatsApp +57 322 362 3930</a></li>
           <li><a href="mailto:direccion@carnotecnia.com">direccion@carnotecnia.com</a></li>
           <li>Maracaibo, Zulia</li>
-          <li>Consultoría remota a toda Hispanoamérica</li>
+          <li>Consultoría remota a todo el mundo</li>
         </ul>
       </div>
     </div>
+    <nav class="idiomas" aria-label="Idioma"><a href="/formulacion/chorizo-espanol-curado/" hreflang="es" lang="es" aria-current="true">Español</a><a href="/en/formulation/spanish-cured-chorizo/" hreflang="en" lang="en">English</a><a href="/pt/formulacao/chourico-espanhol-curado/" hreflang="pt" lang="pt">Português</a><a href="/fr/formulation/chorizo-espagnol-sec/" hreflang="fr" lang="fr">Français</a><a href="/it/formulazione/chorizo-spagnolo-stagionato/" hreflang="it" lang="it">Italiano</a><a href="/ar/tarkib/shorizo-isbani-mujaffaf/" hreflang="ar" lang="ar">العربية</a></nav>
     <div class="ftr-legal">
       <span>© 2026 Carnotecnia · Tecnología cárnica aplicada</span>
       <span>Las formulaciones publicadas son orientativas: cada país fija sus propios límites de aditivos.</span>

@@ -246,6 +246,51 @@ td b{color:var(--tinta)}
 .ftr-legal{border-top:1px solid var(--linea);padding-top:22px;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-size:13px}
 .ftr .marca{color:var(--crema);margin-bottom:14px}
 
+/* ------------------------------------------------- selector de idioma */
+.idiomas{
+  display:flex;flex-wrap:wrap;gap:6px 0;align-items:center;justify-content:center;
+  padding:22px 0 6px;border-top:1px solid var(--linea);margin-top:8px;
+}
+.idiomas a{
+  text-decoration:none;font-size:13.4px;padding:5px 15px;border-radius:999px;
+  color:#9d948d;transition:color .2s,background .2s;
+}
+.idiomas a:hover{color:var(--crema);background:rgba(250,246,240,.07)}
+.idiomas a[aria-current]{color:var(--crema);background:rgba(168,47,54,.28);font-weight:650}
+
+/* ------------------------------------------------------ servicio destacado */
+.serv-top{position:relative}
+.serv-top::before{
+  content:"";position:absolute;inset-inline-start:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,var(--curado),var(--paprika));
+}
+.servicios.claros{background:var(--linea-clara);border-color:var(--linea-clara)}
+.servicios.claros .serv{background:#fff}
+.servicios.claros .serv:hover{background:var(--crema-2)}
+.servicios.claros .serv h3{color:var(--tinta)}
+.servicios.claros .serv p{color:var(--gris)}
+.servicios.claros .serv dt{color:var(--curado)}
+.servicios.claros .serv dd{color:#5b524c}
+.servicios.claros .serv .num{color:var(--curado)}
+
+/* -------------------------------------------------------------- formulario */
+.consulta{max-width:880px;margin-inline:auto}
+.campos{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.consulta label{display:block;font-size:13px;font-weight:650;letter-spacing:.02em;color:var(--paprika)}
+.consulta label.ancho{grid-column:1/-1}
+.consulta input,.consulta textarea{
+  width:100%;margin-top:7px;padding:13px 15px;border-radius:10px;
+  border:1px solid var(--linea);background:var(--carbon-2);color:var(--crema);
+  font:inherit;font-size:15.4px;font-weight:400;transition:border-color .2s,background .2s;
+}
+.consulta input:focus,.consulta textarea:focus{
+  outline:none;border-color:var(--curado-vivo);background:var(--carbon-3);
+}
+.consulta textarea{resize:vertical;min-height:120px}
+.consulta .btns{margin-top:20px}
+.form-nota{margin-top:16px;font-size:13.2px;color:var(--gris-claro)}
+.form-nota a{color:var(--paprika)}
+
 /* --------------------------------------------------------------- reveales */
 .js .rev{opacity:0;transform:translateY(22px)}
 .js .rev.visible{opacity:1;transform:none;transition:opacity .7s var(--ease),transform .7s var(--ease)}
@@ -263,6 +308,7 @@ td b{color:var(--tinta)}
 }
 @media (max-width:760px){
   body{font-size:16.3px}
+  .campos{grid-template-columns:1fr}
   .burger{display:block}
   .nav{
     position:fixed;inset:66px 0 auto;background:var(--carbon);flex-direction:column;
@@ -276,3 +322,15 @@ td b{color:var(--tinta)}
   .ftr-grid{grid-template-columns:1fr}
   .hero{padding-top:56px}
 }
+
+
+/* ------------------------------------------------------------------- RTL */
+[dir="rtl"] .eyebrow::before{order:2}
+[dir="rtl"] .linea li{padding-left:0;padding-right:20px}
+[dir="rtl"] .linea li::before{left:auto;right:0}
+[dir="rtl"] .aviso{border-left:0;border-right:3px solid var(--paprika);border-radius:10px 0 0 10px}
+[dir="rtl"] .prosa ul,[dir="rtl"] .prosa ol{padding-left:0;padding-right:20px}
+[dir="rtl"] .nav{margin-left:0;margin-right:auto}
+[dir="rtl"] .linea a.mas span{transform:scaleX(-1)}
+[dir="rtl"] .linea a.mas:hover span{transform:scaleX(-1) translateX(5px)}
+[dir="rtl"] th,[dir="rtl"] td{text-align:right}

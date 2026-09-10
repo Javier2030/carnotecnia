@@ -1,4 +1,4 @@
-/* Carnotecnia — 1 KB: menú, reveal y año. Nada más entra aquí. */
+/* Carnotecnia — menú, reveal y el formulario de consulta. Nada más entra aquí. */
 (function () {
   'use strict';
 
@@ -14,6 +14,30 @@
         nav.classList.remove('abierto');
         burger.setAttribute('aria-expanded', 'false');
       }
+    });
+  }
+
+  /* El sitio es estático: no hay servidor que reciba el POST. El formulario arma
+     un mailto con todo ordenado, y así el cliente conserva copia de lo que envió. */
+  var form = document.getElementById('formConsulta');
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var d = new FormData(form);
+      var v = function (k) { return (d.get(k) || '').toString().trim(); };
+      var asunto = v('tema') || document.title.split(':')[0];
+      var cuerpo = [
+        v('nombre') ? v('nombre') : '',
+        v('pais') ? v('pais') : '',
+        v('correo') ? v('correo') : '',
+        '',
+        v('mensaje'),
+        '',
+        '— ' + location.href
+      ].filter(function (x, i) { return x !== '' || i > 2; }).join('\n');
+      window.location.href = 'mailto:' + form.dataset.correo +
+        '?subject=' + encodeURIComponent(asunto) +
+        '&body=' + encodeURIComponent(cuerpo);
     });
   }
 
