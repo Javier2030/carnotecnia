@@ -271,6 +271,43 @@ text-transform:uppercase;color:var(--curado);
 .grupo-area{margin-bottom:46px}
 .grupo-titulo{font-size:1.28rem;margin-bottom:7px;display:flex;align-items:center;gap:10px}
 .grupo-texto{color:var(--gris);font-size:15px;max-width:70ch;margin-bottom:20px}
+.sintomas{display:grid;grid-template-columns:repeat(2,1fr);gap:13px}
+.sintoma{
+display:flex;gap:14px;align-items:flex-start;text-decoration:none;color:inherit;
+background:#fff;border:1px solid var(--linea-clara);border-radius:11px;padding:17px 19px;
+transition:transform .22s var(--ease),box-shadow .22s var(--ease),border-color .22s;
+}
+.sintoma:hover{transform:translateY(-2px);box-shadow:0 14px 32px -18px rgba(26,21,18,.32);border-color:transparent}
+.sintoma b{display:block;font-size:15.2px;margin-bottom:4px;letter-spacing:-.015em}
+.sintoma span{display:block;font-size:13.6px;color:var(--gris);line-height:1.5}
+.sintoma::before{
+content:"→";color:var(--curado);font-weight:700;font-size:15px;flex:none;margin-top:2px;
+transition:transform .22s var(--ease);
+}
+.sintoma:hover::before{transform:translateX(4px)}
+.seccion-oscura .sintoma{background:var(--carbon-2);border-color:var(--linea)}
+.seccion-oscura .sintoma:hover{background:var(--carbon-3)}
+.seccion-oscura .sintoma span{color:#a89f97}
+.precios{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:stretch}
+.plan{
+background:#fff;border:1px solid var(--linea-clara);border-radius:var(--r);
+padding:32px 28px;display:flex;flex-direction:column;position:relative;
+}
+.plan-destacado{border-color:var(--curado);box-shadow:0 22px 50px -26px rgba(168,47,54,.45)}
+.plan-destacado::before{
+content:attr(data-cinta);position:absolute;top:-11px;left:28px;
+background:var(--curado);color:#fff;font-size:10.5px;font-weight:750;letter-spacing:.13em;
+text-transform:uppercase;padding:5px 13px;border-radius:999px;
+}
+.plan h3{font-size:1.16rem;margin-bottom:7px;letter-spacing:-.025em}
+.plan .para{font-size:13.6px;color:var(--gris);margin-bottom:18px;min-height:2.8em}
+.plan .cifra{font-size:clamp(1.7rem,3.2vw,2.15rem);font-weight:780;letter-spacing:-.035em;line-height:1.1}
+.plan .cifra small{display:block;font-size:12.5px;font-weight:600;color:var(--gris);letter-spacing:.02em;margin-top:5px}
+.plan ul{list-style:none;padding:0;margin:20px 0;display:grid;gap:9px}
+.plan li{position:relative;padding-left:20px;font-size:14.3px;color:#443c37;line-height:1.5}
+.plan li::before{content:"✓";position:absolute;left:0;color:var(--curado);font-weight:700}
+.plan .btn{margin-top:auto}
+.nota-precio{margin-top:26px;font-size:13.8px;color:var(--gris);max-width:70ch}
 .perfiles{list-style:none;padding:0;margin:34px 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:11px}
 .perfiles li{
 background:var(--carbon-2);border:1px solid var(--linea);border-radius:10px;
@@ -310,6 +347,8 @@ outline:none;border-color:var(--curado-vivo);background:var(--carbon-3);
 .areas{grid-template-columns:1fr 1fr}
 .perfiles{grid-template-columns:1fr 1fr}
 .dos-cta{grid-template-columns:1fr}
+.precios{grid-template-columns:1fr}
+.sintomas{grid-template-columns:1fr}
 .servicios{grid-template-columns:1fr}
 .ftr-grid{grid-template-columns:1fr 1fr}
 }
@@ -365,6 +404,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
       <a href="/servicios/" aria-current="page">Servicios</a>
       <a href="/formulacion/">Formulación</a>
       <a href="/talento/">Talento</a>
+      <a href="/diagnostico/">Diagnóstico</a>
       <a class="btn btn-p btn-sm" href="https://wa.me/573223623930?text=Buen%20d%C3%ADa.%20Escribo%20desde%20carnotecnia.com%2C%20quiero%20consultar%20por%20asesor%C3%ADa%20en%20c%C3%A1rnicos." rel="noopener">Hablemos</a>
     </nav>
   </div>
@@ -496,6 +536,37 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
         <dl><dt>Entregable</dt><dd>Taller con material y constancia de asistencia.</dd><dt>Modalidad</dt><dd>Grupos pequeños, en nuestra planta o en la suya.</dd></dl>
       </article>
     </div>
+  </div>
+</section>
+
+<section class="seccion" id="precios">
+  <div class="wrap">
+    <div class="cab rev"><span class="eyebrow">Precios</span><h2>Lo que cuesta, dicho antes de empezar.</h2><p>Publicamos el precio porque preguntar cuánto vale algo no debería costar tres correos. El presupuesto se cierra antes de tocar su producto, y si su caso no es para nosotros se lo decimos sin cobrarle por descubrirlo.</p></div>
+    <div class="precios rev">
+      <article class="plan">
+        <h3>Consulta técnica</h3>
+        <p class="para">Una pregunta concreta con una respuesta concreta.</p>
+        <div class="cifra">USD 120<small>Latinoamérica: USD 45</small></div>
+        <ul><li>Respuesta escrita en 24 – 48 h hábiles</li><li>La causa más probable y cómo confirmarla</li><li>La corrección concreta, con el mecanismo explicado</li><li>Una repregunta dentro de los 7 días siguientes</li></ul>
+        <a class="btn btn-oscuro" href="https://wa.me/573223623930?text=Buen%20d%C3%ADa.%20Quiero%20una%20consulta%20t%C3%A9cnica%20puntual.%20Le%20describo%20el%20problema%3A" rel="noopener">Enviar mi consulta</a>
+      </article>
+      <article class="plan plan-destacado" data-cinta="El más pedido">
+        <h3>Diagnóstico de planta</h3>
+        <p class="para">Le decimos dónde está perdiendo dinero, con números.</p>
+        <div class="cifra">desde USD 950<small>Presencial en Latinoamérica: desde USD 1.400/día</small></div>
+        <ul><li>Recorrido por video y revisión de sus documentos</li><li>Informe con los hallazgos ordenados por dinero, no por capricho</li><li>Plan de corrección a 90 días, priorizado</li><li>Una llamada de 60 minutos para revisarlo</li><li>Si no encontramos al menos cinco hallazgos accionables, no se paga</li></ul>
+        <a class="btn btn-p" href="https://wa.me/573223623930?text=Buen%20d%C3%ADa.%20Quiero%20un%20diagn%C3%B3stico%20de%20mi%20planta.%20Le%20cuento%20qu%C3%A9%20producimos%3A" rel="noopener">Pedir el diagnóstico</a>
+      </article>
+      <article class="plan">
+        <h3>Proyecto</h3>
+        <p class="para">Reformular, desarrollar, validar vida útil, montar HACCP o armar un expediente.</p>
+        <div class="cifra">desde USD 2.900<small>Se cotiza por alcance: líneas, productos y país de destino</small></div>
+        <ul><li>Reformulación para bajar el costo por kilo</li><li>Desarrollo de producto hasta ficha técnica y proceso</li><li>Validación de vida útil y plan HACCP</li><li>Expediente regulatorio y etiquetado por país</li><li>Acompañamiento mensual desde USD 600 al mes</li></ul>
+        <a class="btn btn-oscuro" href="https://wa.me/573223623930?text=Buen%20d%C3%ADa.%20Tengo%20un%20proyecto%20y%20quiero%20saber%20si%20pueden%20acompa%C3%B1arlo%3A" rel="noopener">Contarnos el proyecto</a>
+      </article>
+    </div>
+    <p class="nota-precio rev"><b>Tarifa de fundador:</b> estos son precios de lanzamiento para los primeros clientes, y suben cuando publiquemos los primeros casos. Los laboratorios externos, cuando hacen falta, se facturan aparte y a la vista. Urgencia de 48 horas: 35 % adicional.</p>
+    <div class="aviso rev" style="margin-top:22px"><b>Atendemos en siete idiomas y entregamos por escrito en español e inglés.</b> Si su consulta llega en portugués, francés, italiano, árabe o polaco, la leemos y la contestamos — pero el informe técnico va en español o en inglés. Preferimos decirlo antes que hacerle esperar por una traducción que no prometimos.</div>
   </div>
 </section>
 
