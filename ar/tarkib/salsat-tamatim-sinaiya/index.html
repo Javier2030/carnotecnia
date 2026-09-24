@@ -135,6 +135,8 @@ border:1px solid var(--linea);border-radius:var(--r);padding:30px 28px;box-shado
 .seccion-clara{background:var(--crema-2)}
 .cab{max-width:64ch;margin-bottom:clamp(34px,4.6vw,52px)}
 .cab h2{font-size:clamp(1.72rem,3.7vw,2.66rem);margin-bottom:15px}
+.cab h1{font-size:clamp(1.72rem,3.7vw,2.66rem);margin-bottom:15px}
+.seccion-oscura h1{color:var(--crema)}
 .cab p{font-size:clamp(1rem,1.4vw,1.115rem);color:var(--gris)}
 .seccion-oscura .cab p{color:#b8afa7}
 .centrado{margin-inline:auto;text-align:center}
@@ -202,6 +204,13 @@ border-left:3px solid var(--paprika);background:var(--crema-2);
 padding:17px 20px;border-radius:0 10px 10px 0;margin:26px 0;font-size:15px;color:#4a423c;
 }
 .aviso b{color:var(--tinta)}
+.respuesta{border-left:3px solid var(--curado);background:#fff;padding:16px 20px;border-radius:0 10px 10px 0;margin:18px 0 0;font-size:1.04rem;line-height:1.62;color:var(--tinta)!important}
+.actualizado{font-size:13px!important;color:var(--gris);margin-top:12px}
+.fuente{font-size:13px!important;color:var(--gris)!important;margin-top:-12px}
+.fuentes{padding-left:20px}
+.fuentes li{font-size:14px!important;color:var(--gris)!important;margin-bottom:6px}
+.fuentes a,.prosa a{color:var(--curado);text-underline-offset:2px}
+.prosa table{margin:0}
 .tecnico{max-width:1000px}
 .tecnico h2{font-size:clamp(1.5rem,3vw,2.05rem);margin:54px 0 16px}
 .tecnico h2:first-child{margin-top:0}
@@ -422,8 +431,10 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
   <div class="wrap">
     <div class="cab rev" style="max-width:74ch">
       <span class="eyebrow">الصلصات</span>
-      <h2 style="font-size:clamp(2rem,4.4vw,3rem)">صلصة الطماطم والكاتشب</h2>
+      <h1 style="font-size:clamp(2rem,4.4vw,3rem)">صلصة الطماطم والكاتشب</h1>
       <p>منتج يبدو بسيطًا ويُضبط بثلاثة أرقام: درجات بريكس، والأس الهيدروجيني، واللزوجة. فإذا كانت الثلاثة في النطاق، فالباقي تركيب نكهة.</p>
+      
+      
     </div>
     <div class="tecnico rev">
       
@@ -439,6 +450,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
     </div>
   </div>
 </section>
+
 
 <section class="seccion seccion-oscura">
   <div class="wrap">
@@ -484,9 +496,10 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
   </div>
 </section>
 
+
 <section class="seccion seccion-clara">
-  <div class="ancho">
-    <h2><span aria-hidden="true">🫙</span> الصلصات والتوابل</h2>
+  <div class="wrap">
+    <h2 style="margin-bottom:24px"><span aria-hidden="true">🫙</span> الصلصات والتوابل</h2>
     <div class="fichas rev">
       <a class="ficha" href="/ar/tarkib/mayonez-sinai/">
         <span class="tipo">الصلصات</span><h3>المايونيز الصناعي</h3><p>تركيبة وعملية المايونيز الصناعي: نسبة الزيت، المستحلِب، الأس الهيدروجيني الحرج ٤٫١ ولماذا ينفصل المستحلب.</p>

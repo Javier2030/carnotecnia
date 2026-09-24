@@ -135,6 +135,8 @@ border:1px solid var(--linea);border-radius:var(--r);padding:30px 28px;box-shado
 .seccion-clara{background:var(--crema-2)}
 .cab{max-width:64ch;margin-bottom:clamp(34px,4.6vw,52px)}
 .cab h2{font-size:clamp(1.72rem,3.7vw,2.66rem);margin-bottom:15px}
+.cab h1{font-size:clamp(1.72rem,3.7vw,2.66rem);margin-bottom:15px}
+.seccion-oscura h1{color:var(--crema)}
 .cab p{font-size:clamp(1rem,1.4vw,1.115rem);color:var(--gris)}
 .seccion-oscura .cab p{color:#b8afa7}
 .centrado{margin-inline:auto;text-align:center}
@@ -202,6 +204,13 @@ border-left:3px solid var(--paprika);background:var(--crema-2);
 padding:17px 20px;border-radius:0 10px 10px 0;margin:26px 0;font-size:15px;color:#4a423c;
 }
 .aviso b{color:var(--tinta)}
+.respuesta{border-left:3px solid var(--curado);background:#fff;padding:16px 20px;border-radius:0 10px 10px 0;margin:18px 0 0;font-size:1.04rem;line-height:1.62;color:var(--tinta)!important}
+.actualizado{font-size:13px!important;color:var(--gris);margin-top:12px}
+.fuente{font-size:13px!important;color:var(--gris)!important;margin-top:-12px}
+.fuentes{padding-left:20px}
+.fuentes li{font-size:14px!important;color:var(--gris)!important;margin-bottom:6px}
+.fuentes a,.prosa a{color:var(--curado);text-underline-offset:2px}
+.prosa table{margin:0}
 .tecnico{max-width:1000px}
 .tecnico h2{font-size:clamp(1.5rem,3vw,2.05rem);margin:54px 0 16px}
 .tecnico h2:first-child{margin-top:0}
@@ -383,7 +392,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
 [dir="rtl"] .linea a.mas:hover span{transform:scaleX(-1) translateX(5px)}
 [dir="rtl"] th,[dir="rtl"] td{text-align:right}</style>
 <link rel="icon" href="/assets/img/logo.svg" type="image/svg+xml">
-<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"Carnotecnia","url":"https://carnotecnia.com","logo":"https://carnotecnia.com/assets/img/logo.svg","description":"Sausages, dry-aged meat, sauces, precooked flours, pasta, meat and bone meal and pet food. Manufacturing in Venezuela and consulting worldwide.","address":{"@type":"PostalAddress","addressLocality":"Maracaibo","addressRegion":"Zulia","addressCountry":"VE"},"contactPoint":[{"@type":"ContactPoint","telephone":"+573223623930","contactType":"sales","email":"direccion@carnotecnia.com","areaServed":"Worldwide","availableLanguage":["es","en","pt","fr","it","ar","pl","de","zh","ru"]}],"knowsAbout":["Meat technology","Sausage formulation","Dry-aged meat","HACCP","Halal production","Food technology"],"location":[{"@type":"Place","name":"Maracaibo, Venezuela","address":{"@type":"PostalAddress","addressLocality":"Maracaibo","addressRegion":"Zulia","addressCountry":"VE"}},{"@type":"Place","name":"Bogotá, Colombia","address":{"@type":"PostalAddress","addressLocality":"Bogotá","addressRegion":"Bogotá D.C.","addressCountry":"CO"}}],"parentOrganization":{"@type":"Organization","name":"Grupo Empresarial Almadía S.A.S."},"founder":{"@type":"Person","name":"César Pérez","jobTitle":"Experto en producción agroalimentaria y de procesos","knowsAbout":["Agrifood production","Process engineering","Meat processing","Plant diagnostics","Cost per kilo"]},"employee":[{"@type":"Person","name":"César Pérez","jobTitle":"Experto en producción agroalimentaria y de procesos","knowsAbout":["Agrifood production","Process engineering","Meat processing","Plant diagnostics","Cost per kilo"]},{"@type":"Person","name":"José Luis Molaya","jobTitle":"Experto en tecnología de alimentos y chef internacional","knowsAbout":["Food technology","Product development","International cuisine","Sensory evaluation","Recipe scale-up"]}],"areaServed":{"@type":"Place","name":"Worldwide"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What exactly is meat technology?","acceptedAnswer":{"@type":"Answer","text":"It is the discipline that runs from the live animal to the packed product, through slaughter, ageing, formulation, thermal treatment and shelf life. When somebody says «food technology applied to meat», that is what they mean."}},{"@type":"Question","name":"Do you work outside Venezuela?","acceptedAnswer":{"@type":"Answer","text":"Yes. The factory and wholesale side is Venezuelan, based in Maracaibo, but consulting and training are remote and delivered in any country. We work in English, Spanish, Portuguese, French, Italian and Arabic, and we fit your time zone."}},{"@type":"Question","name":"Can I ask about one formula without hiring a whole project?","acceptedAnswer":{"@type":"Answer","text":"Yes. A specific question — why an emulsion broke, what nitrite dosage applies, why pH will not drop, whether an ingredient is legal in a given country — is answered by email or a short video call. Projects are for what does not fit in one answer."}},{"@type":"Question","name":"Can I set up a small sausage plant?","acceptedAnswer":{"@type":"Answer","text":"Yes, and assuming otherwise is the most common mistake. A fresh and scalded line starts with a grinder, a mixer, a stuffer and one chamber: what decides whether it works is not the size of the equipment, it is batter temperature control and formulation discipline."}},{"@type":"Question","name":"Do you hand over recipes?","acceptedAnswer":{"@type":"Answer","text":"We hand over formulations with the reason for every component and its legal dosage, which is the only thing you can actually produce from. An ingredient list with no process curve and no temperature control reproduces nothing."}},{"@type":"Question","name":"How long does developing a new product take?","acceptedAnswer":{"@type":"Answer","text":"A fresh or scalded product closes in weeks. A dry cured one needs the full ageing time per trial, so the product sets the clock: between 21 and 90 days depending on calibre and type."}},{"@type":"Question","name":"What do I need to sell to hotels and retail chains?","acceptedAnswer":{"@type":"Answer","text":"A technical sheet per product, validated shelf life, current regulatory registration and batch records. Without those four documents the negotiation does not start, however good the product is."}}]}]</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"Carnotecnia","url":"https://carnotecnia.com","logo":"https://carnotecnia.com/assets/img/logo.svg","description":"Sausages, dry-aged meat, sauces, precooked flours, pasta, meat and bone meal and pet food. Manufacturing in Venezuela and consulting worldwide.","address":{"@type":"PostalAddress","addressLocality":"Maracaibo","addressRegion":"Zulia","addressCountry":"VE"},"contactPoint":[{"@type":"ContactPoint","telephone":"+573223623930","contactType":"sales","email":"direccion@carnotecnia.com","areaServed":"Worldwide","availableLanguage":["es","en","pt","fr","it","ar","pl","de","zh","ru"]}],"knowsAbout":["Meat technology","Sausage formulation","Dry-aged meat","HACCP","Halal production","Food technology"],"location":[{"@type":"Place","name":"Maracaibo, Venezuela","address":{"@type":"PostalAddress","addressLocality":"Maracaibo","addressRegion":"Zulia","addressCountry":"VE"}},{"@type":"Place","name":"Bogotá, Colombia","address":{"@type":"PostalAddress","addressLocality":"Bogotá","addressRegion":"Bogotá D.C.","addressCountry":"CO"}}],"parentOrganization":{"@type":"Organization","name":"Grupo Empresarial Almadía S.A.S."},"founder":{"@type":"Person","name":"César Pérez","jobTitle":"Experto en producción agroalimentaria y de procesos","knowsAbout":["Agrifood production","Process engineering","Meat processing","Plant diagnostics","Cost per kilo"]},"employee":[{"@type":"Person","name":"César Pérez","jobTitle":"Experto en producción agroalimentaria y de procesos","knowsAbout":["Agrifood production","Process engineering","Meat processing","Plant diagnostics","Cost per kilo"]},{"@type":"Person","name":"José Luis Molaya","jobTitle":"Experto en tecnología de alimentos y chef internacional","knowsAbout":["Food technology","Product development","International cuisine","Sensory evaluation","Recipe scale-up"]}],"areaServed":{"@type":"Place","name":"Worldwide"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What exactly is meat technology?","acceptedAnswer":{"@type":"Answer","text":"It is the discipline that runs from the live animal to the packed product, through slaughter, ageing, formulation, thermal treatment and shelf life. When somebody says «food technology applied to meat», that is what they mean."}},{"@type":"Question","name":"Do you work outside Venezuela?","acceptedAnswer":{"@type":"Answer","text":"Yes. The factory and wholesale side is Venezuelan, based in Maracaibo, and the commercial office is in Bogotá; consulting and training are remote and delivered in any country. We answer and deliver in English and Spanish, and we adjust to your time zone."}},{"@type":"Question","name":"Can I ask about one formula without hiring a whole project?","acceptedAnswer":{"@type":"Answer","text":"Yes. A specific question — why an emulsion broke, what nitrite dosage applies, why pH will not drop, whether an ingredient is legal in a given country — is answered by email or a short video call. Projects are for what does not fit in one answer."}},{"@type":"Question","name":"Can I set up a small sausage plant?","acceptedAnswer":{"@type":"Answer","text":"Yes, and assuming otherwise is the most common mistake. A fresh and scalded line starts with a grinder, a mixer, a stuffer and one chamber: what decides whether it works is not the size of the equipment, it is batter temperature control and formulation discipline."}},{"@type":"Question","name":"Do you hand over recipes?","acceptedAnswer":{"@type":"Answer","text":"We hand over formulations with the reason for every component and its legal dosage, which is the only thing you can actually produce from. An ingredient list with no process curve and no temperature control reproduces nothing."}},{"@type":"Question","name":"How long does developing a new product take?","acceptedAnswer":{"@type":"Answer","text":"A fresh or scalded product closes in weeks. A dry cured one needs the full ageing time per trial, so the product sets the clock: between 21 and 90 days depending on calibre and type."}},{"@type":"Question","name":"What do I need to sell to hotels and retail chains?","acceptedAnswer":{"@type":"Answer","text":"A technical sheet per product, validated shelf life, current regulatory registration and batch records. Without those four documents the negotiation does not start, however good the product is."}}]}]</script>
 <script defer src="/assets/js/main.js?v=1204bc35"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9SJTJF6C2Q"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-9SJTJF6C2Q')</script>
@@ -421,7 +430,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <span class="eyebrow">Maracaibo · Venezuela · Consulting in 6 languages</span>
+        <span class="eyebrow">Bogotá · Maracaibo · Remote consulting</span>
         <h1>Food technology that <em>holds up in numbers</em>, not in family recipes.</h1>
         <p class="hero-sub">From the sausage to the dog’s kibble: meat products, sauces, precooked flours, pasta, by-product recovery and animal feed. We manufacture in Venezuela and advise plants anywhere in the world.</p>
         <div class="btns">
@@ -439,8 +448,8 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
   </div>
   <div class="wrap">
     <div class="cifras">
-      <div class="cifra"><b>6 languages</b><span>Technical enquiries in English, Spanish, Portuguese, French, Italian and Arabic</span></div>
-      <div class="cifra"><b>15 sheets</b><span>Published formulations with process, dosage and defects</span></div>
+      <div class="cifra"><b>10 languages</b><span>Technical content in ten languages; enquiries and deliverables in English and Spanish</span></div>
+      <div class="cifra"><b>19 sheets</b><span>Technical sheets with process, control and defects</span></div>
       <div class="cifra"><b>25 services</b><span>From cost-down reformulation to a full livestock project</span></div>
     </div>
   </div>
@@ -462,17 +471,17 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
         <a class="mas" href="/en/factory/">See factory and sales <span>→</span></a>
       </article>
       <article class="linea rev">
-        <span class="eyebrow">International</span>
-        <h3>Food technology consulting</h3>
-        <p>For plants already in production that need the product to come out the same every day, or that want to launch a new line without burning six months on trial and error.</p>
-        <ul><li>Plant diagnosis: where yield is lost and why.</li><li>Reformulation to cut cost per kilo without losing quality.</li><li>Product and dossier compliance for export markets.</li><li>HACCP, shelf life, technical sheets and regulatory registration.</li></ul>
-        <a class="mas" href="/en/consulting/">See consulting <span>→</span></a>
+        <span class="eyebrow">Meat technology</span>
+        <h3>Meat processing consultancy</h3>
+        <p>For sausage and meat plants already in production that need the product to come out the same every day, or that want to launch a new line without burning six months on trial and error.</p>
+        <ul><li>Plant diagnosis: where yield is lost and why.</li><li>Reformulation to cut cost per kilo without losing quality.</li><li>Shelf life, HACCP, labelling and regulatory dossiers.</li><li>Product and dossier compliance for export markets.</li></ul>
+        <a class="mas" href="/en/consulting/">Meat processing consultancy <span>→</span></a>
       </article>
       <article class="linea rev">
         <span class="eyebrow">Online</span>
         <h3>Training and industrial formulations</h3>
         <p>Complete formulations with the reason for every gram, not copied ingredient lists. For people who manufacture, not for people who collect PDFs.</p>
-        <ul><li>Formulation sheets with each additive’s function and legal dosage.</li><li>Process curves: temperature, humidity and time, hour by hour.</li><li>Cost per kilo and weight-loss calculation before you produce.</li><li>Defect diagnosis: why did the emulsion break, why did it turn grey?</li></ul>
+        <ul><li>Your product’s formulation, with each additive’s function and legal limit.</li><li>Process curves: temperature, humidity and time, hour by hour.</li><li>Cost per kilo and weight-loss calculation before you produce.</li><li>Defect diagnosis: why did the emulsion break, why did it turn grey?</li></ul>
         <a class="mas" href="/en/academy/">See academy <span>→</span></a>
       </article>
     </div>
@@ -583,18 +592,18 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
   <div class="wrap">
     <div class="cab rev">
       <span class="eyebrow">Technical library</span>
-      <h2>Published formulations, with the reason for every gram.</h2>
-      <p>These are not ingredient lists: each sheet carries percentages, the process curve, expected yield and the defects that ruin a batch.</p>
+      <h2>Technical sheets: the reason behind every ingredient.</h2>
+      <p>These are not recipes: each sheet explains what every ingredient does, which variables must be controlled and which defects ruin a batch. Your product’s formula and dosages are worked out in your plant, not on the internet.</p>
     </div>
     <div class="fichas rev">
       <a class="ficha" href="/en/formulation/grilling-chorizo/">
-        <span class="tipo">Fresh</span><h3>Grilling chorizo</h3><p>Full formulation for grilling chorizo: percentages, batter temperature, grinding, stuffing and yield.</p>
+        <span class="tipo">Fresh</span><h3>Grilling chorizo</h3><p>Industrial grilling chorizo: what each ingredient does, batter temperature, grinding, stuffing and yield, with the defects that ruin the batch.</p>
       </a>
       <a class="ficha" href="/en/formulation/mortadella-and-emulsions/">
         <span class="tipo">Scalded</span><h3>Mortadella and emulsions</h3><p>How a stable meat emulsion is built: order in the cutter, temperature ceiling, phosphates, scalding to 72 °C and why the batter breaks.</p>
       </a>
       <a class="ficha" href="/en/formulation/cooked-ham/">
-        <span class="tipo">Scalded</span><h3>Cooked ham</h3><p>Brine calculation, injection percentage, tumbling times and cooking for cooked leg ham.</p>
+        <span class="tipo">Scalded</span><h3>Cooked ham</h3><p>Cooked leg ham: brine, injection, tumbling and cooking.</p>
       </a>
       <a class="ficha" href="/en/formulation/fermented-salami/">
         <span class="tipo">Dry cured</span><h3>Fermented salami</h3><p>Directed salami fermentation: starter cultures, pH drop, temperature and humidity curve, target weight loss and water activity control.</p>
@@ -636,7 +645,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
         <span class="tipo">Petfood</span><h3>Dog and cat kibble</h3><p>How extruded dog and cat food is made: formulation, extrusion parameters, drying, coating and reference nutrient profiles.</p>
       </a>
       <a class="ficha" href="/en/formulation/industrial-mayonnaise/">
-        <span class="tipo">Sauces</span><h3>Industrial mayonnaise</h3><p>Formulation and process for industrial mayonnaise: oil ratio, emulsifier, the critical pH of 4.</p>
+        <span class="tipo">Sauces</span><h3>Industrial mayonnaise</h3><p>Why commercial mayonnaise is acidified to pH 4.</p>
       </a>
       <a class="ficha" href="/en/formulation/industrial-tomato-sauce/">
         <span class="tipo">Sauces</span><h3>Tomato sauce</h3><p>Industrial process for tomato sauce and ketchup: concentration in degrees Brix, critical pH, hot filling and Bostwick viscosity control.</p>
@@ -654,7 +663,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
     <div class="cab rev"><span class="eyebrow">Frequently asked</span><h2>What people ask before they start.</h2></div>
     <div class="faq rev">
       <details><summary>What exactly is meat technology?</summary><p>It is the discipline that runs from the live animal to the packed product, through slaughter, ageing, formulation, thermal treatment and shelf life. When somebody says «food technology applied to meat», that is what they mean.</p></details>
-      <details><summary>Do you work outside Venezuela?</summary><p>Yes. The factory and wholesale side is Venezuelan, based in Maracaibo, but consulting and training are remote and delivered in any country. We work in English, Spanish, Portuguese, French, Italian and Arabic, and we fit your time zone.</p></details>
+      <details><summary>Do you work outside Venezuela?</summary><p>Yes. The factory and wholesale side is Venezuelan, based in Maracaibo, and the commercial office is in Bogotá; consulting and training are remote and delivered in any country. We answer and deliver in English and Spanish, and we adjust to your time zone.</p></details>
       <details><summary>Can I ask about one formula without hiring a whole project?</summary><p>Yes. A specific question — why an emulsion broke, what nitrite dosage applies, why pH will not drop, whether an ingredient is legal in a given country — is answered by email or a short video call. Projects are for what does not fit in one answer.</p></details>
       <details><summary>Can I set up a small sausage plant?</summary><p>Yes, and assuming otherwise is the most common mistake. A fresh and scalded line starts with a grinder, a mixer, a stuffer and one chamber: what decides whether it works is not the size of the equipment, it is batter temperature control and formulation discipline.</p></details>
       <details><summary>Do you hand over recipes?</summary><p>We hand over formulations with the reason for every component and its legal dosage, which is the only thing you can actually produce from. An ingredient list with no process curve and no temperature control reproduces nothing.</p></details>
@@ -669,7 +678,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
     <div class="cab rev centrado">
       <span class="eyebrow">Contact</span>
       <h2>Ask us from wherever you are</h2>
-      <p>We answer in English, Spanish, Portuguese, French, Italian and Arabic. If your question is technical and specific, so is the answer.</p>
+      <p>We answer in English and Spanish, and deliver in writing in those two languages. If your question is technical and specific, so is the answer.</p>
     </div>
     <form class="consulta rev" id="formConsulta" data-correo="direccion@carnotecnia.com">
       <div class="campos">
@@ -703,7 +712,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
       </div>
       <div>
         <h4>What we do</h4>
-        <ul><li><a href="/en/factory/">Sausages and dry-aged meat</a></li><li><a href="/en/consulting/">Food technology consulting</a></li><li><a href="/en/academy/">Training and industrial formulations</a></li>
+        <ul><li><a href="/en/factory/">Sausages and dry-aged meat</a></li><li><a href="/en/consulting/">Meat processing consultancy</a></li><li><a href="/en/academy/">Training and industrial formulations</a></li>
         <li><a href="/en/services/">Services</a></li></ul>
       </div>
       <div>

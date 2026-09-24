@@ -135,6 +135,8 @@ border:1px solid var(--linea);border-radius:var(--r);padding:30px 28px;box-shado
 .seccion-clara{background:var(--crema-2)}
 .cab{max-width:64ch;margin-bottom:clamp(34px,4.6vw,52px)}
 .cab h2{font-size:clamp(1.72rem,3.7vw,2.66rem);margin-bottom:15px}
+.cab h1{font-size:clamp(1.72rem,3.7vw,2.66rem);margin-bottom:15px}
+.seccion-oscura h1{color:var(--crema)}
 .cab p{font-size:clamp(1rem,1.4vw,1.115rem);color:var(--gris)}
 .seccion-oscura .cab p{color:#b8afa7}
 .centrado{margin-inline:auto;text-align:center}
@@ -202,6 +204,13 @@ border-left:3px solid var(--paprika);background:var(--crema-2);
 padding:17px 20px;border-radius:0 10px 10px 0;margin:26px 0;font-size:15px;color:#4a423c;
 }
 .aviso b{color:var(--tinta)}
+.respuesta{border-left:3px solid var(--curado);background:#fff;padding:16px 20px;border-radius:0 10px 10px 0;margin:18px 0 0;font-size:1.04rem;line-height:1.62;color:var(--tinta)!important}
+.actualizado{font-size:13px!important;color:var(--gris);margin-top:12px}
+.fuente{font-size:13px!important;color:var(--gris)!important;margin-top:-12px}
+.fuentes{padding-left:20px}
+.fuentes li{font-size:14px!important;color:var(--gris)!important;margin-bottom:6px}
+.fuentes a,.prosa a{color:var(--curado);text-underline-offset:2px}
+.prosa table{margin:0}
 .tecnico{max-width:1000px}
 .tecnico h2{font-size:clamp(1.5rem,3vw,2.05rem);margin:54px 0 16px}
 .tecnico h2:first-child{margin-top:0}
@@ -422,8 +431,10 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
   <div class="wrap">
     <div class="cab rev" style="max-width:74ch">
       <span class="eyebrow">Pasta</span>
-      <h2 style="font-size:clamp(2rem,4.4vw,3rem)">Industrial dry pasta</h2>
+      <h1 style="font-size:clamp(2rem,4.4vw,3rem)">Industrial dry pasta</h1>
       <p>All the quality of a pasta is decided at two points: the protein in the semolina and the drying curve. The rest is shape. And bad drying does not show in the plant, it shows when the customer boils it.</p>
+      
+      
     </div>
     <div class="tecnico rev">
       
@@ -439,6 +450,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
     </div>
   </div>
 </section>
+
 
 <section class="seccion seccion-oscura">
   <div class="wrap">
@@ -484,21 +496,34 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
   </div>
 </section>
 
+<section class="seccion">
+  <div class="wrap">
+    <div class="cta rev">
+      <h2>Is this defect costing you batches?</h2>
+      <p>This sheet explains the phenomenon. Finding the cause in your plant takes your data: batch weights, temperatures, pH and formulation. That is what the consultancy does, remotely and at a published fee.</p>
+      <div class="btns">
+        <a class="btn btn-p" href="/en/consulting/">See the meat processing consultancy</a>
+        <a class="btn btn-linea" href="/en/diagnosis/">Diagnosis</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="seccion seccion-clara">
-  <div class="ancho">
-    <h2><span aria-hidden="true">🌽</span> Precooked flours and pasta</h2>
+  <div class="wrap">
+    <h2 style="margin-bottom:24px"><span aria-hidden="true">🌽</span> Precooked flours and pasta</h2>
     <div class="fichas rev">
       <a class="ficha" href="/en/formulation/precooked-corn-flour/">
         <span class="tipo">Flours</span><h3>Precooked corn flour</h3><p>How precooked corn flour is made: degerming, cooking, flaking, drying, milling, and the water absorption index that decides whether the dough works.</p>
       </a>
       <a class="ficha" href="/en/formulation/grilling-chorizo/">
-        <span class="tipo">Fresh</span><h3>Grilling chorizo</h3><p>Full formulation for grilling chorizo: percentages, batter temperature, grinding, stuffing and yield.</p>
+        <span class="tipo">Fresh</span><h3>Grilling chorizo</h3><p>Industrial grilling chorizo: what each ingredient does, batter temperature, grinding, stuffing and yield, with the defects that ruin the batch.</p>
       </a>
       <a class="ficha" href="/en/formulation/mortadella-and-emulsions/">
         <span class="tipo">Scalded</span><h3>Mortadella and emulsions</h3><p>How a stable meat emulsion is built: order in the cutter, temperature ceiling, phosphates, scalding to 72 °C and why the batter breaks.</p>
       </a>
       <a class="ficha" href="/en/formulation/cooked-ham/">
-        <span class="tipo">Scalded</span><h3>Cooked ham</h3><p>Brine calculation, injection percentage, tumbling times and cooking for cooked leg ham.</p>
+        <span class="tipo">Scalded</span><h3>Cooked ham</h3><p>Cooked leg ham: brine, injection, tumbling and cooking.</p>
       </a>
     </div>
   </div>
@@ -509,7 +534,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
     <div class="cab rev centrado">
       <span class="eyebrow">Contact</span>
       <h2>Ask us from wherever you are</h2>
-      <p>We answer in English, Spanish, Portuguese, French, Italian and Arabic. If your question is technical and specific, so is the answer.</p>
+      <p>We answer in English and Spanish, and deliver in writing in those two languages. If your question is technical and specific, so is the answer.</p>
     </div>
     <form class="consulta rev" id="formConsulta" data-correo="direccion@carnotecnia.com">
       <div class="campos">
@@ -543,7 +568,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
       </div>
       <div>
         <h4>What we do</h4>
-        <ul><li><a href="/en/factory/">Sausages and dry-aged meat</a></li><li><a href="/en/consulting/">Food technology consulting</a></li><li><a href="/en/academy/">Training and industrial formulations</a></li>
+        <ul><li><a href="/en/factory/">Sausages and dry-aged meat</a></li><li><a href="/en/consulting/">Meat processing consultancy</a></li><li><a href="/en/academy/">Training and industrial formulations</a></li>
         <li><a href="/en/services/">Services</a></li></ul>
       </div>
       <div>

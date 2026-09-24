@@ -135,6 +135,8 @@ border:1px solid var(--linea);border-radius:var(--r);padding:30px 28px;box-shado
 .seccion-clara{background:var(--crema-2)}
 .cab{max-width:64ch;margin-bottom:clamp(34px,4.6vw,52px)}
 .cab h2{font-size:clamp(1.72rem,3.7vw,2.66rem);margin-bottom:15px}
+.cab h1{font-size:clamp(1.72rem,3.7vw,2.66rem);margin-bottom:15px}
+.seccion-oscura h1{color:var(--crema)}
 .cab p{font-size:clamp(1rem,1.4vw,1.115rem);color:var(--gris)}
 .seccion-oscura .cab p{color:#b8afa7}
 .centrado{margin-inline:auto;text-align:center}
@@ -202,6 +204,13 @@ border-left:3px solid var(--paprika);background:var(--crema-2);
 padding:17px 20px;border-radius:0 10px 10px 0;margin:26px 0;font-size:15px;color:#4a423c;
 }
 .aviso b{color:var(--tinta)}
+.respuesta{border-left:3px solid var(--curado);background:#fff;padding:16px 20px;border-radius:0 10px 10px 0;margin:18px 0 0;font-size:1.04rem;line-height:1.62;color:var(--tinta)!important}
+.actualizado{font-size:13px!important;color:var(--gris);margin-top:12px}
+.fuente{font-size:13px!important;color:var(--gris)!important;margin-top:-12px}
+.fuentes{padding-left:20px}
+.fuentes li{font-size:14px!important;color:var(--gris)!important;margin-bottom:6px}
+.fuentes a,.prosa a{color:var(--curado);text-underline-offset:2px}
+.prosa table{margin:0}
 .tecnico{max-width:1000px}
 .tecnico h2{font-size:clamp(1.5rem,3vw,2.05rem);margin:54px 0 16px}
 .tecnico h2:first-child{margin-top:0}
@@ -422,8 +431,10 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
   <div class="wrap">
     <div class="cab rev" style="max-width:74ch">
       <span class="eyebrow">Aditivos</span>
-      <h2 style="font-size:clamp(2rem,4.4vw,3rem)">Nitrito de sodio: función, dosis y cálculo</h2>
+      <h1 style="font-size:clamp(2rem,4.4vw,3rem)">Nitrito de sodio: función, dosis y cálculo</h1>
       <p>Es el aditivo peor entendido de la industria: se le teme por lo que no hace y se le dosifica mal por lo que sí hace. Sin nitrito no hay curado, y con nitrito mal medido hay riesgo real de intoxicación.</p>
+      
+      
     </div>
     <div class="tecnico rev">
       
@@ -446,6 +457,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
     </div>
   </div>
 </section>
+
 
 <section class="seccion seccion-oscura">
   <div class="wrap">
@@ -490,21 +502,34 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
   </div>
 </section>
 
+<section class="seccion">
+  <div class="wrap">
+    <div class="cta rev">
+      <h2>¿Este defecto le está costando lotes?</h2>
+      <p>La ficha explica el fenómeno. Encontrar la causa en su planta exige sus datos: pesos por lote, temperaturas, pH y fórmula. Eso es lo que hace la consultoría, a distancia y con precio publicado.</p>
+      <div class="btns">
+        <a class="btn btn-p" href="/consultoria/">Ver la consultoría cárnica</a>
+        <a class="btn btn-linea" href="/diagnostico/">Diagnóstico</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="seccion seccion-clara">
-  <div class="ancho">
-    <h2><span aria-hidden="true">🥩</span> Cárnicos y charcutería</h2>
+  <div class="wrap">
+    <h2 style="margin-bottom:24px"><span aria-hidden="true">🥩</span> Cárnicos y charcutería</h2>
     <div class="fichas rev">
       <a class="ficha" href="/formulacion/reduccion-de-sodio/">
         <span class="tipo">Reformulación</span><h3>Reducción de sodio</h3><p>Cómo bajar la sal de un embutido sin perder extracción proteica ni seguridad microbiológica: sustitutos, reducción gradual y compensación de la actividad de agua.</p>
       </a>
       <a class="ficha" href="/formulacion/chorizo-parrillero/">
-        <span class="tipo">Fresco</span><h3>Chorizo parrillero</h3><p>Formulación completa del chorizo parrillero: porcentajes, temperatura de masa, molienda, embutido y rendimiento.</p>
+        <span class="tipo">Fresco</span><h3>Chorizo parrillero</h3><p>Chorizo parrillero industrial: qué hace cada ingrediente, temperatura de masa, molienda, embutido y rendimiento, con los defectos que arruinan el lote.</p>
       </a>
       <a class="ficha" href="/formulacion/mortadela-y-escaldados/">
         <span class="tipo">Escaldado</span><h3>Mortadela y emulsiones</h3><p>Cómo se construye una emulsión cárnica estable: orden en el cutter, temperatura límite, fosfatos, escaldado a 72 °C y por qué se corta la masa.</p>
       </a>
       <a class="ficha" href="/formulacion/jamon-cocido-de-pierna/">
-        <span class="tipo">Escaldado</span><h3>Jamón cocido</h3><p>Cálculo de salmuera, porcentaje de inyección, tiempos de masajeo y cocción del jamón cocido de pierna.</p>
+        <span class="tipo">Escaldado</span><h3>Jamón cocido</h3><p>Jamón cocido de pierna: salmuera, inyección, masajeo y cocción.</p>
       </a>
     </div>
   </div>
@@ -515,7 +540,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
     <div class="cab rev centrado">
       <span class="eyebrow">Contacto</span>
       <h2>Consúltenos desde donde esté</h2>
-      <p>Respondemos en español, inglés, portugués, francés, italiano y árabe. Si su pregunta es técnica y concreta, la respuesta también lo será.</p>
+      <p>Respondemos en español y en inglés, y entregamos por escrito en esos dos idiomas. Si su pregunta es técnica y concreta, la respuesta también lo será.</p>
     </div>
     <form class="consulta rev" id="formConsulta" data-correo="direccion@carnotecnia.com">
       <div class="campos">
@@ -549,7 +574,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
       </div>
       <div>
         <h4>Qué hacemos</h4>
-        <ul><li><a href="/fabrica/">Embutidos y carnes maduradas</a></li><li><a href="/consultoria/">Asesoría en tecnología de alimentos</a></li><li><a href="/academia/">Formación y recetas industriales</a></li>
+        <ul><li><a href="/fabrica/">Embutidos y carnes maduradas</a></li><li><a href="/consultoria/">Consultoría en tecnología cárnica</a></li><li><a href="/academia/">Formación y recetas industriales</a></li>
         <li><a href="/servicios/">Servicios</a></li></ul>
       </div>
       <div>
