@@ -320,6 +320,44 @@ text-transform:uppercase;padding:5px 13px;border-radius:999px;
 .plan li::before{content:"✓";position:absolute;left:0;color:var(--curado);font-weight:700}
 .plan .btn{margin-top:auto}
 .nota-precio{margin-top:26px;font-size:13.8px;color:var(--gris);max-width:70ch}
+.grupo-precio{font-size:11.5px;font-weight:750;letter-spacing:.17em;text-transform:uppercase;color:var(--gris);margin:0 0 22px}
+.precios-puertas{margin-bottom:46px}
+.plan-puerta::before{
+content:attr(data-cinta);position:absolute;top:-11px;left:28px;
+background:var(--tinta);color:var(--crema);font-size:10.5px;font-weight:750;letter-spacing:.13em;
+text-transform:uppercase;padding:5px 13px;border-radius:999px;
+}
+.plan-guia{font-size:14px;margin:-4px 0 18px}
+.plan-guia a{color:var(--curado);font-weight:650;text-underline-offset:2px}
+.escalera{
+background:var(--carbon);color:var(--crema);border-radius:var(--r);padding:32px 28px;
+display:flex;flex-direction:column;
+}
+.escalones{list-style:none;padding:0;margin:6px 0 22px;display:grid;gap:0;counter-reset:esc}
+.escalones li{position:relative;padding:0 0 18px 34px;counter-increment:esc}
+.escalones li::before{
+content:counter(esc);position:absolute;left:0;top:1px;width:22px;height:22px;border-radius:50%;
+background:var(--curado);color:#fff;font-size:12px;font-weight:750;display:grid;place-items:center;
+}
+.escalones li:not(:last-child)::after{content:"";position:absolute;left:10.5px;top:27px;bottom:4px;width:1px;background:var(--linea)}
+.escalones b{display:block;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--paprika);margin-bottom:3px}
+.escalones span{display:block;font-size:14.6px;color:#e4dcd3;line-height:1.5}
+.escalera .eyebrow{margin-bottom:14px}
+.escalera-t{font-size:1.2rem;font-weight:760;letter-spacing:-.02em;line-height:1.28;color:#fff;margin-bottom:12px}
+.escalera p{color:#cfc6bd;font-size:15px}
+.escalera p:last-child{margin-bottom:0}
+.escalera-clara{background:#fff;border:1px solid var(--linea-clara);color:var(--tinta);justify-content:flex-start}
+.escalera-clara .escalera-t{color:var(--tinta)}
+.escalera-clara ul{margin:0;padding-left:18px;display:grid;gap:8px}
+.escalera-clara li{font-size:14.3px;color:#443c37;line-height:1.5}
+.enviar-canal{margin:18px 0 0;padding-top:16px;border-top:1px solid var(--linea-clara);font-size:14px!important;color:var(--gris)!important}
+.enviar-canal a{color:var(--curado);font-weight:650;word-break:break-all}
+.gancho-hero{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:52px;align-items:start}
+.gancho-oferta{margin-top:46px}
+.gancho-oferta .precio-cifra{margin-top:12px}
+.gancho-oferta ul{margin:18px 0 22px}
+.gancho-oferta .plan-guia{margin:14px 0 0;text-align:center}
+@media (max-width:960px){.gancho-hero{grid-template-columns:1fr;gap:34px}.gancho-oferta{margin-top:6px}}
 .perfiles{list-style:none;padding:0;margin:34px 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:11px}
 .perfiles li{
 background:var(--carbon-2);border:1px solid var(--linea);border-radius:10px;
@@ -364,11 +402,7 @@ outline:none;border-color:var(--curado-vivo);background:var(--carbon-3);
 .servicios{grid-template-columns:1fr}
 .ftr-grid{grid-template-columns:1fr 1fr}
 }
-@media (max-width:760px){
-body{font-size:16.3px}
-.campos{grid-template-columns:1fr}
-.areas{grid-template-columns:1fr}
-.perfiles{grid-template-columns:1fr}
+@media (max-width:1160px){
 .burger{display:block}
 .nav{
 position:fixed;inset:66px 0 auto;background:var(--carbon);flex-direction:column;
@@ -378,6 +412,12 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
 .nav.abierto{transform:none}
 .nav a{padding:14px 0;border-bottom:1px solid var(--linea);font-size:16px}
 .nav .btn{margin-top:16px;border-bottom:0}
+}
+@media (max-width:760px){
+body{font-size:16.3px}
+.campos{grid-template-columns:1fr}
+.areas{grid-template-columns:1fr}
+.perfiles{grid-template-columns:1fr}
 .cifras{grid-template-columns:1fr}
 .ftr-grid{grid-template-columns:1fr}
 .hero{padding-top:56px}
@@ -500,7 +540,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
   <div class="wrap">
     <div class="cta rev">
       <h2>¿Este defecto le está costando lotes?</h2>
-      <p>La ficha explica el fenómeno. Encontrar la causa en su planta exige sus datos: pesos por lote, temperaturas, pH y fórmula. Eso es lo que hace la consultoría, a distancia y con precio publicado.</p>
+      <p>La ficha explica el fenómeno. Encontrar la causa en su planta exige sus datos: pesos por lote, temperaturas, pH y fórmula. Con ellos, una consulta técnica puntual cuesta USD 300 y se responde por escrito en 48 horas hábiles.</p>
       <div class="btns">
         <a class="btn btn-p" href="/consultoria/">Ver la consultoría cárnica</a>
         <a class="btn btn-linea" href="/diagnostico/">Diagnóstico</a>
@@ -569,7 +609,8 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
       <div>
         <h4>Qué hacemos</h4>
         <ul><li><a href="/fabrica/">Embutidos y carnes maduradas</a></li><li><a href="/consultoria/">Consultoría en tecnología cárnica</a></li><li><a href="/academia/">Formación y recetas industriales</a></li>
-        <li><a href="/servicios/">Servicios</a></li></ul>
+        <li><a href="/servicios/">Servicios</a></li>
+        <li><a href="/sello-ultraprocesado/">Sello de ultraprocesado</a></li></ul>
       </div>
       <div>
         <h4>Técnico</h4>

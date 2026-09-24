@@ -320,6 +320,44 @@ text-transform:uppercase;padding:5px 13px;border-radius:999px;
 .plan li::before{content:"✓";position:absolute;left:0;color:var(--curado);font-weight:700}
 .plan .btn{margin-top:auto}
 .nota-precio{margin-top:26px;font-size:13.8px;color:var(--gris);max-width:70ch}
+.grupo-precio{font-size:11.5px;font-weight:750;letter-spacing:.17em;text-transform:uppercase;color:var(--gris);margin:0 0 22px}
+.precios-puertas{margin-bottom:46px}
+.plan-puerta::before{
+content:attr(data-cinta);position:absolute;top:-11px;left:28px;
+background:var(--tinta);color:var(--crema);font-size:10.5px;font-weight:750;letter-spacing:.13em;
+text-transform:uppercase;padding:5px 13px;border-radius:999px;
+}
+.plan-guia{font-size:14px;margin:-4px 0 18px}
+.plan-guia a{color:var(--curado);font-weight:650;text-underline-offset:2px}
+.escalera{
+background:var(--carbon);color:var(--crema);border-radius:var(--r);padding:32px 28px;
+display:flex;flex-direction:column;
+}
+.escalones{list-style:none;padding:0;margin:6px 0 22px;display:grid;gap:0;counter-reset:esc}
+.escalones li{position:relative;padding:0 0 18px 34px;counter-increment:esc}
+.escalones li::before{
+content:counter(esc);position:absolute;left:0;top:1px;width:22px;height:22px;border-radius:50%;
+background:var(--curado);color:#fff;font-size:12px;font-weight:750;display:grid;place-items:center;
+}
+.escalones li:not(:last-child)::after{content:"";position:absolute;left:10.5px;top:27px;bottom:4px;width:1px;background:var(--linea)}
+.escalones b{display:block;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--paprika);margin-bottom:3px}
+.escalones span{display:block;font-size:14.6px;color:#e4dcd3;line-height:1.5}
+.escalera .eyebrow{margin-bottom:14px}
+.escalera-t{font-size:1.2rem;font-weight:760;letter-spacing:-.02em;line-height:1.28;color:#fff;margin-bottom:12px}
+.escalera p{color:#cfc6bd;font-size:15px}
+.escalera p:last-child{margin-bottom:0}
+.escalera-clara{background:#fff;border:1px solid var(--linea-clara);color:var(--tinta);justify-content:flex-start}
+.escalera-clara .escalera-t{color:var(--tinta)}
+.escalera-clara ul{margin:0;padding-left:18px;display:grid;gap:8px}
+.escalera-clara li{font-size:14.3px;color:#443c37;line-height:1.5}
+.enviar-canal{margin:18px 0 0;padding-top:16px;border-top:1px solid var(--linea-clara);font-size:14px!important;color:var(--gris)!important}
+.enviar-canal a{color:var(--curado);font-weight:650;word-break:break-all}
+.gancho-hero{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:52px;align-items:start}
+.gancho-oferta{margin-top:46px}
+.gancho-oferta .precio-cifra{margin-top:12px}
+.gancho-oferta ul{margin:18px 0 22px}
+.gancho-oferta .plan-guia{margin:14px 0 0;text-align:center}
+@media (max-width:960px){.gancho-hero{grid-template-columns:1fr;gap:34px}.gancho-oferta{margin-top:6px}}
 .perfiles{list-style:none;padding:0;margin:34px 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:11px}
 .perfiles li{
 background:var(--carbon-2);border:1px solid var(--linea);border-radius:10px;
@@ -364,11 +402,7 @@ outline:none;border-color:var(--curado-vivo);background:var(--carbon-3);
 .servicios{grid-template-columns:1fr}
 .ftr-grid{grid-template-columns:1fr 1fr}
 }
-@media (max-width:760px){
-body{font-size:16.3px}
-.campos{grid-template-columns:1fr}
-.areas{grid-template-columns:1fr}
-.perfiles{grid-template-columns:1fr}
+@media (max-width:1160px){
 .burger{display:block}
 .nav{
 position:fixed;inset:66px 0 auto;background:var(--carbon);flex-direction:column;
@@ -378,6 +412,12 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
 .nav.abierto{transform:none}
 .nav a{padding:14px 0;border-bottom:1px solid var(--linea);font-size:16px}
 .nav .btn{margin-top:16px;border-bottom:0}
+}
+@media (max-width:760px){
+body{font-size:16.3px}
+.campos{grid-template-columns:1fr}
+.areas{grid-template-columns:1fr}
+.perfiles{grid-template-columns:1fr}
 .cifras{grid-template-columns:1fr}
 .ftr-grid{grid-template-columns:1fr}
 .hero{padding-top:56px}
@@ -392,7 +432,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
 [dir="rtl"] .linea a.mas:hover span{transform:scaleX(-1) translateX(5px)}
 [dir="rtl"] th,[dir="rtl"] td{text-align:right}</style>
 <link rel="icon" href="/assets/img/logo.svg" type="image/svg+xml">
-<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"Carnotecnia","url":"https://carnotecnia.com","logo":"https://carnotecnia.com/assets/img/logo.svg","description":"Reformulamos para bajar su costo por kilo sin que el cliente note el cambio. Vida útil, HACCP y exportación para plantas de alimentos. Asesoría remota.","address":{"@type":"PostalAddress","addressLocality":"Maracaibo","addressRegion":"Zulia","addressCountry":"VE"},"contactPoint":[{"@type":"ContactPoint","telephone":"+573223623930","contactType":"sales","email":"direccion@carnotecnia.com","areaServed":"Worldwide","availableLanguage":["es","en","pt","fr","it","ar","pl","de","zh","ru"]}],"knowsAbout":["Meat technology","Sausage formulation","Dry-aged meat","HACCP","Halal production","Food technology"],"location":[{"@type":"Place","name":"Maracaibo, Venezuela","address":{"@type":"PostalAddress","addressLocality":"Maracaibo","addressRegion":"Zulia","addressCountry":"VE"}},{"@type":"Place","name":"Bogotá, Colombia","address":{"@type":"PostalAddress","addressLocality":"Bogotá","addressRegion":"Bogotá D.C.","addressCountry":"CO"}}],"parentOrganization":{"@type":"Organization","name":"Grupo Empresarial Almadía S.A.S."},"founder":{"@type":"Person","name":"César Pérez","jobTitle":"Experto en producción agroalimentaria y de procesos","knowsAbout":["Agrifood production","Process engineering","Meat processing","Plant diagnostics","Cost per kilo"]},"employee":[{"@type":"Person","name":"César Pérez","jobTitle":"Experto en producción agroalimentaria y de procesos","knowsAbout":["Agrifood production","Process engineering","Meat processing","Plant diagnostics","Cost per kilo"]},{"@type":"Person","name":"José Luis Molaya","jobTitle":"Experto en tecnología de alimentos y chef internacional","knowsAbout":["Food technology","Product development","International cuisine","Sensory evaluation","Recipe scale-up"]}],"areaServed":{"@type":"Place","name":"Worldwide"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué es exactamente la carnotecnia?","acceptedAnswer":{"@type":"Answer","text":"Es la tecnología de la carne: la disciplina que va de la res en pie al producto empacado, pasando por sacrificio, maduración, formulación, tratamiento térmico y vida útil. Cuando alguien dice «tecnología de alimentos aplicada a cárnicos», está diciendo carnotecnia."}},{"@type":"Question","name":"¿Atienden fuera de Venezuela?","acceptedAnswer":{"@type":"Answer","text":"Sí. La fábrica y la venta al mayor son venezolanas, con base en Maracaibo, y la sede comercial está en Bogotá; la consultoría y la formación son remotas y se prestan en cualquier país. Atendemos y entregamos en español e inglés, y nos ajustamos a su huso horario."}},{"@type":"Question","name":"¿Puedo consultar una fórmula puntual sin contratar un proyecto?","acceptedAnswer":{"@type":"Answer","text":"Sí. Una consulta concreta —por qué se corta una emulsión, qué dosis de nitrito corresponde, por qué no baja el pH— se responde por correo o videollamada corta. Los proyectos son para lo que no cabe en una respuesta."}},{"@type":"Question","name":"¿Puedo montar una planta de embutidos pequeña?","acceptedAnswer":{"@type":"Answer","text":"Sí, y es el error más común pretender lo contrario. Una línea de frescos y escaldados arranca con molino, mezcladora, embutidora y una cámara: lo que decide si funciona no es el tamaño del equipo, es el control de temperatura de la masa y la disciplina de formulación."}},{"@type":"Question","name":"¿Entregan recetas?","acceptedAnswer":{"@type":"Answer","text":"Entregamos formulaciones con el porqué de cada componente y su dosis legal, que es lo único que sirve para producir. Una lista de ingredientes sin curva de proceso ni control de temperatura no reproduce nada."}},{"@type":"Question","name":"¿Cuánto tarda desarrollar un producto nuevo?","acceptedAnswer":{"@type":"Answer","text":"Un producto fresco o escaldado se cierra en semanas. Un crudo curado necesita el tiempo de maduración completo por ensayo, así que el reloj lo pone el producto: entre 21 y 90 días según calibre y tipo."}},{"@type":"Question","name":"¿Qué hace falta para vender a hoteles y cadenas?","acceptedAnswer":{"@type":"Answer","text":"Ficha técnica por producto, vida útil validada, registro sanitario vigente y constancia de lote. Sin esos cuatro papeles la negociación no empieza, por bueno que esté el producto."}}]}]</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"Carnotecnia","url":"https://carnotecnia.com","logo":"https://carnotecnia.com/assets/img/logo.svg","description":"Reformulamos para bajar su costo por kilo sin que el cliente note el cambio. Vida útil, HACCP y exportación para plantas de alimentos. Asesoría remota.","address":{"@type":"PostalAddress","addressLocality":"Maracaibo","addressRegion":"Zulia","addressCountry":"VE"},"contactPoint":[{"@type":"ContactPoint","telephone":"+573223623930","contactType":"sales","email":"direccion@carnotecnia.com","areaServed":"Worldwide","availableLanguage":["es","en","pt","fr","it","ar","pl","de","zh","ru"]}],"knowsAbout":["Meat technology","Sausage formulation","Dry-aged meat","HACCP","Halal production","Food technology"],"location":[{"@type":"Place","name":"Maracaibo, Venezuela","address":{"@type":"PostalAddress","addressLocality":"Maracaibo","addressRegion":"Zulia","addressCountry":"VE"}},{"@type":"Place","name":"Bogotá, Colombia","address":{"@type":"PostalAddress","addressLocality":"Bogotá","addressRegion":"Bogotá D.C.","addressCountry":"CO"}}],"parentOrganization":{"@type":"Organization","name":"Grupo Empresarial Almadía S.A.S."},"founder":{"@type":"Person","name":"César Pérez","jobTitle":"Experto en producción agroalimentaria y de procesos","knowsAbout":["Agrifood production","Process engineering","Meat processing","Plant diagnostics","Cost per kilo"]},"employee":[{"@type":"Person","name":"César Pérez","jobTitle":"Experto en producción agroalimentaria y de procesos","knowsAbout":["Agrifood production","Process engineering","Meat processing","Plant diagnostics","Cost per kilo"]},{"@type":"Person","name":"José Luis Molaya","jobTitle":"Experto en tecnología de alimentos y chef internacional","knowsAbout":["Food technology","Product development","International cuisine","Sensory evaluation","Recipe scale-up"]}],"areaServed":{"@type":"Place","name":"Worldwide"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué es exactamente la carnotecnia?","acceptedAnswer":{"@type":"Answer","text":"Es la tecnología de la carne: la disciplina que va de la res en pie al producto empacado, pasando por sacrificio, maduración, formulación, tratamiento térmico y vida útil. Cuando alguien dice «tecnología de alimentos aplicada a cárnicos», está diciendo carnotecnia."}},{"@type":"Question","name":"¿Atienden fuera de Venezuela?","acceptedAnswer":{"@type":"Answer","text":"Sí. La fábrica y la venta al mayor son venezolanas, con base en Maracaibo, y la sede comercial está en Bogotá; la consultoría y la formación son remotas y se prestan en cualquier país. Atendemos y entregamos en español e inglés, y nos ajustamos a su huso horario."}},{"@type":"Question","name":"¿Puedo consultar una fórmula puntual sin contratar un proyecto?","acceptedAnswer":{"@type":"Answer","text":"Sí. Una consulta técnica puntual —por qué se corta una emulsión, qué dosis de nitrito corresponde, por qué no baja el pH— cuesta USD 300 y se responde por escrito en 48 horas hábiles desde que llegan los datos. Los proyectos son para lo que no cabe en una respuesta."}},{"@type":"Question","name":"¿Puedo montar una planta de embutidos pequeña?","acceptedAnswer":{"@type":"Answer","text":"Sí, y es el error más común pretender lo contrario. Una línea de frescos y escaldados arranca con molino, mezcladora, embutidora y una cámara: lo que decide si funciona no es el tamaño del equipo, es el control de temperatura de la masa y la disciplina de formulación."}},{"@type":"Question","name":"¿Entregan recetas?","acceptedAnswer":{"@type":"Answer","text":"Entregamos formulaciones con el porqué de cada componente y su dosis legal, que es lo único que sirve para producir. Una lista de ingredientes sin curva de proceso ni control de temperatura no reproduce nada."}},{"@type":"Question","name":"¿Cuánto tarda desarrollar un producto nuevo?","acceptedAnswer":{"@type":"Answer","text":"Un producto fresco o escaldado se cierra en semanas. Un crudo curado necesita el tiempo de maduración completo por ensayo, así que el reloj lo pone el producto: entre 21 y 90 días según calibre y tipo."}},{"@type":"Question","name":"¿Qué hace falta para vender a hoteles y cadenas?","acceptedAnswer":{"@type":"Answer","text":"Ficha técnica por producto, vida útil validada, registro sanitario vigente y constancia de lote. Sin esos cuatro papeles la negociación no empieza, por bueno que esté el producto."}}]}]</script>
 <script defer src="/assets/js/main.js?v=1204bc35"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9SJTJF6C2Q"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-9SJTJF6C2Q')</script>
@@ -664,7 +704,7 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
     <div class="faq rev">
       <details><summary>¿Qué es exactamente la carnotecnia?</summary><p>Es la tecnología de la carne: la disciplina que va de la res en pie al producto empacado, pasando por sacrificio, maduración, formulación, tratamiento térmico y vida útil. Cuando alguien dice «tecnología de alimentos aplicada a cárnicos», está diciendo carnotecnia.</p></details>
       <details><summary>¿Atienden fuera de Venezuela?</summary><p>Sí. La fábrica y la venta al mayor son venezolanas, con base en Maracaibo, y la sede comercial está en Bogotá; la consultoría y la formación son remotas y se prestan en cualquier país. Atendemos y entregamos en español e inglés, y nos ajustamos a su huso horario.</p></details>
-      <details><summary>¿Puedo consultar una fórmula puntual sin contratar un proyecto?</summary><p>Sí. Una consulta concreta —por qué se corta una emulsión, qué dosis de nitrito corresponde, por qué no baja el pH— se responde por correo o videollamada corta. Los proyectos son para lo que no cabe en una respuesta.</p></details>
+      <details><summary>¿Puedo consultar una fórmula puntual sin contratar un proyecto?</summary><p>Sí. Una consulta técnica puntual —por qué se corta una emulsión, qué dosis de nitrito corresponde, por qué no baja el pH— cuesta USD 300 y se responde por escrito en 48 horas hábiles desde que llegan los datos. Los proyectos son para lo que no cabe en una respuesta.</p></details>
       <details><summary>¿Puedo montar una planta de embutidos pequeña?</summary><p>Sí, y es el error más común pretender lo contrario. Una línea de frescos y escaldados arranca con molino, mezcladora, embutidora y una cámara: lo que decide si funciona no es el tamaño del equipo, es el control de temperatura de la masa y la disciplina de formulación.</p></details>
       <details><summary>¿Entregan recetas?</summary><p>Entregamos formulaciones con el porqué de cada componente y su dosis legal, que es lo único que sirve para producir. Una lista de ingredientes sin curva de proceso ni control de temperatura no reproduce nada.</p></details>
       <details><summary>¿Cuánto tarda desarrollar un producto nuevo?</summary><p>Un producto fresco o escaldado se cierra en semanas. Un crudo curado necesita el tiempo de maduración completo por ensayo, así que el reloj lo pone el producto: entre 21 y 90 días según calibre y tipo.</p></details>
@@ -713,7 +753,8 @@ transform:translateY(-125%);transition:transform .34s var(--ease);margin:0;
       <div>
         <h4>Qué hacemos</h4>
         <ul><li><a href="/fabrica/">Embutidos y carnes maduradas</a></li><li><a href="/consultoria/">Consultoría en tecnología cárnica</a></li><li><a href="/academia/">Formación y recetas industriales</a></li>
-        <li><a href="/servicios/">Servicios</a></li></ul>
+        <li><a href="/servicios/">Servicios</a></li>
+        <li><a href="/sello-ultraprocesado/">Sello de ultraprocesado</a></li></ul>
       </div>
       <div>
         <h4>Técnico</h4>
