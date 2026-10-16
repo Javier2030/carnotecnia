@@ -473,3 +473,6 @@ td b{color:var(--tinta)}
 [dir="rtl"] .linea a.mas span{transform:scaleX(-1)}
 [dir="rtl"] .linea a.mas:hover span{transform:scaleX(-1) translateX(5px)}
 [dir="rtl"] th,[dir="rtl"] td{text-align:right}
+
+/* 16-oct-2026: botones largos (p. ej. «Si vende en Colombia: revisión del sello, USD 290») se salían de la caja a 390 px */
+@media (max-width:520px){.btn{white-space:normal;max-width:100%;text-align:center;line-height:1.3}}
